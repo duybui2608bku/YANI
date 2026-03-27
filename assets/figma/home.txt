@@ -1,0 +1,5723 @@
+metadata:
+  name: Yani webstite (Copy) (Copy)
+  components: {}
+  componentSets: {}
+nodes:
+  - id: 541:128
+    name: Home - fix font size
+    type: FRAME
+    layout: layout_NO23TF
+    fills: fill_H0ECOG
+    children:
+      - id: 541:129
+        name: vô cực
+        type: RECTANGLE
+        layout: layout_K2S4NJ
+        fills: fill_TGVH85
+        effects: effect_5GTS2V
+      - id: 541:130
+        name: bgr - bảng giá
+        type: IMAGE-SVG
+        layout: layout_ES7XTI
+        opacity: 0.800000011920929
+      - id: 541:134
+        name: background - trang 3
+        type: RECTANGLE
+        layout: layout_XFXJPG
+        fills: fill_95H0A2
+      - id: 541:135
+        name: vô cực
+        type: RECTANGLE
+        layout: layout_KKR5ZT
+        fills: fill_TGVH85
+        effects: effect_HIBOV1
+      - id: 541:136
+        name: Footer
+        type: GROUP
+        layout: layout_XVCOLJ
+        children:
+          - id: 541:137
+            name: background
+            type: RECTANGLE
+            layout: layout_2J58CE
+            fills: fill_THRAVR
+          - id: 541:138
+            name: Group 228
+            type: GROUP
+            layout: layout_TC4UQT
+            children:
+              - id: 541:139
+                name: "MST: 0123456789\_\LGiấy phép số: 123/GP-BTTTT cấp bởi Bộ Thông tin và Truyền thông."
+                type: TEXT
+                layout: layout_MTL104
+                text: "MST: 0123456789\_\LGiấy phép số: 123/GP-BTTTT cấp bởi Bộ Thông tin và Truyền thông."
+                textStyle: Body S
+                fills: fill_B4RPUF
+              - id: 541:140
+                name: © 2026 Yani Content Master. All rights reserved.
+                type: TEXT
+                layout: layout_WJB79C
+                text: © 2026 Yani Content Master. All rights reserved.
+                textStyle: Body S
+                fills: fill_B4RPUF
+              - id: 541:141
+                name: Group 227
+                type: GROUP
+                layout: layout_0GGZLI
+                children:
+                  - id: 541:142
+                    name: Group 226
+                    type: GROUP
+                    layout: layout_ARJPR0
+                    children:
+                      - id: 541:143
+                        name: Group 225
+                        type: GROUP
+                        layout: layout_MRKKYY
+                        children:
+                          - id: 541:144
+                            name: Group 7
+                            type: IMAGE-SVG
+                            layout: layout_DVF9M5
+                          - id: 541:158
+                            name: Yani Content là đơn vị tiên phong trong giải pháp nội dung chuẩn EEAT. Chúng tôi giúp doanh nghiệp B2B xây dựng vị thế chuyên gia (Authority) thông qua chiến lược nội dung bền vững.
+                            type: TEXT
+                            layout: layout_S28NZZ
+                            text: Yani Content là đơn vị tiên phong trong giải pháp nội dung chuẩn EEAT. Chúng tôi giúp doanh nghiệp B2B xây dựng vị thế chuyên gia (Authority) thông qua chiến lược nội dung bền vững.
+                            textStyle: Body M
+                            fills: fill_PWTDLW
+                      - id: 541:159
+                        name: Group 222
+                        type: GROUP
+                        layout: layout_ONQ2HR
+                        borderRadius: 0px 0px 0px 0px
+                        children:
+                          - id: 541:160
+                            name: Content SEO Chiến lược Viết bài chuẩn EEAT Audit & Tối ưu nội dung Content Marketing B2B
+                            type: TEXT
+                            layout: layout_WQ2N02
+                            text: |-
+                              Content SEO Chiến lược
+                              Viết bài chuẩn EEAT
+                              Audit & Tối ưu nội dung
+                              Content Marketing B2B
+                            textStyle: style_9QPFC6
+                            fills: fill_PWTDLW
+                          - id: 541:161
+                            name: DỊCH VỤ MŨI NHỌN
+                            type: TEXT
+                            layout: layout_ZPJUV2
+                            text: DỊCH VỤ MŨI NHỌN
+                            textStyle: H5 - card title
+                            fills: fill_XKTBYE
+                      - id: 541:162
+                        name: Group 223
+                        type: GROUP
+                        layout: layout_M5CXXA
+                        borderRadius: 0px 0px 0px 0px
+                        children:
+                          - id: 541:163
+                            name: Triết lý nội dung Thư viện tri thức Yêu cầu báo giá Chính sách bảo mật
+                            type: TEXT
+                            layout: layout_ZQDAXT
+                            text: |-
+                              Triết lý nội dung
+                              Thư viện tri thức
+                              Yêu cầu báo giá
+                              Chính sách bảo mật
+                            textStyle: style_9QPFC6
+                            fills: fill_PWTDLW
+                          - id: 541:164
+                            name: VỀ CHÚNG TÔI
+                            type: TEXT
+                            layout: layout_UPGATI
+                            text: VỀ CHÚNG TÔI
+                            textStyle: H5 - card title
+                            fills: fill_XKTBYE
+                      - id: 541:165
+                        name: Group 224
+                        type: GROUP
+                        layout: layout_ZFBT1N
+                        borderRadius: 0px 0px 0px 0px
+                        children:
+                          - id: 541:166
+                            name: yanicontent@gmail.com 0902.623.078 (Zalo) Thành phố Hồ Chí Minh
+                            type: TEXT
+                            layout: layout_G5RN29
+                            text: |-
+                              yanicontent@gmail.com
+                              0902.623.078 (Zalo)
+                              Thành phố Hồ Chí Minh
+                            textStyle: style_9QPFC6
+                            fills: fill_PWTDLW
+                          - id: 541:167
+                            name: KẾT NỐI NGAY
+                            type: TEXT
+                            layout: layout_EXVT23
+                            text: KẾT NỐI NGAY
+                            textStyle: H5 - card title
+                            fills: fill_XKTBYE
+                  - id: 541:168
+                    name: Line 1
+                    type: LINE
+                    layout: layout_Y68Y57
+                    strokes: stroke_9CPP0N
+                  - id: 541:169
+                    name: Line 2
+                    type: LINE
+                    layout: layout_CJPKA4
+                    strokes: stroke_9CPP0N
+      - id: 541:170
+        name: background
+        type: RECTANGLE
+        layout: layout_Y4UQYG
+        fills: fill_THRAVR
+      - id: 541:171
+        name: Header
+        type: GROUP
+        layout: layout_AXYSY5
+        children:
+          - id: 541:172
+            name: Rectangle 9
+            type: RECTANGLE
+            layout: layout_AXYSY5
+            fills: fill_H0ECOG
+          - id: 541:173
+            name: Group 2
+            type: IMAGE-SVG
+            layout: layout_NFH4SZ
+          - id: 541:187
+            name: Group 229
+            type: GROUP
+            layout: layout_3ZUKDV
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:188
+                name: HOME
+                type: TEXT
+                layout: layout_H3TRR3
+                text: HOME
+                textStyle: style_8A3ZIQ
+                fills: fill_PWTDLW
+              - id: 541:189
+                name: SErvice
+                type: TEXT
+                layout: layout_EPJ45V
+                text: SErvice
+                textStyle: style_8A3ZIQ
+                fills: fill_PWTDLW
+              - id: 541:190
+                name: bảng giá
+                type: TEXT
+                layout: layout_ANEMO6
+                text: bảng giá
+                textStyle: style_8A3ZIQ
+                fills: fill_PWTDLW
+              - id: 541:191
+                name: Blog
+                type: TEXT
+                layout: layout_RXP1DJ
+                text: Blog
+                textStyle: style_8A3ZIQ
+                fills: fill_PWTDLW
+              - id: 541:192
+                name: about
+                type: TEXT
+                layout: layout_ZZXDVP
+                text: about
+                textStyle: style_8A3ZIQ
+                fills: fill_PWTDLW
+              - id: 541:193
+                name: contact
+                type: TEXT
+                layout: layout_VA0KSY
+                text: contact
+                textStyle: style_8A3ZIQ
+                fills: fill_PWTDLW
+      - id: 541:194
+        name: Spotlight
+        type: IMAGE-SVG
+        layout: layout_0500OT
+        opacity: 0.5
+      - id: 541:200
+        name: GIẢI PHÁP CONTENT CHUYÊN NGHIỆP CHO DOANH NGHIỆP SME
+        type: TEXT
+        layout: layout_ATELNE
+        text: GIẢI PHÁP CONTENT CHUYÊN NGHIỆP CHO DOANH NGHIỆP SME
+        textStyle: style_H60R44
+        fills: fill_PWTDLW
+      - id: 541:201
+        name: CHUYỂN HOÁ Nội dung
+        type: TEXT
+        layout: layout_MXHZ6R
+        text: CHUYỂN HOÁ Nội dung
+        textStyle: style_AJ2FN2
+        fills: Tiêu đề - gradient
+      - id: 541:202
+        name: THÀNH Tài Sản Số Bền Vững
+        type: TEXT
+        layout: layout_XTV10U
+        text: THÀNH Tài Sản Số Bền Vững
+        textStyle: style_AJ2FN2
+        fills: fill_XKTBYE
+      - id: 541:203
+        name: "Thay vì “đăng bài cho có”, Yani tập trung xây dựng hệ thống\_nội dung số & content SEO chiến lược cho doanh nghiệp, bám sát hành trình khách hàng,\_giải thích đúng vấn đề,\_tăng niềm tin, và\_đưa người đọc đến bước liên hệ. Phù hợp doanh nghiệp SME muốn tăng trưởng dài hạn, giảm lệ thuộc quảng cáo."
+        type: TEXT
+        layout: layout_YSGP5M
+        text: "Thay vì “đăng bài cho có”, Yani tập trung xây dựng hệ thống\_nội dung số & content SEO chiến lược cho doanh nghiệp, bám sát hành trình khách hàng,\_giải thích đúng vấn đề,\_tăng niềm tin, và\_đưa người đọc đến bước liên hệ. Phù hợp doanh nghiệp SME muốn tăng trưởng dài hạn, giảm lệ thuộc quảng cáo."
+        textStyle: Body M
+        fills: fill_PWTDLW
+      - id: 541:204
+        name: Group 161
+        type: GROUP
+        layout: layout_4UZH4Z
+        borderRadius: 8px
+        children:
+          - id: 541:205
+            name: Rectangle 13
+            type: RECTANGLE
+            layout: layout_3EW9EU
+            fills: fill_49J2RA
+            strokes: stroke_5M6N1M
+            effects: effect_KRA5OY
+            borderRadius: 8px
+          - id: 541:206
+            name: Xem giải pháp content
+            type: TEXT
+            layout: layout_HO2SKT
+            text: Xem giải pháp content
+            textStyle: style_Q00PI0
+            fills: fill_XKTBYE
+      - id: 541:207
+        name: Group 163
+        type: GROUP
+        layout: layout_UTYRI0
+        borderRadius: 8px
+        children:
+          - id: 541:208
+            name: Nhắn zalo để nhận báo giá
+            type: TEXT
+            layout: layout_PEPNK2
+            text: Nhắn zalo để nhận báo giá
+            textStyle: Button
+            fills: fill_PWTDLW
+          - id: 541:209
+            name: Group 162
+            type: IMAGE-SVG
+            layout: layout_TVQ6VU
+            borderRadius: 8px
+      - id: 541:213
+        name: Group 141
+        type: GROUP
+        layout: layout_LESIZM
+        borderRadius: 0px 0px 0px 0px
+        children:
+          - id: 541:214
+            name: Group 164
+            type: GROUP
+            layout: layout_KUFRA8
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:215
+                name: Xem bảng giá và cách tính chi tiết
+                type: TEXT
+                layout: layout_QTYECK
+                text: Xem bảng giá và cách tính chi tiết
+                textStyle: Input/Label
+                fills: fill_TXYAA3
+              - id: 541:216
+                name: Group 140
+                type: IMAGE-SVG
+                layout: layout_HOW822
+                borderRadius: 0px 0px 0px 0px
+      - id: 541:220
+        name: Spotlight
+        type: IMAGE-SVG
+        layout: layout_7AEPXN
+        opacity: 0.30000001192092896
+      - id: 541:226
+        name: Group 170
+        type: GROUP
+        layout: layout_2B1B0V
+        borderRadius: 0px 0px 0px 0px
+        children:
+          - id: 541:227
+            name: Group 169
+            type: GROUP
+            layout: layout_XGGGAZ
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:228
+                name: "Thay vì “đăng bài cho có”, Yani tập trung xây dựng hệ thống\_nội dung số & content SEO chiến lược cho doanh nghiệp, bám sát hành trình khách hàng,\_giải thích đúng vấn đề,\_tăng niềm tin, và\_đưa người đọc đến bước liên hệ. Phù hợp doanh nghiệp SME muốn tăng trưởng dài hạn, giảm lệ thuộc quảng cáo."
+                type: TEXT
+                layout: layout_HCYD47
+                text: "Thay vì “đăng bài cho có”, Yani tập trung xây dựng hệ thống\_nội dung số & content SEO chiến lược cho doanh nghiệp, bám sát hành trình khách hàng,\_giải thích đúng vấn đề,\_tăng niềm tin, và\_đưa người đọc đến bước liên hệ. Phù hợp doanh nghiệp SME muốn tăng trưởng dài hạn, giảm lệ thuộc quảng cáo."
+                textStyle: Body M
+                fills: fill_PWTDLW
+              - id: 541:229
+                name: Đối tác phù hợp
+                type: TEXT
+                layout: layout_83IZW6
+                text: Đối tác phù hợp
+                textStyle: style_X38VM3
+                fills: Tiêu đề - gradient
+          - id: 541:230
+            name: Group 168
+            type: GROUP
+            layout: layout_UNSES4
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:231
+                name: Group 165
+                type: GROUP
+                layout: layout_Y3N4WV
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:232
+                    name: Frame 8
+                    type: FRAME
+                    layout: layout_Y3N4WV
+                    fills: fill_DOT0GZ
+                    borderRadius: 8px
+                  - id: 541:233
+                    name: Thể hiện năng lực thi công và tư duy thẩm mỹ qua từng bài viết kỹ thuật.
+                    type: TEXT
+                    layout: layout_FSWQYO
+                    text: Thể hiện năng lực thi công và tư duy thẩm mỹ qua từng bài viết kỹ thuật.
+                    textStyle: Body M
+                    fills: fill_PWTDLW
+                  - id: 541:234
+                    name: Xây dựng & Nội thất
+                    type: TEXT
+                    layout: layout_R1OQ7O
+                    text: Xây dựng & Nội thất
+                    textStyle: H4 - Block title
+                    fills: fill_XKTBYE
+                  - id: 541:235
+                    name: icon - XD & NT
+                    type: IMAGE-SVG
+                    layout: layout_J9V9NJ
+              - id: 541:238
+                name: Group 167
+                type: GROUP
+                layout: layout_RV5ZVI
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:239
+                    name: Frame 14
+                    type: FRAME
+                    layout: layout_Y3N4WV
+                    fills: fill_DOT0GZ
+                    borderRadius: 8px
+                  - id: 541:240
+                    name: Tuân thủ tiêu chuẩn EEAT. Nội dung minh bạch, chính xác và có trách nhiệm.
+                    type: TEXT
+                    layout: layout_N56FQR
+                    text: Tuân thủ tiêu chuẩn EEAT. Nội dung minh bạch, chính xác và có trách nhiệm.
+                    textStyle: Body M
+                    fills: fill_PWTDLW
+                  - id: 541:241
+                    name: B2B Services
+                    type: TEXT
+                    layout: layout_R1OQ7O
+                    text: B2B Services
+                    textStyle: H4 - Block title
+                    fills: fill_XKTBYE
+                  - id: 541:242
+                    name: icon - business
+                    type: IMAGE-SVG
+                    layout: layout_9RR2I3
+                    fills: icon
+              - id: 541:243
+                name: Group 166
+                type: GROUP
+                layout: layout_WBMV5L
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:244
+                    name: Frame 13
+                    type: FRAME
+                    layout: layout_Y3N4WV
+                    fills: fill_DOT0GZ
+                    borderRadius: 8px
+                  - id: 541:245
+                    name: Tuân thủ tiêu chuẩn EEAT. Nội dung minh bạch, chính xác và có trách nhiệm.
+                    type: TEXT
+                    layout: layout_NNP7RV
+                    text: Tuân thủ tiêu chuẩn EEAT. Nội dung minh bạch, chính xác và có trách nhiệm.
+                    textStyle: Body M
+                    fills: fill_PWTDLW
+                  - id: 541:246
+                    name: Y tế & Sức khỏe (YMYL)
+                    type: TEXT
+                    layout: layout_MADSQM
+                    text: Y tế & Sức khỏe (YMYL)
+                    textStyle: H4 - Block title
+                    fills: fill_XKTBYE
+                  - id: 541:247
+                    name: icon - y tế
+                    type: IMAGE-SVG
+                    layout: layout_J9V9NJ
+                    fills: icon
+      - id: 541:248
+        name: Group 183
+        type: GROUP
+        layout: layout_945388
+        borderRadius: 0px 0px 0px 0px
+        children:
+          - id: 541:249
+            name: Group 182
+            type: GROUP
+            layout: layout_IDGTY1
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:250
+                name: BẠN CÓ ĐANG GẶP TÌNH HUỐNG NÀY?
+                type: TEXT
+                layout: layout_5GB4HC
+                text: BẠN CÓ ĐANG GẶP TÌNH HUỐNG NÀY?
+                textStyle: H3
+                fills: fill_PWTDLW
+              - id: 541:251
+                name: Nếu bạn thấy “đúng mình”, phần dưới sẽ giúp bạn chọn hướng triển khai phù hợp (không cần gói dài ngay từ đầu).
+                type: TEXT
+                layout: layout_GF6ILH
+                text: Nếu bạn thấy “đúng mình”, phần dưới sẽ giúp bạn chọn hướng triển khai phù hợp (không cần gói dài ngay từ đầu).
+                textStyle: Body M
+                fills: fill_PWTDLW
+              - id: 541:252
+                name: "Content có rồi nhưng\_không ra khách?"
+                type: TEXT
+                layout: layout_OZOMK1
+                text: "Content có rồi nhưng\_không ra khách?"
+                textStyle: style_WK13HB
+                fills: fill_XKTBYE
+          - id: 541:253
+            name: Group 181
+            type: GROUP
+            layout: layout_ZKNKJQ
+            borderRadius: 8px
+            children:
+              - id: 541:254
+                name: 'Gợi ý: bạn có thể bắt đầu bằng 1–3 bài test để đánh giá chất lượng trước.'
+                type: TEXT
+                layout: layout_LQK7AE
+                text: 'Gợi ý: bạn có thể bắt đầu bằng 1–3 bài test để đánh giá chất lượng trước.'
+                textStyle: Caption
+                fills: fill_B4RPUF
+              - id: 541:255
+                name: Group 180
+                type: GROUP
+                layout: layout_JFGLM2
+                borderRadius: 8px
+                children:
+                  - id: 541:256
+                    name: Rectangle 13
+                    type: RECTANGLE
+                    layout: layout_X7T7ZI
+                    fills: fill_49J2RA
+                    strokes: stroke_5M6N1M
+                    effects: effect_KRA5OY
+                    borderRadius: 8px
+                  - id: 541:257
+                    name: Nhắn zalo để được định hướng nhanh
+                    type: TEXT
+                    layout: layout_CJ2L6N
+                    text: Nhắn zalo để được định hướng nhanh
+                    textStyle: Button
+                    fills: fill_U0K5WZ
+          - id: 541:258
+            name: Group 179
+            type: GROUP
+            layout: layout_DFOXYO
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:259
+                name: Group 175
+                type: GROUP
+                layout: layout_KKNL4R
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:260
+                    name: Rectangle 23
+                    type: RECTANGLE
+                    layout: layout_R3468P
+                    fills: Tiêu chuẩn
+                    strokes: stroke_VAM60P
+                    borderRadius: 8px
+                  - id: 541:261
+                    name: Group 28
+                    type: IMAGE-SVG
+                    layout: layout_0YOZWO
+                    opacity: 0.5
+                    borderRadius: 0px 0px 0px 0px
+                  - id: 541:268
+                    name: Nội dung thiếu đúng “câu hỏi người tìm kiếm”, nên khó lên nhóm từ khóa mang lại nhu cầu thật.
+                    type: TEXT
+                    layout: layout_0SZT6B
+                    text: Nội dung thiếu đúng “câu hỏi người tìm kiếm”, nên khó lên nhóm từ khóa mang lại nhu cầu thật.
+                    textStyle: Body M
+                    fills: fill_PWTDLW
+                  - id: 541:269
+                    name: Đăng bài đều nhưng traffic “mỏng”
+                    type: TEXT
+                    layout: layout_T09XVA
+                    text: Đăng bài đều nhưng traffic “mỏng”
+                    textStyle: style_QHUDN6
+                    fills: fill_XKTBYE
+                  - id: 541:270
+                    name: Polygon 1
+                    type: REGULAR_POLYGON
+                    layout: layout_ZOMMI0
+                    fills: hình minh hoạ - ver 2
+                    effects: effect_CV8UTA
+                    opacity: 0.800000011920929
+                  - id: 541:271
+                    name: '!'
+                    type: TEXT
+                    layout: layout_E5HRI2
+                    text: '!'
+                    textStyle: style_J2QM6T
+                    fills: fill_OI8EPK
+                    effects: effect_CV8UTA
+                  - id: 541:272
+                    name: Group 171
+                    type: GROUP
+                    layout: layout_SMNLFB
+                    borderRadius: 0px 0px 0px 0px
+                    children:
+                      - id: 541:273
+                        name: Xem hướng triển khai phù hợp
+                        type: TEXT
+                        layout: layout_1IRYWL
+                        text: Xem hướng triển khai phù hợp
+                        textStyle: Input/Label
+                        fills: fill_TXYAA3
+                      - id: 541:274
+                        name: Group 38
+                        type: IMAGE-SVG
+                        layout: layout_RJLTUW
+                        borderRadius: 0px 0px 0px 0px
+              - id: 541:278
+                name: Group 177
+                type: GROUP
+                layout: layout_ELF6WG
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:279
+                    name: Rectangle 23
+                    type: RECTANGLE
+                    layout: layout_4UJJVV
+                    fills: Tiêu chuẩn
+                    strokes: stroke_VAM60P
+                    borderRadius: 8px
+                  - id: 541:280
+                    name: Group 41
+                    type: IMAGE-SVG
+                    layout: layout_UN8UP0
+                    opacity: 0.5
+                    borderRadius: 0px 0px 0px 0px
+                  - id: 541:287
+                    name: Cần nội dung đúng ngữ cảnh ngành, diễn đạt rõ ràng và hạn chế sai sót gây hiểu nhầm.
+                    type: TEXT
+                    layout: layout_EKA0J4
+                    text: Cần nội dung đúng ngữ cảnh ngành, diễn đạt rõ ràng và hạn chế sai sót gây hiểu nhầm.
+                    textStyle: Body M
+                    fills: fill_PWTDLW
+                  - id: 541:288
+                    name: Ngành khó (B2B/YMYL) nên “không dám viết đại”
+                    type: TEXT
+                    layout: layout_D7HL19
+                    text: Ngành khó (B2B/YMYL) nên “không dám viết đại”
+                    textStyle: style_QHUDN6
+                    fills: fill_XKTBYE
+                  - id: 541:289
+                    name: Group 173
+                    type: GROUP
+                    layout: layout_34EM9F
+                    borderRadius: 0px 0px 0px 0px
+                    children:
+                      - id: 541:290
+                        name: Xem tiêu chuẩn nội dung
+                        type: TEXT
+                        layout: layout_LDH1LH
+                        text: Xem tiêu chuẩn nội dung
+                        textStyle: Input/Label
+                        fills: fill_TXYAA3
+                      - id: 541:291
+                        name: Group 42
+                        type: IMAGE-SVG
+                        layout: layout_VGLELS
+                        borderRadius: 0px 0px 0px 0px
+                  - id: 541:295
+                    name: Mask group
+                    type: IMAGE-SVG
+                    layout: layout_ODUX95
+              - id: 541:300
+                name: Group 178
+                type: GROUP
+                layout: layout_HLTX05
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:301
+                    name: Rectangle 23
+                    type: RECTANGLE
+                    layout: layout_R3468P
+                    fills: Tiêu chuẩn
+                    strokes: stroke_VAM60P
+                    borderRadius: 8px
+                  - id: 541:302
+                    name: Group 43
+                    type: IMAGE-SVG
+                    layout: layout_0YOZWO
+                    opacity: 0.5
+                    borderRadius: 0px 0px 0px 0px
+                  - id: 541:309
+                    name: Vấn đề thường không nằm ở “viết”, mà ở việc chọn đúng chủ đề, đúng dàn ý, đúng tiêu chuẩn bàn giao.
+                    type: TEXT
+                    layout: layout_BX4HBO
+                    text: Vấn đề thường không nằm ở “viết”, mà ở việc chọn đúng chủ đề, đúng dàn ý, đúng tiêu chuẩn bàn giao.
+                    textStyle: Body M
+                    fills: fill_PWTDLW
+                  - id: 541:310
+                    name: Team in-house thiếu thời gian / thiếu chuyên môn ngành
+                    type: TEXT
+                    layout: layout_0FDSZR
+                    text: |-
+                      Team in-house thiếu thời gian /
+                      thiếu chuyên môn ngành
+                    textStyle: style_QHUDN6
+                    fills: fill_XKTBYE
+                  - id: 541:311
+                    name: Group 174
+                    type: GROUP
+                    layout: layout_8K3AOA
+                    borderRadius: 0px 0px 0px 0px
+                    children:
+                      - id: 541:312
+                        name: Gửi ngành để tư vấn nhanh
+                        type: TEXT
+                        layout: layout_VMPJ9X
+                        text: Gửi ngành để tư vấn nhanh
+                        textStyle: Input/Label
+                        fills: fill_TXYAA3
+                      - id: 541:313
+                        name: Group 44
+                        type: IMAGE-SVG
+                        layout: layout_83DBLC
+                        borderRadius: 0px 0px 0px 0px
+                  - id: 541:317
+                    name: Group 45
+                    type: IMAGE-SVG
+                    layout: layout_JOBGT9
+                    effects: effect_M5H0GH
+              - id: 541:324
+                name: Group 176
+                type: GROUP
+                layout: layout_FVIEWK
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:325
+                    name: Rectangle 23
+                    type: RECTANGLE
+                    layout: layout_4UJJVV
+                    fills: Tiêu chuẩn
+                    strokes: stroke_VAM60P
+                    borderRadius: 8px
+                  - id: 541:326
+                    name: Group 40
+                    type: IMAGE-SVG
+                    layout: layout_UN8UP0
+                    opacity: 0.5
+                    borderRadius: 0px 0px 0px 0px
+                  - id: 541:333
+                    name: Thiếu độ sâu, thiếu cấu trúc, thiếu tín hiệu tin cậy khiến bài khó giữ top khi cạnh tranh tăng.
+                    type: TEXT
+                    layout: layout_S70CG3
+                    text: Thiếu độ sâu, thiếu cấu trúc, thiếu tín hiệu tin cậy khiến bài khó giữ top khi cạnh tranh tăng.
+                    textStyle: Body M
+                    fills: fill_PWTDLW
+                  - id: 541:334
+                    name: Bài lên rồi tụt / không bền
+                    type: TEXT
+                    layout: layout_ZE7TCX
+                    text: Bài lên rồi tụt / không bền
+                    textStyle: style_QHUDN6
+                    fills: fill_XKTBYE
+                  - id: 541:335
+                    name: Group 172
+                    type: GROUP
+                    layout: layout_TDUCNW
+                    borderRadius: 0px 0px 0px 0px
+                    children:
+                      - id: 541:336
+                        name: Tối ưu theo hướng bền vững
+                        type: TEXT
+                        layout: layout_7DVJGT
+                        text: Tối ưu theo hướng bền vững
+                        textStyle: Input/Label
+                        fills: fill_TXYAA3
+                      - id: 541:337
+                        name: Group 39
+                        type: IMAGE-SVG
+                        layout: layout_7NW1X5
+                        borderRadius: 0px 0px 0px 0px
+                  - id: 541:341
+                    name: Vector
+                    type: IMAGE-SVG
+                    layout: layout_FQ3YQM
+                    fills: fill_LPHUC5
+                    effects: effect_CV8UTA
+      - id: 541:342
+        name: Background - Section 4
+        type: IMAGE-SVG
+        layout: layout_G5E3V3
+        opacity: 0.10000000149011612
+        borderRadius: 8px
+      - id: 541:346
+        name: Group 190
+        type: GROUP
+        layout: layout_PJKH5I
+        borderRadius: 0px 0px 0px 0px
+        children:
+          - id: 541:347
+            name: Group 184
+            type: GROUP
+            layout: layout_0XOYSZ
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:348
+                name: CASE STUDY
+                type: TEXT
+                layout: layout_CH5OHS
+                text: CASE STUDY
+                textStyle: H3
+                fills: Tiêu đề - gradient
+              - id: 541:349
+                name: Các case dưới đây đại diện cho mô hình triển khai và tư duy tối ưu, không phải cam kết kết quả cố định.
+                type: TEXT
+                layout: layout_8XVDJ4
+                text: Các case dưới đây đại diện cho mô hình triển khai và tư duy tối ưu, không phải cam kết kết quả cố định.
+                textStyle: Body S
+                fills: fill_PWTDLW
+              - id: 541:350
+                name: (Số liệu minh họa dựa trên các dự án cùng phân khúc)
+                type: TEXT
+                layout: layout_V0JEU4
+                text: (Số liệu minh họa dựa trên các dự án cùng phân khúc)
+                textStyle: Caption
+                fills: fill_B4RPUF
+              - id: 541:351
+                name: Dưới đây là ví dụ cách chúng tôi đo và tối ưu hiệu quả nội dung, tập trung vào traffic chất lượng, hành vi người dùng và khả năng tạo lead, thay vì chỉ chạy theo số lượng bài viết hay thứ hạng ngắn hạn.
+                type: TEXT
+                layout: layout_NIH1YG
+                text: Dưới đây là ví dụ cách chúng tôi đo và tối ưu hiệu quả nội dung, tập trung vào traffic chất lượng, hành vi người dùng và khả năng tạo lead, thay vì chỉ chạy theo số lượng bài viết hay thứ hạng ngắn hạn.
+                textStyle: Body M
+                fills: fill_PWTDLW
+              - id: 541:352
+                name: "Hiệu quả\_Thực tế"
+                type: TEXT
+                layout: layout_943L71
+                text: "Hiệu quả\_Thực tế"
+                textStyle: style_9DXS8L
+                fills: fill_XKTBYE
+          - id: 541:353
+            name: Group 189
+            type: GROUP
+            layout: layout_5A1QA4
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:354
+                name: Group 187
+                type: GROUP
+                layout: layout_K0ICXE
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:355
+                    name: Group 26
+                    type: IMAGE-SVG
+                    layout: layout_K0ICXE
+                    borderRadius: 0px 0px 0px 0px
+                  - id: 541:362
+                    name: Group 186
+                    type: GROUP
+                    layout: layout_AGNBES
+                    borderRadius: 4px
+                    children:
+                      - id: 541:363
+                        name: Group 185
+                        type: GROUP
+                        layout: layout_DM4C5I
+                        borderRadius: 4px
+                        children:
+                          - id: 541:364
+                            name: Tăng Organic Traffic
+                            type: TEXT
+                            layout: layout_NDSZLP
+                            text: Tăng Organic Traffic
+                            textStyle: Body S
+                            fills: fill_PWTDLW
+                          - id: 541:365
+                            name: MỤC TIÊU
+                            type: TEXT
+                            layout: layout_L7BY9Y
+                            text: MỤC TIÊU
+                            textStyle: H6 - sub title
+                            fills: fill_XKTBYE
+                          - id: 541:366
+                            name: Growth
+                            type: TEXT
+                            layout: layout_0VQ7T6
+                            text: Growth
+                            textStyle: Body M
+                            fills: fill_TXYAA3
+                          - id: 541:367
+                            name: Group 93
+                            type: GROUP
+                            layout: layout_VBQ6LJ
+                            borderRadius: 0px 0px 0px 0px
+                            children:
+                              - id: 541:368
+                                name: Dự án xây dựng
+                                type: TEXT
+                                layout: layout_M6SM6R
+                                text: Dự án xây dựng
+                                textStyle: Body M
+                                fills: fill_PWTDLW
+                              - id: 541:369
+                                name: Construction Firm
+                                type: TEXT
+                                layout: layout_P7REV9
+                                text: Construction Firm
+                                textStyle: H5 - card title
+                                fills: fill_XKTBYE
+                          - id: 541:370
+                            name: Tăng Leads chất lượng
+                            type: TEXT
+                            layout: layout_Z4CC76
+                            text: Tăng Leads chất lượng
+                            textStyle: Body S
+                            fills: fill_TXYAA3
+                          - id: 541:371
+                            name: TÁC ĐỘNG KINH DOANH
+                            type: TEXT
+                            layout: layout_IUD9QA
+                            text: |-
+                              TÁC ĐỘNG 
+                              KINH DOANH
+                            textStyle: H6 - sub title
+                            fills: fill_XKTBYE
+                          - id: 541:372
+                            name: Traffic
+                            type: TEXT
+                            layout: layout_P38VY2
+                            text: Traffic
+                            textStyle: Body S
+                            fills: fill_PWTDLW
+                          - id: 541:373
+                            name: KẾT QUẢ
+                            type: TEXT
+                            layout: layout_DLUWA2
+                            text: KẾT QUẢ
+                            textStyle: H6 - sub title
+                            fills: fill_XKTBYE
+                          - id: 541:374
+                            name: X3
+                            type: TEXT
+                            layout: layout_QZ6PK2
+                            text: X3
+                            textStyle: style_ZH3EPH
+                            fills: Tiêu đề - gradient
+                          - id: 541:375
+                            name: Rectangle 27
+                            type: RECTANGLE
+                            layout: layout_R1AVSC
+                            fills: fill_AJQMZR
+                            borderRadius: 4px
+                          - id: 541:376
+                            name: Rectangle 28
+                            type: RECTANGLE
+                            layout: layout_6U8P9U
+                            fills: fill_AJQMZR
+                            borderRadius: 4px
+                      - id: 541:377
+                        name: Line 5
+                        type: LINE
+                        layout: layout_7ZM0QU
+                        strokes: stroke_9CPP0N
+              - id: 541:378
+                name: Group 188
+                type: GROUP
+                layout: layout_CPWZRL
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:379
+                    name: Group 26
+                    type: IMAGE-SVG
+                    layout: layout_K0ICXE
+                    borderRadius: 0px 0px 0px 0px
+                  - id: 541:386
+                    name: Group 186
+                    type: GROUP
+                    layout: layout_FNWZBP
+                    borderRadius: 4px
+                    children:
+                      - id: 541:387
+                        name: Group 185
+                        type: GROUP
+                        layout: layout_QYGVTR
+                        borderRadius: 4px
+                        children:
+                          - id: 541:388
+                            name: Traffic dậm chân tại chỗ
+                            type: TEXT
+                            layout: layout_TK0JUH
+                            text: Traffic dậm chân tại chỗ
+                            textStyle: Body S
+                            fills: fill_PWTDLW
+                          - id: 541:389
+                            name: VẤN ĐỀ
+                            type: TEXT
+                            layout: layout_X0QMBI
+                            text: VẤN ĐỀ
+                            textStyle: H6 - sub title
+                            fills: fill_XKTBYE
+                          - id: 541:390
+                            name: Niche Authority
+                            type: TEXT
+                            layout: layout_7F28LG
+                            text: Niche Authority
+                            textStyle: Body M
+                            fills: fill_TXYAA3
+                          - id: 541:391
+                            name: Group 93
+                            type: GROUP
+                            layout: layout_PDSFKW
+                            borderRadius: 0px 0px 0px 0px
+                            children:
+                              - id: 541:392
+                                name: Đào tạo Tiếng Anh
+                                type: TEXT
+                                layout: layout_Z2SLSM
+                                text: Đào tạo Tiếng Anh
+                                textStyle: Body M
+                                fills: fill_PWTDLW
+                              - id: 541:393
+                                name: B2B Education
+                                type: TEXT
+                                layout: layout_WPMEFK
+                                text: B2B Education
+                                textStyle: H5 - card title
+                                fills: fill_XKTBYE
+                          - id: 541:394
+                            name: Phủ sóng từ khóa ngành
+                            type: TEXT
+                            layout: layout_PJQKB2
+                            text: |-
+                              Phủ sóng
+                              từ khóa ngành
+                            textStyle: Body S
+                            fills: fill_TXYAA3
+                          - id: 541:395
+                            name: HIỆU QUẢ
+                            type: TEXT
+                            layout: layout_FNENPV
+                            text: HIỆU QUẢ
+                            textStyle: H6 - sub title
+                            fills: fill_XKTBYE
+                          - id: 541:396
+                            name: Topic Cluster
+                            type: TEXT
+                            layout: layout_FA72DJ
+                            text: Topic Cluster
+                            textStyle: Body S
+                            fills: fill_PWTDLW
+                          - id: 541:397
+                            name: GIẢI PHÁP
+                            type: TEXT
+                            layout: layout_3P1DU7
+                            text: GIẢI PHÁP
+                            textStyle: H6 - sub title
+                            fills: fill_XKTBYE
+                          - id: 541:398
+                            name: Rectangle 27
+                            type: IMAGE-SVG
+                            layout: layout_Q9618J
+                            fills: fill_AJQMZR
+                            borderRadius: 4px
+                          - id: 541:399
+                            name: Rectangle 28
+                            type: RECTANGLE
+                            layout: layout_5MO71F
+                            fills: fill_AJQMZR
+                            borderRadius: 4px
+                      - id: 541:400
+                        name: Line 5
+                        type: LINE
+                        layout: layout_7ZM0QU
+                        strokes: stroke_9CPP0N
+      - id: 598:177
+        name: Group 25
+        type: IMAGE-SVG
+        layout: layout_U2ZJOV
+        effects: effect_CY5MRV
+        borderRadius: 0px 0px 0px 0px
+      - id: 541:401
+        name: Group 199
+        type: GROUP
+        layout: layout_3XGIUU
+        borderRadius: 0px 0px 0px 0px
+        children:
+          - id: 541:402
+            name: DỊCH VỤ CỐT LÕI
+            type: TEXT
+            layout: layout_BMGBQB
+            text: DỊCH VỤ CỐT LÕI
+            textStyle: H3
+            fills: fill_PWTDLW
+          - id: 541:403
+            name: "Không phải doanh nghiệp nào cũng cần cùng một loại content.\LChúng tôi xây dựng từng giải pháp nội dung để\_giải quyết đúng vấn đề SEO và chuyển đổi\_mà team marketing đang gặp phải."
+            type: TEXT
+            layout: layout_5MSY8H
+            text: "Không phải doanh nghiệp nào cũng cần cùng một loại content.\LChúng tôi xây dựng từng giải pháp nội dung để\_giải quyết đúng vấn đề SEO và chuyển đổi\_mà team marketing đang gặp phải."
+            textStyle: Body M
+            fills: fill_PWTDLW
+          - id: 541:404
+            name: Giải pháp Nội dung Chuyên biệt
+            type: TEXT
+            layout: layout_3NTFDS
+            text: Giải pháp Nội dung Chuyên biệt
+            textStyle: style_WK13HB
+            fills: fill_XKTBYE
+      - id: 541:405
+        name: Group 198
+        type: GROUP
+        layout: layout_L2U03W
+        children:
+          - id: 541:406
+            name: Ellipse 6
+            type: ELLIPSE
+            layout: layout_1JJPKW
+            fills: fill_68POHP
+          - id: 541:407
+            name: Ellipse 7
+            type: ELLIPSE
+            layout: layout_MXTAS1
+            fills: fill_A3QYJA
+            strokes: stroke_T45J97
+          - id: 541:408
+            name: Ellipse 8
+            type: ELLIPSE
+            layout: layout_20GR56
+            fills: fill_68POHP
+          - id: 541:409
+            name: Group 197
+            type: GROUP
+            layout: layout_BJRO8Q
+            children:
+              - id: 541:410
+                name: Group 194
+                type: GROUP
+                layout: layout_CCLYNC
+                children:
+                  - id: 541:411
+                    name: Group 191
+                    type: GROUP
+                    layout: layout_Y9505Y
+                    children:
+                      - id: 541:412
+                        name: Group 50
+                        type: IMAGE-SVG
+                        layout: layout_FCCA27
+                      - id: 541:415
+                        name: Bài Pillar chuyên sâu
+                        type: TEXT
+                        layout: layout_6TBGS9
+                        text: Bài Pillar chuyên sâu
+                        textStyle: Body M
+                        fills: fill_PWTDLW
+                  - id: 541:416
+                    name: Xây dựng mạng lưới nội dung bao phủ chủ đề. Giúp Google hiểu bạn là chuyên gia số 1 trong ngành.
+                    type: TEXT
+                    layout: layout_PN1VQG
+                    text: Xây dựng mạng lưới nội dung bao phủ chủ đề. Giúp Google hiểu bạn là chuyên gia số 1 trong ngành.
+                    textStyle: Body M
+                    fills: fill_PWTDLW
+                  - id: 541:417
+                    name: Triển khai Topic Cluster
+                    type: TEXT
+                    layout: layout_PV1SES
+                    text: |-
+                      Triển khai
+                      Topic Cluster
+                    textStyle: style_QHUDN6
+                    fills: fill_XKTBYE
+              - id: 541:418
+                name: Group 196
+                type: GROUP
+                layout: layout_CCQXWM
+                children:
+                  - id: 541:419
+                    name: Group 193
+                    type: GROUP
+                    layout: layout_5XUM61
+                    children:
+                      - id: 541:420
+                        name: Group 50
+                        type: IMAGE-SVG
+                        layout: layout_FCCA27
+                      - id: 541:423
+                        name: Bài Pillar chuyên sâu
+                        type: TEXT
+                        layout: layout_K3NZF3
+                        text: Bài Pillar chuyên sâu
+                        textStyle: Body M
+                        fills: fill_PWTDLW
+                  - id: 541:424
+                    name: Làm mới nội dung cũ (Content Refresh), cập nhật thông tin để lấy lại thứ hạng từ đối thủ.
+                    type: TEXT
+                    layout: layout_JNYCPS
+                    text: Làm mới nội dung cũ (Content Refresh), cập nhật thông tin để lấy lại thứ hạng từ đối thủ.
+                    textStyle: Body M
+                    fills: fill_PWTDLW
+                  - id: 541:425
+                    name: Audit & Tối ưu Content
+                    type: TEXT
+                    layout: layout_PV1SES
+                    text: |-
+                      Audit &
+                      Tối ưu Content
+                    textStyle: style_QHUDN6
+                    fills: fill_XKTBYE
+              - id: 541:426
+                name: Group 195
+                type: GROUP
+                layout: layout_OXDYYQ
+                children:
+                  - id: 541:427
+                    name: Group 192
+                    type: GROUP
+                    layout: layout_VYOF0D
+                    children:
+                      - id: 541:428
+                        name: Group 50
+                        type: IMAGE-SVG
+                        layout: layout_8ITBJK
+                      - id: 541:431
+                        name: Tối ưu Search Intent
+                        type: TEXT
+                        layout: layout_9RSNHS
+                        text: Tối ưu Search Intent
+                        textStyle: Body M
+                        fills: fill_PWTDLW
+                  - id: 541:432
+                    name: Nội dung 100% Human-written. Tập trung vào trải nghiệm người dùng và intent tìm kiếm thực tế.
+                    type: TEXT
+                    layout: layout_2AUGAU
+                    text: Nội dung 100% Human-written. Tập trung vào trải nghiệm người dùng và intent tìm kiếm thực tế.
+                    textStyle: Body M
+                    fills: fill_PWTDLW
+                  - id: 541:433
+                    name: Content Chuẩn EEAT
+                    type: TEXT
+                    layout: layout_L3L0Z5
+                    text: Content Chuẩn EEAT
+                    textStyle: style_QHUDN6
+                    fills: fill_XKTBYE
+                  - id: 541:434
+                    name: Recommended
+                    type: TEXT
+                    layout: layout_CTV6YW
+                    text: Recommended
+                    textStyle: Body M
+                    fills: fill_772HKY
+      - id: 541:435
+        name: Group 68
+        type: GROUP
+        layout: layout_0SX49C
+        borderRadius: 0px 0px 0px 0px
+        children:
+          - id: 541:436
+            name: Xem chi tiết dịch vụ
+            type: TEXT
+            layout: layout_396EI5
+            text: Xem chi tiết dịch vụ
+            textStyle: Input/Label
+            fills: fill_TXYAA3
+          - id: 541:437
+            name: Group 67
+            type: IMAGE-SVG
+            layout: layout_ZK4EDH
+            borderRadius: 0px 0px 0px 0px
+      - id: 541:441
+        name: Group 204
+        type: GROUP
+        layout: layout_NC70OE
+        borderRadius: 0px 0px 0px 0px
+        children:
+          - id: 541:442
+            name: 'Gợi ý để dễ chốt: bắt đầu bằng 1–3 bài test (có trả phí), nghiệm thu theo checklist rõ ràng, sau đó mới mở rộng số lượng.'
+            type: TEXT
+            layout: layout_II1R41
+            text: 'Gợi ý để dễ chốt: bắt đầu bằng 1–3 bài test (có trả phí), nghiệm thu theo checklist rõ ràng, sau đó mới mở rộng số lượng.'
+            textStyle: Caption
+            fills: fill_B4RPUF
+          - id: 541:443
+            name: ƯỚC LƯỢNG CHI PHÍ NHANH
+            type: TEXT
+            layout: layout_MXUY4R
+            text: ƯỚC LƯỢNG CHI PHÍ NHANH
+            textStyle: H3
+            fills: fill_PWTDLW
+          - id: 541:444
+            name: 'Thay vì hỏi “một bài bao nhiêu tiền”, doanh nghiệp thường chốt theo mục tiêu: duy trì – tăng trưởng – chuyển đổi. Bạn có thể bắt đầu nhỏ với bài test trước.'
+            type: TEXT
+            layout: layout_JSV6VP
+            text: 'Thay vì hỏi “một bài bao nhiêu tiền”, doanh nghiệp thường chốt theo mục tiêu: duy trì – tăng trưởng – chuyển đổi. Bạn có thể bắt đầu nhỏ với bài test trước.'
+            textStyle: Body M
+            fills: fill_PWTDLW
+          - id: 541:445
+            name: "Chọn mức đầu tư theo\_mục tiêu"
+            type: TEXT
+            layout: layout_2U9ESW
+            text: "Chọn mức đầu tư theo\_mục tiêu"
+            textStyle: style_WK13HB
+            fills: fill_XKTBYE
+          - id: 541:446
+            name: Group 203
+            type: GROUP
+            layout: layout_705I61
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:447
+                name: Group 200
+                type: GROUP
+                layout: layout_83O2DC
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:448
+                    name: Frame 8
+                    type: FRAME
+                    layout: layout_83O2DC
+                    fills: fill_SL3ZXD
+                    borderRadius: 8px
+                  - id: 541:449
+                    name: Line 8
+                    type: LINE
+                    layout: layout_S07YKD
+                    strokes: stroke_FO0QVH
+                  - id: 541:450
+                    name: icon
+                    type: IMAGE-SVG
+                    layout: layout_KSQOAZ
+                  - id: 541:466
+                    name: button
+                    type: GROUP
+                    layout: layout_ITDSJK
+                    borderRadius: 8px
+                    children:
+                      - id: 541:467
+                        name: Rectangle 13
+                        type: RECTANGLE
+                        layout: layout_QGTDWB
+                        fills: fill_H0ECOG
+                        strokes: stroke_FO0QVH
+                        borderRadius: 8px
+                      - id: 541:468
+                        name: Rectangle 15
+                        type: IMAGE-SVG
+                        layout: layout_QAO87R
+                        fills: fill_ELW93K
+                        borderRadius: 8px
+                      - id: 541:469
+                        name: Rectangle 14
+                        type: RECTANGLE
+                        layout: layout_QGTDWB
+                        strokes: stroke_0PBGBR
+                        borderRadius: 8px
+                      - id: 541:470
+                        name: Xem mức giá tham khảo
+                        type: TEXT
+                        layout: layout_UUMV77
+                        text: Xem mức giá tham khảo
+                        textStyle: Button
+                        fills: fill_PWTDLW
+                  - id: 541:471
+                    name: DUY TRÌ
+                    type: TEXT
+                    layout: layout_KZQMHU
+                    text: DUY TRÌ
+                    textStyle: style_7XJ1VA
+                    fills: fill_VM521D
+                  - id: 541:472
+                    name: Maintenance
+                    type: TEXT
+                    layout: layout_BWE968
+                    text: Maintenance
+                    textStyle: H4 - Block title
+                    fills: fill_XKTBYE
+                  - id: 541:473
+                    name: Phù hợp đăng đều, chủ đề thông dụng, tối ưu cơ bản để giữ nền nội dung.
+                    type: TEXT
+                    layout: layout_WOSQ8D
+                    text: Phù hợp đăng đều, chủ đề thông dụng, tối ưu cơ bản để giữ nền nội dung.
+                    textStyle: Caption
+                    fills: fill_B4RPUF
+                  - id: 541:474
+                    name: Bố cục rõ, dễ đọc Không trùng lặp nội dung Bàn giao nhanh theo lịch
+                    type: TEXT
+                    layout: layout_KNIOD7
+                    text: |-
+                      Bố cục rõ, dễ đọc
+                      Không trùng lặp nội dung
+                      Bàn giao nhanh theo lịch
+                    textStyle: Body M
+                    fills: fill_PWTDLW
+              - id: 541:475
+                name: Group 201
+                type: GROUP
+                layout: layout_43ITQR
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:476
+                    name: Frame 8
+                    type: FRAME
+                    layout: layout_83O2DC
+                    fills: fill_SL3ZXD
+                    borderRadius: 8px
+                  - id: 541:477
+                    name: Group 27
+                    type: IMAGE-SVG
+                    layout: layout_83O2DC
+                    borderRadius: 8px
+                  - id: 541:484
+                    name: Group 11
+                    type: GROUP
+                    layout: layout_GI23D1
+                    borderRadius: 8px
+                    children:
+                      - id: 541:485
+                        name: Rectangle 14
+                        type: RECTANGLE
+                        layout: layout_IWMC76
+                        fills: fill_DT2O9D
+                        strokes: stroke_5M6N1M
+                        effects: effect_VY95DG
+                        borderRadius: 8px
+                      - id: 541:486
+                        name: Xem bảng giá chi tiết
+                        type: TEXT
+                        layout: layout_1F023T
+                        text: Xem bảng giá chi tiết
+                        textStyle: Button
+                        fills: fill_U0K5WZ
+                  - id: 541:487
+                    name: Line 8
+                    type: LINE
+                    layout: layout_S07YKD
+                    strokes: stroke_FO0QVH
+                  - id: 541:488
+                    name: icon
+                    type: IMAGE-SVG
+                    layout: layout_KSQOAZ
+                  - id: 541:504
+                    name: TĂNG TRƯỞNG
+                    type: TEXT
+                    layout: layout_7N0T1B
+                    text: TĂNG TRƯỞNG
+                    textStyle: Body S
+                    fills: fill_VM521D
+                  - id: 541:505
+                    name: Growth SEO
+                    type: TEXT
+                    layout: layout_91OPVK
+                    text: Growth SEO
+                    textStyle: H4 - Block title
+                    fills: fill_XKTBYE
+                  - id: 541:506
+                    name: Phù hợp kéo traffic chất lượng cho blog doanh nghiệp, bài dịch vụ cạnh tranh vừa.
+                    type: TEXT
+                    layout: layout_LNA68E
+                    text: Phù hợp kéo traffic chất lượng cho blog doanh nghiệp, bài dịch vụ cạnh tranh vừa.
+                    textStyle: Caption
+                    fills: fill_B4RPUF
+                  - id: 541:507
+                    name: Nghiên cứu nhu cầu tìm kiếm Dàn ý duyệt trước (tùy bài) Tối ưu điều hướng người dùng
+                    type: TEXT
+                    layout: layout_PBFC8Z
+                    text: |-
+                      Nghiên cứu nhu cầu tìm kiếm
+                      Dàn ý duyệt trước (tùy bài)
+                      Tối ưu điều hướng người dùng
+                    textStyle: Body M
+                    fills: fill_PWTDLW
+              - id: 541:508
+                name: Group 202
+                type: GROUP
+                layout: layout_POUJFT
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:509
+                    name: Frame 8
+                    type: FRAME
+                    layout: layout_83O2DC
+                    fills: fill_SL3ZXD
+                    borderRadius: 8px
+                    children:
+                      - id: 541:510
+                        name: button
+                        type: GROUP
+                        layout: layout_MFJHZX
+                        borderRadius: 8px
+                        children:
+                          - id: 541:511
+                            name: Rectangle 13
+                            type: RECTANGLE
+                            layout: layout_QGTDWB
+                            fills: fill_H0ECOG
+                            strokes: stroke_FO0QVH
+                            borderRadius: 8px
+                          - id: 541:512
+                            name: Rectangle 15
+                            type: IMAGE-SVG
+                            layout: layout_QAO87R
+                            fills: fill_ELW93K
+                            borderRadius: 8px
+                          - id: 541:513
+                            name: Rectangle 14
+                            type: RECTANGLE
+                            layout: layout_QGTDWB
+                            strokes: stroke_0PBGBR
+                            borderRadius: 8px
+                          - id: 541:514
+                            name: Nhận tư vấn mức phù hợp
+                            type: TEXT
+                            layout: layout_UUMV77
+                            text: Nhận tư vấn mức phù hợp
+                            textStyle: Button
+                            fills: fill_PWTDLW
+                  - id: 541:515
+                    name: Line 8
+                    type: LINE
+                    layout: layout_S07YKD
+                    strokes: stroke_FO0QVH
+                  - id: 541:516
+                    name: icon
+                    type: IMAGE-SVG
+                    layout: layout_KSQOAZ
+                  - id: 541:532
+                    name: CHUYỂN ĐỔI
+                    type: TEXT
+                    layout: layout_SVTGR5
+                    text: CHUYỂN ĐỔI
+                    textStyle: Body S
+                    fills: fill_VM521D
+                  - id: 541:533
+                    name: Authority
+                    type: TEXT
+                    layout: layout_LL25YY
+                    text: Authority
+                    textStyle: H4 - Block title
+                    fills: fill_XKTBYE
+                  - id: 541:534
+                    name: Dành cho bài “đinh” cần lập luận, ví dụ sát ngành và điều hướng liên hệ/mua.
+                    type: TEXT
+                    layout: layout_WOSQ8D
+                    text: Dành cho bài “đinh” cần lập luận, ví dụ sát ngành và điều hướng liên hệ/mua.
+                    textStyle: Caption
+                    fills: fill_B4RPUF
+                  - id: 541:535
+                    name: Góc nhìn/insight khác biệt Tối ưu CTA theo mục tiêu Báo giá theo phạm vi
+                    type: TEXT
+                    layout: layout_Y9LT2M
+                    text: |-
+                      Góc nhìn/insight khác biệt
+                      Tối ưu CTA theo mục tiêu
+                      Báo giá theo phạm vi
+                    textStyle: Body M
+                    fills: fill_PWTDLW
+      - id: 541:536
+        name: Group 205
+        type: GROUP
+        layout: layout_7YGTHK
+        borderRadius: 0px 0px 0px 0px
+        children:
+          - id: 541:537
+            name: "Trong bối cảnh nội dung AI ngày càng phổ biến, chúng tôi tập trung vào\_chất lượng, tính chính xác và trải nghiệm người đọc\_để nội dung thực sự mang lại giá trị dài hạn cho doanh nghiệp."
+            type: TEXT
+            layout: layout_1Y8S1D
+            text: "Trong bối cảnh nội dung AI ngày càng phổ biến, chúng tôi tập trung vào\_chất lượng, tính chính xác và trải nghiệm người đọc\_để nội dung thực sự mang lại giá trị dài hạn cho doanh nghiệp."
+            textStyle: Body M
+            fills: fill_PWTDLW
+          - id: 541:538
+            name: "Tiêu chuẩn\_Nội dung"
+            type: TEXT
+            layout: layout_TJ6BMF
+            text: "Tiêu chuẩn\_Nội dung"
+            textStyle: style_WK13HB
+            fills: fill_XKTBYE
+      - id: 541:539
+        name: background
+        type: RECTANGLE
+        layout: layout_QUGBAY
+        fills: fill_THRAVR
+      - id: 541:540
+        name: Spotlight
+        type: IMAGE-SVG
+        layout: layout_4JXQ4H
+        opacity: 0.5
+      - id: 541:546
+        name: Group 210
+        type: GROUP
+        layout: layout_QT8U82
+        children:
+          - id: 541:547
+            name: "Chúng tôi triển khai nội dung theo quy trình rõ ràng, có người chịu trách nhiệm ở từng bước, tập trung vào\_hiệu quả SEO và khả năng tạo lead, thay vì chỉ xuất bản bài viết theo cảm tính."
+            type: TEXT
+            layout: layout_U5IZSY
+            text: "Chúng tôi triển khai nội dung theo quy trình rõ ràng, có người chịu trách nhiệm ở từng bước, tập trung vào\_hiệu quả SEO và khả năng tạo lead, thay vì chỉ xuất bản bài viết theo cảm tính."
+            textStyle: Body M
+            fills: fill_PWTDLW
+          - id: 541:548
+            name: Quy trình làm việc
+            type: TEXT
+            layout: layout_KZPAWC
+            text: Quy trình làm việc
+            textStyle: style_WK13HB
+            fills: fill_XKTBYE
+            effects: effect_KRVWG5
+          - id: 541:549
+            name: Line 6
+            type: LINE
+            layout: layout_Y855QX
+            strokes: stroke_9CPP0N
+          - id: 541:550
+            name: '01'
+            type: TEXT
+            layout: layout_HST098
+            text: '01'
+            textStyle: style_Y7UA3N
+            fills: Tiêu đề - gradient
+            opacity: 0.699999988079071
+          - id: 541:551
+            name: Phân tích nhu cầu tìm kiếm, đối thủ và nội dung hiện có của website để xác định chủ đề cần làm trước, tránh viết lan man hoặc trùng lặp.
+            type: TEXT
+            layout: layout_AW9WX1
+            text: Phân tích nhu cầu tìm kiếm, đối thủ và nội dung hiện có của website để xác định chủ đề cần làm trước, tránh viết lan man hoặc trùng lặp.
+            textStyle: Body M
+            fills: fill_PWTDLW
+          - id: 541:552
+            name: Nghiên cứu & định hướng nội dung
+            type: TEXT
+            layout: layout_0EOALR
+            text: Nghiên cứu & định hướng nội dung
+            textStyle: style_QHUDN6
+            fills: fill_XKTBYE
+          - id: 541:553
+            name: '02'
+            type: TEXT
+            layout: layout_AE86B3
+            text: '02'
+            textStyle: style_Y7UA3N
+            fills: Tiêu đề - gradient
+            opacity: 0.699999988079071
+          - id: 541:554
+            name: Lựa chọn từ khóa dựa trên mức độ liên quan đến dịch vụ, khả năng chuyển đổi và giai đoạn ra quyết định của người tìm kiếm.
+            type: TEXT
+            layout: layout_E48Z1U
+            text: Lựa chọn từ khóa dựa trên mức độ liên quan đến dịch vụ, khả năng chuyển đổi và giai đoạn ra quyết định của người tìm kiếm.
+            textStyle: Body M
+            fills: fill_PWTDLW
+          - id: 541:555
+            name: Xây dựng bộ từ khóa ưu tiên
+            type: TEXT
+            layout: layout_GMJGBC
+            text: Xây dựng bộ từ khóa ưu tiên
+            textStyle: style_QHUDN6
+            fills: fill_XKTBYE
+          - id: 541:556
+            name: '03'
+            type: TEXT
+            layout: layout_YC4VN9
+            text: '03'
+            textStyle: style_Y7UA3N
+            fills: Tiêu đề - gradient
+            opacity: 0.699999988079071
+          - id: 541:557
+            name: Nội dung được viết dựa trên outline rõ ràng, biên tập về chuyên môn và cấu trúc SEO, đảm bảo dễ đọc, đúng ngữ cảnh và phù hợp ngành.
+            type: TEXT
+            layout: layout_N2MRCU
+            text: Nội dung được viết dựa trên outline rõ ràng, biên tập về chuyên môn và cấu trúc SEO, đảm bảo dễ đọc, đúng ngữ cảnh và phù hợp ngành.
+            textStyle: Body M
+            fills: fill_PWTDLW
+          - id: 541:558
+            name: Sản xuất & biên tập nội dung
+            type: TEXT
+            layout: layout_VO9OTH
+            text: |-
+              Sản xuất &
+              biên tập nội dung
+            textStyle: style_QHUDN6
+            fills: fill_XKTBYE
+          - id: 541:559
+            name: '04'
+            type: TEXT
+            layout: layout_MR4JD9
+            text: '04'
+            textStyle: style_Y7UA3N
+            fills: Tiêu đề - gradient
+            opacity: 0.699999988079071
+          - id: 541:560
+            name: Theo dõi hiệu quả nội dung dựa trên traffic, hành vi người dùng và tín hiệu chuyển đổi; cập nhật và tối ưu định kỳ theo dữ liệu thực tế.
+            type: TEXT
+            layout: layout_Z51FMD
+            text: Theo dõi hiệu quả nội dung dựa trên traffic, hành vi người dùng và tín hiệu chuyển đổi; cập nhật và tối ưu định kỳ theo dữ liệu thực tế.
+            textStyle: Body M
+            fills: fill_PWTDLW
+          - id: 541:561
+            name: Theo dõi, báo cáo & tối ưu
+            type: TEXT
+            layout: layout_B0Q352
+            text: Theo dõi, báo cáo & tối ưu
+            textStyle: style_QHUDN6
+            fills: fill_XKTBYE
+          - id: 541:562
+            name: Group 118
+            type: IMAGE-SVG
+            layout: layout_X07D7K
+          - id: 541:566
+            name: Group 119
+            type: IMAGE-SVG
+            layout: layout_B4XOEA
+          - id: 541:570
+            name: Group 120
+            type: IMAGE-SVG
+            layout: layout_SOWJE7
+          - id: 541:574
+            name: Group 121
+            type: IMAGE-SVG
+            layout: layout_C6NOQM
+      - id: 541:578
+        name: Spotlight
+        type: IMAGE-SVG
+        layout: layout_REYBX4
+        opacity: 0.5
+      - id: 541:584
+        name: Group 217
+        type: GROUP
+        layout: layout_R9L4LN
+        borderRadius: 0px 0px 0px 0px
+        children:
+          - id: 541:585
+            name: GÓC NHÌN CHUYÊN GIA
+            type: TEXT
+            layout: layout_4W9MJS
+            text: GÓC NHÌN CHUYÊN GIA
+            textStyle: H3
+            fills: fill_PWTDLW
+          - id: 541:586
+            name: 'Tổng hợp các phân tích ngắn, dễ áp dụng cho doanh nghiệp: chọn mức đầu tư nội dung, tối ưu intent, và giảm rủi ro “viết xong để đó”.'
+            type: TEXT
+            layout: layout_GS2SZ4
+            text: 'Tổng hợp các phân tích ngắn, dễ áp dụng cho doanh nghiệp: chọn mức đầu tư nội dung, tối ưu intent, và giảm rủi ro “viết xong để đó”.'
+            textStyle: Body M
+            fills: fill_PWTDLW
+          - id: 541:587
+            name: Bài viết mới về Content SEO & UX
+            type: TEXT
+            layout: layout_M06462
+            text: Bài viết mới về Content SEO & UX
+            textStyle: style_WK13HB
+            fills: fill_XKTBYE
+          - id: 541:588
+            name: Group 68
+            type: GROUP
+            layout: layout_XRK8YY
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:589
+                name: Group 104
+                type: GROUP
+                layout: layout_AZY1YB
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:590
+                    name: xem toàn bộ bài viết
+                    type: TEXT
+                    layout: layout_QY5JY1
+                    text: xem toàn bộ bài viết
+                    textStyle: style_AHWFLL
+                    fills: fill_TXYAA3
+                  - id: 541:591
+                    name: Group 67
+                    type: IMAGE-SVG
+                    layout: layout_DGEBN7
+                    borderRadius: 0px 0px 0px 0px
+      - id: 541:595
+        name: Đối thủ đang xây dựng Authority mỗi ngày. Hãy bắt đầu ngay hôm nay để dẫn đầu thị trường ngách của bạn.
+        type: TEXT
+        layout: layout_10LCO0
+        text: Đối thủ đang xây dựng Authority mỗi ngày. Hãy bắt đầu ngay hôm nay để dẫn đầu thị trường ngách của bạn.
+        textStyle: Body M
+        fills: fill_PWTDLW
+      - id: 541:596
+        name: Đừng để Website đánh mất
+        type: TEXT
+        layout: layout_98O31T
+        text: Đừng để Website đánh mất
+        textStyle: H3
+        fills: fill_XKTBYE
+      - id: 541:597
+        name: Lợi thế Cạnh tranh
+        type: TEXT
+        layout: layout_D7L3RP
+        text: Lợi thế Cạnh tranh
+        textStyle: style_X38VM3
+        fills: Tiêu đề - gradient
+      - id: 541:598
+        name: Group 46
+        type: IMAGE-SVG
+        layout: layout_VRQ40X
+      - id: 541:604
+        name: Group 208
+        type: GROUP
+        layout: layout_T0QZI3
+        borderRadius: 0px 0px 0px 0px
+        children:
+          - id: 541:605
+            name: Group 129
+            type: IMAGE-SVG
+            layout: layout_F14N59
+            borderRadius: 0px 0px 0px 0px
+          - id: 541:613
+            name: Group 207
+            type: GROUP
+            layout: layout_JQIKCJ
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:614
+                name: Có kiểm duyệt & nghiệm thu
+                type: TEXT
+                layout: layout_Q1T26Z
+                text: Có kiểm duyệt & nghiệm thu
+                textStyle: Body S
+                fills: fill_N5TMCA
+              - id: 541:615
+                name: Biên tập
+                type: TEXT
+                layout: layout_ZHHK3N
+                text: Biên tập
+                textStyle: H4 - Block title
+                fills: fill_XKTBYE
+              - id: 541:616
+                name: Mỗi bài viết đều được rà soát về cấu trúc SEO và nội dung chuyên môn, đảm bảo dễ đọc, đúng ngữ cảnh và phù hợp ngành.
+                type: TEXT
+                layout: layout_NR9XRS
+                text: Mỗi bài viết đều được rà soát về cấu trúc SEO và nội dung chuyên môn, đảm bảo dễ đọc, đúng ngữ cảnh và phù hợp ngành.
+                textStyle: Body M
+                fills: fill_PWTDLW
+              - id: 541:617
+                name: Biên tập đa tầng
+                type: TEXT
+                layout: layout_BOCDRD
+                text: Biên tập đa tầng
+                textStyle: H6 - sub title
+                fills: fill_XKTBYE
+      - id: 541:618
+        name: Group 209
+        type: GROUP
+        layout: layout_C6ZJTH
+        borderRadius: 0px 0px 0px 0px
+        children:
+          - id: 541:619
+            name: Group 153
+            type: IMAGE-SVG
+            layout: layout_F14N59
+            borderRadius: 0px 0px 0px 0px
+          - id: 541:627
+            name: Group 206
+            type: GROUP
+            layout: layout_JQIKCJ
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:628
+                name: Không đạo văn, không nội dung rác
+                type: TEXT
+                layout: layout_C645R4
+                text: Không đạo văn, không nội dung rác
+                textStyle: Body S
+                fills: fill_N5TMCA
+              - id: 541:629
+                name: nội dung
+                type: TEXT
+                layout: layout_0CA24J
+                text: nội dung
+                textStyle: H4 - Block title
+                fills: fill_XKTBYE
+              - id: 541:630
+                name: Nội dung được xây dựng dựa trên câu hỏi và nhu cầu thực tế của người tìm kiếm, tránh viết lan man hay nhồi nhét từ khóa.
+                type: TEXT
+                layout: layout_NR9XRS
+                text: Nội dung được xây dựng dựa trên câu hỏi và nhu cầu thực tế của người tìm kiếm, tránh viết lan man hay nhồi nhét từ khóa.
+                textStyle: Body M
+                fills: fill_PWTDLW
+              - id: 541:631
+                name: Tập trung Search Intent
+                type: TEXT
+                layout: layout_U03URN
+                text: Tập trung Search Intent
+                textStyle: H6 - sub title
+                fills: fill_XKTBYE
+      - id: 541:632
+        name: Group 218
+        type: GROUP
+        layout: layout_PGSE1T
+        borderRadius: 0px 0px 0px 0px
+        children:
+          - id: 541:633
+            name: Group 214
+            type: GROUP
+            layout: layout_C1ILVQ
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:634
+                name: Frame 8
+                type: FRAME
+                layout: layout_3XZ23I
+                fills: fill_SL3ZXD
+                borderRadius: 8px
+              - id: 541:635
+                name: Group 211
+                type: GROUP
+                layout: layout_NPZTLX
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:636
+                    name: 'Checklist chọn gói theo mục tiêu: traffic – lead – branding. Tránh phí ẩn và giảm chi phí sửa lại.'
+                    type: TEXT
+                    layout: layout_ND4MU3
+                    text: 'Checklist chọn gói theo mục tiêu: traffic – lead – branding. Tránh phí ẩn và giảm chi phí sửa lại.'
+                    textStyle: Body S
+                    fills: fill_B4RPUF
+                  - id: 541:637
+                    name: Cách chọn mức giá viết bài chuẩn SEO để không “mua sai”
+                    type: TEXT
+                    layout: layout_ZJV6BQ
+                    text: Cách chọn mức giá viết bài chuẩn SEO để không “mua sai”
+                    textStyle: H5 - card title
+                    fills: fill_XKTBYE
+                  - id: 541:638
+                    name: Group 104
+                    type: GROUP
+                    layout: layout_BW467J
+                    borderRadius: 0px 0px 0px 0px
+                    children:
+                      - id: 541:639
+                        name: ĐỌC BÀI
+                        type: TEXT
+                        layout: layout_AQKWY5
+                        text: ĐỌC BÀI
+                        textStyle: style_CEOYTE
+                        fills: fill_TXYAA3
+                      - id: 541:640
+                        name: Group 67
+                        type: IMAGE-SVG
+                        layout: layout_ZU2ASK
+                        borderRadius: 0px 0px 0px 0px
+              - id: 541:644
+                name: Rectangle 14
+                type: IMAGE-SVG
+                layout: layout_DP5D3Z
+                fills: fill_W1FKA4
+                borderRadius: 0px 0px 0px 0px
+          - id: 541:645
+            name: Group 215
+            type: GROUP
+            layout: layout_PAWCLF
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:646
+                name: Frame 9
+                type: FRAME
+                layout: layout_3XZ23I
+                fills: fill_SL3ZXD
+                borderRadius: 8px
+              - id: 541:647
+                name: Group 212
+                type: GROUP
+                layout: layout_NPZTLX
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:648
+                    name: Dấu hiệu nhận biết bài có insight, ví dụ sát ngành và tạo tin tưởng — nhất là B2B/YMYL.
+                    type: TEXT
+                    layout: layout_ND4MU3
+                    text: Dấu hiệu nhận biết bài có insight, ví dụ sát ngành và tạo tin tưởng — nhất là B2B/YMYL.
+                    textStyle: Body S
+                    fills: fill_B4RPUF
+                  - id: 541:649
+                    name: Nội dung “người thật” khác gì nội dung tổng hợp?
+                    type: TEXT
+                    layout: layout_1RZEUL
+                    text: Nội dung “người thật” khác gì nội dung tổng hợp?
+                    textStyle: H5 - card title
+                    fills: fill_XKTBYE
+                  - id: 541:650
+                    name: Group 104
+                    type: GROUP
+                    layout: layout_BW467J
+                    borderRadius: 0px 0px 0px 0px
+                    children:
+                      - id: 541:651
+                        name: ĐỌC BÀI
+                        type: TEXT
+                        layout: layout_AQKWY5
+                        text: ĐỌC BÀI
+                        textStyle: style_CEOYTE
+                        fills: fill_TXYAA3
+                      - id: 541:652
+                        name: Group 67
+                        type: IMAGE-SVG
+                        layout: layout_ZU2ASK
+                        borderRadius: 0px 0px 0px 0px
+              - id: 541:656
+                name: Rectangle 19
+                type: IMAGE-SVG
+                layout: layout_DP5D3Z
+                fills: fill_W1FKA4
+                borderRadius: 0px 0px 0px 0px
+          - id: 541:657
+            name: Group 216
+            type: GROUP
+            layout: layout_C80LKF
+            borderRadius: 0px 0px 0px 0px
+            children:
+              - id: 541:658
+                name: Frame 10
+                type: FRAME
+                layout: layout_3XZ23I
+                fills: fill_SL3ZXD
+                borderRadius: 8px
+              - id: 541:659
+                name: Group 213
+                type: GROUP
+                layout: layout_NPZTLX
+                borderRadius: 0px 0px 0px 0px
+                children:
+                  - id: 541:660
+                    name: Tối ưu bố cục và điều hướng CTA giúp tăng trải nghiệm đọc cho người dùng.
+                    type: TEXT
+                    layout: layout_ND4MU3
+                    text: Tối ưu bố cục và điều hướng CTA giúp tăng trải nghiệm đọc cho người dùng.
+                    textStyle: Body S
+                    fills: fill_B4RPUF
+                  - id: 541:661
+                    name: 5 thay đổi UX nhỏ giúp bài viết tăng thời gian đọc
+                    type: TEXT
+                    layout: layout_HPGADW
+                    text: 5 thay đổi UX nhỏ giúp bài viết tăng thời gian đọc
+                    textStyle: H5 - card title
+                    fills: fill_XKTBYE
+                  - id: 541:662
+                    name: Group 104
+                    type: GROUP
+                    layout: layout_BW467J
+                    borderRadius: 0px 0px 0px 0px
+                    children:
+                      - id: 541:663
+                        name: ĐỌC BÀI
+                        type: TEXT
+                        layout: layout_AQKWY5
+                        text: ĐỌC BÀI
+                        textStyle: style_CEOYTE
+                        fills: fill_TXYAA3
+                      - id: 541:664
+                        name: Group 67
+                        type: IMAGE-SVG
+                        layout: layout_ZU2ASK
+                        borderRadius: 0px 0px 0px 0px
+              - id: 541:668
+                name: Rectangle 20
+                type: IMAGE-SVG
+                layout: layout_DP5D3Z
+                fills: fill_W1FKA4
+                borderRadius: 0px 0px 0px 0px
+      - id: 541:669
+        name: Group 221
+        type: GROUP
+        layout: layout_3CCDEG
+        borderRadius: 8px
+        children:
+          - id: 541:670
+            name: Group 219
+            type: GROUP
+            layout: layout_X37G31
+            borderRadius: 8px
+            children:
+              - id: 541:671
+                name: Rectangle 13
+                type: RECTANGLE
+                layout: layout_KLOZW6
+                fills: fill_49J2RA
+                strokes: stroke_5M6N1M
+                effects: effect_KRA5OY
+                borderRadius: 8px
+              - id: 541:672
+                name: Đăng ký tư vấn chiến lược
+                type: TEXT
+                layout: layout_2SIUVH
+                text: Đăng ký tư vấn chiến lược
+                textStyle: style_Q00PI0
+                fills: fill_XKTBYE
+          - id: 541:673
+            name: Group 220
+            type: GROUP
+            layout: layout_ADU8LH
+            borderRadius: 8px
+            children:
+              - id: 541:674
+                name: Xem quy trình và bảng giá
+                type: TEXT
+                layout: layout_DBKITM
+                text: Xem quy trình và bảng giá
+                textStyle: Button
+                fills: fill_PWTDLW
+              - id: 541:675
+                name: Group 162
+                type: IMAGE-SVG
+                layout: layout_YTQ0VW
+                borderRadius: 8px
+globalVars:
+  styles:
+    layout_NO23TF:
+      mode: none
+      sizing: {}
+      dimensions:
+        width: 1440
+        height: 9606
+    fill_H0ECOG:
+      - '#0B1F17'
+    layout_K2S4NJ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: -834
+        y: 120
+      dimensions:
+        width: 1076.57
+        height: 548.32
+    fill_TGVH85:
+      - type: IMAGE
+        imageRef: cf45017cf7735b301c2599c4cff8b5708ad31cb9
+        scaleMode: STRETCH
+        objectFit: fill
+        isBackground: false
+        imageDownloadArguments:
+          needsCropping: true
+          requiresImageDimensions: false
+          cropTransform:
+            - - 1
+              - 0
+              - 0
+            - - 0
+              - 1
+              - 0
+          filenameSuffix: 56586a
+    effect_5GTS2V:
+      filter: blur(60px)
+    layout_ES7XTI:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: -271
+        y: 4814
+      dimensions:
+        width: 1982
+        height: 1471.04
+    layout_UHKUTR:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 242
+        y: 0
+      dimensions:
+        width: 1497
+        height: 619
+    fill_B3KX0Y:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(180deg, rgba(63, 191, 140, 0) 0%, rgba(63, 191, 140, 0.7) 40%, rgba(11, 31, 23, 1) 94%)
+    effect_8RFQ50:
+      filter: blur(85px)
+    layout_1BG16J:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 724.02
+        y: 149.46
+      dimensions:
+        width: 554.76
+        height: 181.79
+    fill_9SUF4O:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(180deg, rgba(63, 191, 140, 0) 0%, rgba(63, 191, 140, 0.7) 18%, rgba(63, 191, 140, 0.7) 80%, rgba(94, 224, 182, 0.8) 94%)
+    layout_31KZPS:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 249.04
+      dimensions:
+        width: 1982
+        height: 1222
+    effect_G6IJMB:
+      filter: blur(10px)
+    layout_XFXJPG:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 1580
+      dimensions:
+        width: 1440
+        height: 1024
+    fill_95H0A2:
+      - '#0B1F17'
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(180deg, rgba(11, 31, 23, 1) 47%, rgba(15, 42, 32, 1) 100%)
+    layout_KKR5ZT:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 743
+        y: 289
+      dimensions:
+        width: 956
+        height: 487
+    effect_HIBOV1:
+      filter: blur(40px)
+    layout_XVCOLJ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 9059
+      dimensions:
+        width: 1440
+        height: 554
+    layout_2J58CE:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 1440
+        height: 554
+    fill_THRAVR:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(180deg, rgba(11, 31, 23, 1) 47%, rgba(15, 42, 32, 1) 100%)
+    layout_TC4UQT:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 85
+        y: 83
+      dimensions:
+        width: 1271
+        height: 389
+    layout_MTL104:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 1015
+        y: 323
+      dimensions:
+        width: 253
+        height: 66
+    Body S:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 400
+      fontSize: 14
+      lineHeight: 1.5714285714285714em
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    fill_B4RPUF:
+      - '#7A968B'
+    layout_WJB79C:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 359
+      dimensions:
+        width: 328
+        height: 22
+    layout_0GGZLI:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 1271
+        height: 291
+    layout_ARJPR0:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 38
+      dimensions:
+        width: 1271
+        height: 215
+    layout_MRKKYY:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 2
+      dimensions:
+        width: 352
+        height: 190
+    layout_DVF9M5:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 181.86
+        height: 25
+    layout_L4V1R9:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 29.15
+        y: 3.82
+      dimensions:
+        width: 152.71
+        height: 17.42
+    layout_XG31Y6:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0.36
+      dimensions:
+        width: 13.06
+        height: 16.66
+    fill_NGQGD8:
+      - '#017340'
+    layout_XKC3LB:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 14.57
+        y: 0.36
+      dimensions:
+        width: 15.25
+        height: 16.65
+    layout_ZXAHST:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 31.37
+        y: 0.36
+      dimensions:
+        width: 12.6
+        height: 16.66
+    layout_VDNX1Z:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 46.91
+        y: 0.36
+      dimensions:
+        width: 2.9
+        height: 16.66
+    layout_E3BRVP:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 58.29
+        y: 0.04
+      dimensions:
+        width: 15.33
+        height: 17.38
+    layout_YXXMHI:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 74.67
+        y: 0
+      dimensions:
+        width: 14.57
+        height: 17.38
+    layout_YFX8J5:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 91.18
+        y: 0.36
+      dimensions:
+        width: 12.6
+        height: 16.66
+    layout_CZ5LZR:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 105.46
+        y: 0.36
+      dimensions:
+        width: 8.61
+        height: 16.66
+    layout_KJKPTB:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 115.7
+        y: 0.36
+      dimensions:
+        width: 11.17
+        height: 16.66
+    layout_DCWMB3:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 129.81
+        y: 0.36
+      dimensions:
+        width: 12.6
+        height: 16.66
+    layout_HBC5VI:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 144.1
+        y: 0.36
+      dimensions:
+        width: 8.61
+        height: 16.66
+    layout_KKM2KN:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 24.99
+        height: 25
+    fill_DYWNJJ:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(46deg, rgba(19, 234, 50, 1) 11%, rgba(1, 115, 64, 1) 38%, rgba(1, 115, 64, 1) 65%, rgba(19, 234, 50, 1) 81%)
+    layout_S28NZZ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 60
+      dimensions:
+        width: 352
+        height: 130
+    Body M:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 400
+      fontSize: 16
+      lineHeight: 1.625em
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    fill_PWTDLW:
+      - '#C7D7D1'
+    layout_ONQ2HR:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 523
+        y: 0
+      dimensions:
+        width: 193
+        height: 215
+    layout_WQ2N02:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 55
+      dimensions:
+        width: 187
+        height: 160
+    style_9QPFC6:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 400
+      fontSize: 16
+      lineHeight: 2.5em
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    layout_ZPJUV2:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 193
+        height: 30
+    H5 - card title:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 600
+      fontSize: 20
+      lineHeight: 1.5em
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    fill_XKTBYE:
+      - '#E6F4EE'
+    layout_M5CXXA:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 821
+        y: 0
+      dimensions:
+        width: 157
+        height: 215
+    layout_ZQDAXT:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 1
+        y: 55
+      dimensions:
+        width: 156
+        height: 160
+    layout_UPGATI:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 147
+        height: 30
+    layout_ZFBT1N:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 1079
+        y: 0
+      dimensions:
+        width: 192
+        height: 175
+    layout_G5RN29:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 55
+      dimensions:
+        width: 192
+        height: 120
+    layout_EXVT23:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 145
+        height: 30
+    layout_Y68Y57:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 291
+      dimensions:
+        width: 1268
+        height: 0
+    stroke_9CPP0N:
+      colors:
+        - '#FFFFFF'
+      strokeWeight: 0.5px
+    layout_CJPKA4:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 1268
+        height: 0
+    layout_Y4UQYG:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 7021
+      dimensions:
+        width: 1440
+        height: 983
+    layout_AXYSY5:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 1440
+        height: 80
+    layout_NFH4SZ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 100
+        y: 27
+      dimensions:
+        width: 181.86
+        height: 25
+    layout_3ZUKDV:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 645
+        y: 31
+      dimensions:
+        width: 696
+        height: 18
+    layout_H3TRR3:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 50
+        height: 18
+    style_8A3ZIQ:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 400
+      fontSize: 16
+      lineHeight: 1.625em
+      textCase: UPPER
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    layout_EPJ45V:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 111
+        y: 0
+      dimensions:
+        width: 70
+        height: 18
+    layout_ANEMO6:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 242
+        y: 0
+      dimensions:
+        width: 82
+        height: 18
+    layout_RXP1DJ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 385
+        y: 0
+      dimensions:
+        width: 47
+        height: 18
+    layout_ZZXDVP:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 493
+        y: 0
+      dimensions:
+        width: 60
+        height: 18
+    layout_VA0KSY:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 614
+        y: 0
+      dimensions:
+        width: 82
+        height: 18
+    layout_0500OT:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: -362.84
+        y: 501
+      dimensions:
+        width: 1873.72
+        height: 1870.47
+    layout_BJUI62:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 82.82
+        y: 134.55
+      dimensions:
+        width: 1708.09
+        height: 1601.38
+    fill_9CG1GF:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(-13deg, rgba(15, 41, 32, 0) 56%, rgba(15, 41, 32, 0.3) 80%, rgba(15, 41, 32, 0.7) 99%)
+    effect_EYRQE6:
+      filter: blur(20px)
+    layout_65XXJM:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 94.04
+        y: 214.5
+      dimensions:
+        width: 1025.68
+        height: 1016.83
+    layout_MTLKL9:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 1025.68
+        height: 1016.83
+    fill_UFEUXQ:
+      - '#288161'
+    effect_27UYCJ:
+      filter: blur(180px)
+    layout_4H8XWH:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 219.18
+        y: 212.54
+      dimensions:
+        width: 458.45
+        height: 439.95
+    fill_TXYAA3:
+      - '#5EE0B6'
+    effect_CULUIY:
+      filter: blur(120px)
+    layout_M49XGF:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 138.38
+        y: 120.59
+      dimensions:
+        width: 466.57
+        height: 448.95
+    effect_LE60K4:
+      filter: blur(80px)
+    layout_ATELNE:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 105
+        y: 194
+      dimensions:
+        width: 514
+        height: 20
+    style_H60R44:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 600
+      fontSize: 16
+      lineHeight: 1.2649999856948853em
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    layout_MXHZ6R:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 101
+        y: 230
+      dimensions:
+        width: 618
+        height: 63
+    style_AJ2FN2:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 800
+      fontSize: 50
+      lineHeight: 1.265em
+      textCase: UPPER
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    Tiêu đề - gradient:
+      - type: GRADIENT_RADIAL
+        gradient: radial-gradient(circle at 50% 50%, rgba(94, 224, 182, 1) 0%, rgba(15, 42, 32, 1) 100%)
+    layout_XTV10U:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 101
+        y: 301
+      dimensions:
+        width: 774
+        height: 63
+    layout_YSGP5M:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 105
+        y: 394
+      dimensions:
+        width: 613
+        height: 104
+    layout_4UZH4Z:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 105
+        y: 525
+      dimensions:
+        width: 217
+        height: 40
+    layout_3EW9EU:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 217
+        height: 40
+    fill_49J2RA:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(180deg, rgba(36, 122, 75, 1) 25%, rgba(47, 143, 91, 1) 100%)
+    stroke_5M6N1M:
+      colors:
+        - rgba(255, 255, 255, 0.5)
+      strokeWeight: 0.5px
+    effect_KRA5OY:
+      boxShadow: 0px 4px 12px 0px rgba(47, 143, 91, 0.4), inset 0px 0px 5px 1px rgba(94, 224, 182, 0.5)
+    layout_HO2SKT:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 19
+        y: 8
+      dimensions:
+        width: 181
+        height: 24
+    style_Q00PI0:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 600
+      fontSize: 16
+      lineHeight: 1.5em
+      textAlignHorizontal: CENTER
+      textAlignVertical: TOP
+    layout_UTYRI0:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 365
+        y: 525
+      dimensions:
+        width: 246
+        height: 79
+    layout_PEPNK2:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 18
+        y: 8
+      dimensions:
+        width: 211
+        height: 24
+    Button:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 600
+      fontSize: 16
+      lineHeight: 1.5em
+      textAlignHorizontal: CENTER
+      textAlignVertical: TOP
+    layout_TVQ6VU:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 246
+        height: 79
+    layout_MMLAFK:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 246
+        height: 40
+    stroke_FO0QVH:
+      colors:
+        - rgba(255, 255, 255, 0.3)
+      strokeWeight: 1px
+    layout_EHPVDB:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 39
+      dimensions:
+        width: 246
+        height: 40
+    fill_ELW93K:
+      - type: GRADIENT_RADIAL
+        gradient: radial-gradient(circle at 50% 0%, rgba(63, 191, 140, 0.2) 0%, rgba(63, 191, 140, 0) 79%)
+    stroke_0PBGBR:
+      colors:
+        - type: GRADIENT_RADIAL
+          gradient: radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%)
+      strokeWeight: 1px
+    layout_LESIZM:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 101
+        y: 626
+      dimensions:
+        width: 255.77
+        height: 22
+    layout_KUFRA8:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 255.77
+        height: 22
+    layout_QTYECK:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 233
+        height: 22
+    Input/Label:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 400
+      fontSize: 14
+      lineHeight: 1.5714285714285714em
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    layout_HOW822:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 244
+        y: 5
+      dimensions:
+        width: 11.77
+        height: 12
+    layout_D03XLH:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 2
+      dimensions:
+        width: 11
+        height: 10
+    stroke_V1LNT7:
+      colors:
+        - '#5EE0B6'
+      strokeWeight: 1.5px
+    layout_4LL1L1:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 2.08
+        y: 0
+      dimensions:
+        width: 9.69
+        height: 0
+    layout_T5FVZ4:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 11.77
+        y: -0.0
+      dimensions:
+        width: 0
+        height: 9.69
+    layout_7AEPXN:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 611
+        y: 587
+      dimensions:
+        width: 1291.69
+        height: 1289.15
+    layout_PZOGT9:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 1291.69
+        height: 1289.15
+    fill_LQSB69:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(-7deg, rgba(15, 41, 32, 0) 13%, rgba(15, 41, 32, 1) 100%)
+    effect_7ZMS43:
+      filter: blur(24px)
+    layout_4MIVNR:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 543.54
+        y: 474.69
+      dimensions:
+        width: 659.15
+        height: 675.46
+    layout_1EBHD4:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 659.15
+        height: 675.46
+    layout_LPICTO:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 246.97
+        y: 218.42
+      dimensions:
+        width: 276.47
+        height: 310.57
+    layout_7RYFEP:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 308.07
+        y: 259.11
+      dimensions:
+        width: 282.87
+        height: 315.35
+    layout_2B1B0V:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 100
+        y: 983
+      dimensions:
+        width: 1241
+        height: 500
+    layout_XGGGAZ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 158
+        y: 0
+      dimensions:
+        width: 925
+        height: 160
+    layout_HCYD47:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 82
+      dimensions:
+        width: 925
+        height: 78
+    layout_83IZW6:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 233
+        y: 0
+      dimensions:
+        width: 459
+        height: 63
+    style_X38VM3:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 800
+      fontSize: 50
+      lineHeight: 1.265em
+      textCase: UPPER
+      textAlignHorizontal: CENTER
+      textAlignVertical: TOP
+    layout_UNSES4:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 225
+      dimensions:
+        width: 1241
+        height: 275
+    layout_Y3N4WV:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 397
+        height: 275
+    fill_DOT0GZ:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(145deg, rgba(22, 54, 41, 0.05) 9%, rgba(11, 31, 23, 0.6) 91%)
+    layout_FSWQYO:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 40
+        y: 186
+      dimensions:
+        width: 318
+        height: 52
+    layout_R1OQ7O:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 54
+        y: 137
+      dimensions:
+        width: 290
+        height: 32
+    H4 - Block title:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 600
+      fontSize: 24
+      lineHeight: 1.4166666666666667em
+      letterSpacing: '-0.20000000298023227%'
+      textCase: UPPER
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    layout_J9V9NJ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 176
+        y: 45
+      dimensions:
+        width: 45
+        height: 45
+    layout_38162U:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 45
+        height: 45
+    icon:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(141deg, rgba(94, 224, 182, 1) 0%, rgba(15, 42, 32, 1) 100%)
+    layout_C546NB:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 13.83
+        y: 13.78
+      dimensions:
+        width: 17.33
+        height: 3.62
+    layout_RV5ZVI:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 844
+        y: 0
+      dimensions:
+        width: 397
+        height: 275
+    layout_N56FQR:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 36
+        y: 186
+      dimensions:
+        width: 326
+        height: 52
+    layout_9RR2I3:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 174
+        y: 45
+      dimensions:
+        width: 50
+        height: 45
+    layout_WBMV5L:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 422
+        y: 0
+      dimensions:
+        width: 397
+        height: 275
+    layout_NNP7RV:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 37
+        y: 186
+      dimensions:
+        width: 324
+        height: 52
+    layout_MADSQM:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 37
+        y: 137
+      dimensions:
+        width: 324
+        height: 32
+    layout_945388:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 103
+        y: 1675
+      dimensions:
+        width: 1234
+        height: 982
+    layout_IDGTY1:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 34
+        y: 0
+      dimensions:
+        width: 1167
+        height: 186
+    layout_5GB4HC:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 314
+        y: 0
+      dimensions:
+        width: 541
+        height: 40
+    H3:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 600
+      fontSize: 28
+      lineHeight: 1.4285714285714286em
+      letterSpacing: '-0.30000001192092896%'
+      textCase: UPPER
+      textAlignHorizontal: CENTER
+      textAlignVertical: TOP
+    layout_GF6ILH:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 250
+        y: 134
+      dimensions:
+        width: 668
+        height: 52
+    layout_OZOMK1:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 54
+      dimensions:
+        width: 1167
+        height: 63
+    style_WK13HB:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 700
+      fontSize: 50
+      lineHeight: 1.265em
+      textCase: UPPER
+      textAlignHorizontal: CENTER
+      textAlignVertical: TOP
+    layout_ZKNKJQ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 403
+        y: 906
+      dimensions:
+        width: 428
+        height: 76
+    layout_LQK7AE:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 58
+      dimensions:
+        width: 428
+        height: 18
+    Caption:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 400
+      fontSize: 12
+      lineHeight: 1.5em
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    layout_JFGLM2:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 44
+        y: 0
+      dimensions:
+        width: 340
+        height: 40
+    layout_X7T7ZI:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 340
+        height: 40
+    layout_CJ2L6N:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 21
+        y: 10
+      dimensions:
+        width: 298
+        height: 20
+    fill_U0K5WZ:
+      - '#FFFFFF'
+    layout_DFOXYO:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 259
+      dimensions:
+        width: 1234
+        height: 612
+    layout_KKNL4R:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 566
+        height: 340
+    layout_R3468P:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 503
+        height: 278
+    Tiêu chuẩn:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(145deg, rgba(22, 54, 41, 0) 9%, rgba(15, 42, 32, 1) 91%)
+    stroke_VAM60P:
+      colors:
+        - '#FFFFFF'
+      strokeWeight: 0.20000000298023224px
+    layout_0YOZWO:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 1
+      dimensions:
+        width: 503
+        height: 277
+    layout_4S8MFO:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 503
+        height: 277
+    effect_CCUWMZ:
+      boxShadow: 0px 16px 28.5px 0px rgba(0, 0, 0, 0.05), inset 5px 0px 15px 0px rgba(47, 143, 91, 0.5)
+    fill_N1TUP8:
+      - rgba(15, 42, 32, 0.2)
+    stroke_BN73TY:
+      colors:
+        - type: GRADIENT_LINEAR
+          gradient: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%)
+      strokeWeight: 0.20000000298023224px
+    fill_MEFF8S:
+      - '#2F8F5B'
+    effect_O3VV3T:
+      boxShadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+    layout_2KD1GG:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: -459.24
+        y: -58.59
+      dimensions:
+        width: 1147.32
+        height: 439.2
+    effect_P3F3T5:
+      filter: blur(54px)
+    layout_0SZT6B:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 41
+        y: 94
+      dimensions:
+        width: 285
+        height: 78
+    layout_T09XVA:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 41
+        y: 40
+      dimensions:
+        width: 412
+        height: 34
+    style_QHUDN6:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 600
+      fontSize: 24
+      lineHeight: 1.4166666666666667em
+      letterSpacing: '-0.20000000298023227%'
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    layout_ZOMMI0:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 316
+        y: 90
+      dimensions:
+        width: 250
+        height: 250
+    hình minh hoạ - ver 2:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(164deg, rgba(94, 224, 182, 1) 11%, rgba(47, 143, 91, 0.7) 33%, rgba(15, 42, 32, 0) 88%)
+    effect_CV8UTA:
+      filter: blur(3px)
+    layout_E5HRI2:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 413
+        y: 116
+      dimensions:
+        width: 52
+        height: 190
+    style_J2QM6T:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 700
+      fontSize: 150
+      lineHeight: 1.265em
+      textAlignHorizontal: CENTER
+      textAlignVertical: TOP
+    fill_OI8EPK:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(150deg, rgba(15, 42, 32, 0) 17%, rgba(47, 143, 91, 0.7) 71%, rgba(94, 224, 182, 1) 93%)
+    layout_SMNLFB:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 41
+        y: 224
+      dimensions:
+        width: 223.77
+        height: 22
+    layout_1IRYWL:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 202
+        height: 22
+    layout_RJLTUW:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 212
+        y: 6
+      dimensions:
+        width: 11.77
+        height: 12
+    layout_ELF6WG:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 302
+      dimensions:
+        width: 707
+        height: 310
+    layout_4UJJVV:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 707
+        height: 278
+    layout_UN8UP0:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 1
+      dimensions:
+        width: 707
+        height: 277
+    layout_0ZRVCZ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 707
+        height: 277
+    layout_AG4KB6:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: -645.49
+        y: -58.59
+      dimensions:
+        width: 1612.63
+        height: 439.2
+    layout_EKA0J4:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 41
+        y: 93
+      dimensions:
+        width: 356
+        height: 52
+    layout_D7HL19:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 41
+        y: 39
+      dimensions:
+        width: 589
+        height: 34
+    layout_34EM9F:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 41
+        y: 223
+      dimensions:
+        width: 187.77
+        height: 22
+    layout_LDH1LH:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 167
+        height: 22
+    layout_VGLELS:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 176
+        y: 6
+      dimensions:
+        width: 11.77
+        height: 12
+    layout_ODUX95:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 491
+        y: 110
+      dimensions:
+        width: 177.11
+        height: 200
+    layout_R4GKBP:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 177.11
+        height: 200
+    fill_H2RNPO:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(126deg, rgba(94, 224, 182, 1) 0%, rgba(47, 143, 91, 0.7) 0%, rgba(15, 42, 32, 0) 100%)
+    layout_NFO2MY:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 88.56
+        y: 23.27
+      dimensions:
+        width: 71.68
+        height: 159.45
+    fill_IDY2RU:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(148deg, rgba(15, 42, 32, 0) 21%, rgba(47, 143, 91, 0.7) 100%, rgba(94, 224, 182, 1) 100%)
+    layout_MNSDBI:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: -39
+        y: -17
+      dimensions:
+        width: 241
+        height: 184
+    effect_MA3G55:
+      filter: blur(4px)
+    layout_HLTX05:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 731
+        y: 302
+      dimensions:
+        width: 503
+        height: 278
+    layout_BX4HBO:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 41
+        y: 121
+      dimensions:
+        width: 292
+        height: 78
+    layout_0FDSZR:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 41
+        y: 39
+      dimensions:
+        width: 372
+        height: 68
+    layout_8K3AOA:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 41
+        y: 223
+      dimensions:
+        width: 203.77
+        height: 22
+    layout_VMPJ9X:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 181
+        height: 22
+    layout_83DBLC:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 192
+        y: 6
+      dimensions:
+        width: 11.77
+        height: 12
+    layout_JOBGT9:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 316
+        y: 153
+      dimensions:
+        width: 165
+        height: 125
+    effect_M5H0GH:
+      filter: blur(2px)
+    layout_GTJ9S8:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 110
+        height: 120
+    layout_RPR24T:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 25.36
+        y: 6
+      dimensions:
+        width: 58.99
+        height: 59.14
+    fill_JAQK8X:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(164deg, rgba(63, 191, 140, 1) 0%, rgba(47, 143, 91, 0.8) 5%, rgba(15, 42, 32, 0) 97%)
+    layout_QSLGFP:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 74
+      dimensions:
+        width: 110
+        height: 46
+    layout_IZOAA2:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 55
+        y: 5
+      dimensions:
+        width: 110
+        height: 120
+    layout_FVIEWK:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 527
+        y: 0
+      dimensions:
+        width: 707
+        height: 278
+    layout_S70CG3:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 41
+        y: 94
+      dimensions:
+        width: 356
+        height: 52
+    layout_ZE7TCX:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 41
+        y: 40
+      dimensions:
+        width: 305
+        height: 34
+    layout_TDUCNW:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 41
+        y: 224
+      dimensions:
+        width: 212.77
+        height: 22
+    layout_7DVJGT:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 187
+        height: 22
+    layout_7NW1X5:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 201
+        y: 6
+      dimensions:
+        width: 11.77
+        height: 12
+    layout_FQ3YQM:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 245.92
+        y: 23.96
+      dimensions:
+        width: 390.15
+        height: 228.08
+    fill_LPHUC5:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(157deg, rgba(15, 42, 32, 0) 0%, rgba(47, 143, 91, 0.7) 100%, rgba(94, 224, 182, 1) 100%)
+    layout_G5E3V3:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: -274
+        y: 2811
+      dimensions:
+        width: 1227
+        height: 718.76
+    layout_DLQNBW:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 508.24
+        y: -0.0
+      dimensions:
+        width: 718.76
+        height: 718.76
+    fill_K4JDPX:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(133deg, rgba(15, 42, 32, 0) 10%, rgba(94, 224, 182, 1) 100%)
+    layout_MYXGVY:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 254.12
+        y: -0.0
+      dimensions:
+        width: 718.76
+        height: 718.76
+    layout_R13H8D:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: -0.0
+      dimensions:
+        width: 718.76
+        height: 718.76
+    layout_PJKH5I:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 100
+        y: 2857
+      dimensions:
+        width: 1239
+        height: 440
+    layout_0XOYSZ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 485
+        height: 360
+    layout_CH5OHS:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 180
+        height: 40
+    layout_8XVDJ4:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 118
+      dimensions:
+        width: 473
+        height: 18
+    layout_V0JEU4:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 342
+      dimensions:
+        width: 365
+        height: 18
+    layout_NIH1YG:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 226
+      dimensions:
+        width: 471
+        height: 104
+    layout_943L71:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 42
+      dimensions:
+        width: 485
+        height: 63
+    style_9DXS8L:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 700
+      fontSize: 50
+      lineHeight: 1.265em
+      textCase: UPPER
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    layout_5A1QA4:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 668
+        y: 0
+      dimensions:
+        width: 571
+        height: 440
+    layout_K0ICXE:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 571
+        height: 208
+    effect_CY5MRV:
+      boxShadow: 0px 16px 28.5px 0px rgba(0, 0, 0, 0.05)
+    effect_5G1W9F:
+      boxShadow: inset -8px 1px 13px 0px rgba(47, 143, 91, 1)
+    layout_0CT1P2:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 78
+        y: -24
+      dimensions:
+        width: 646.77
+        height: 126.89
+    fill_TAIEPZ:
+      - '#3FBF8C'
+    effect_8HQ8Z6:
+      filter: blur(48px)
+    layout_AGNBES:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 42
+        y: 22
+      dimensions:
+        width: 487
+        height: 164
+    layout_DM4C5I:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 487
+        height: 164
+    layout_NDSZLP:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 1
+        y: 118
+      dimensions:
+        width: 140
+        height: 22
+    layout_L7BY9Y:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 1
+        y: 88
+      dimensions:
+        width: 90
+        height: 28
+    H6 - sub title:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 600
+      fontSize: 18
+      lineHeight: 1.5555555555555556em
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    layout_0VQ7T6:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 428
+        y: 30
+      dimensions:
+        width: 59
+        height: 26
+    layout_VBQ6LJ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 181
+        height: 56
+    layout_M6SM6R:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 30
+      dimensions:
+        width: 120
+        height: 26
+    layout_P7REV9:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 181
+        height: 30
+    layout_Z4CC76:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 331
+        y: 142
+      dimensions:
+        width: 156
+        height: 22
+    layout_IUD9QA:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 331
+        y: 88
+      dimensions:
+        width: 116
+        height: 56
+    layout_P38VY2:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 222.1
+        y: 118
+      dimensions:
+        width: 45
+        height: 22
+    layout_DLUWA2:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 189.1
+        y: 88
+      dimensions:
+        width: 82
+        height: 28
+    layout_QZ6PK2:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 189.1
+        y: 116
+      dimensions:
+        width: 27
+        height: 23
+    style_ZH3EPH:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 700
+      fontSize: 18
+      lineHeight: 1.2650000254313152em
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    layout_R1AVSC:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 121
+        y: 96
+      dimensions:
+        width: 56.57
+        height: 56.57
+    fill_AJQMZR:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(135deg, rgba(94, 224, 182, 1) 0%, rgba(15, 42, 32, 0) 53%)
+    layout_6U8P9U:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 260
+        y: 96
+      dimensions:
+        width: 56.57
+        height: 56.57
+    layout_7ZM0QU:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 1
+        y: 65
+      dimensions:
+        width: 486
+        height: 0
+    layout_CPWZRL:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 232
+      dimensions:
+        width: 571
+        height: 208
+    layout_FNWZBP:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 42
+        y: 23
+      dimensions:
+        width: 487
+        height: 162
+    layout_QYGVTR:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 487
+        height: 162
+    layout_TK0JUH:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 1
+        y: 118
+      dimensions:
+        width: 167
+        height: 22
+    layout_X0QMBI:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 1
+        y: 88
+      dimensions:
+        width: 69
+        height: 28
+    layout_7F28LG:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 364
+        y: 30
+      dimensions:
+        width: 123
+        height: 26
+    layout_PDSFKW:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 148
+        height: 56
+    layout_Z2SLSM:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 30
+      dimensions:
+        width: 146
+        height: 26
+    layout_WPMEFK:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 148
+        height: 30
+    layout_PJQKB2:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 390
+        y: 118
+      dimensions:
+        width: 97
+        height: 44
+    layout_FNENPV:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 390
+        y: 88
+      dimensions:
+        width: 89
+        height: 28
+    layout_FA72DJ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 236
+        y: 118
+      dimensions:
+        width: 91
+        height: 22
+    layout_3P1DU7:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 236.1
+        y: 88
+      dimensions:
+        width: 93
+        height: 28
+    layout_Q9618J:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 163
+        y: 96
+      dimensions:
+        width: 56.57
+        height: 56.57
+    layout_5MO71F:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 317
+        y: 96
+      dimensions:
+        width: 56.57
+        height: 56.57
+    layout_U2ZJOV:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 768
+        y: 2857
+      dimensions:
+        width: 571
+        height: 208
+    layout_3XGIUU:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 276
+        y: 3530
+      dimensions:
+        width: 888
+        height: 212
+    layout_BMGBQB:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 324
+        y: 0
+      dimensions:
+        width: 241
+        height: 40
+    layout_5MSY8H:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 128
+        y: 134
+      dimensions:
+        width: 632
+        height: 78
+    layout_3NTFDS:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 54
+      dimensions:
+        width: 888
+        height: 63
+    layout_L2U03W:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 100
+        y: 3792
+      dimensions:
+        width: 1239.77
+        height: 496
+    layout_1JJPKW:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 35
+      dimensions:
+        width: 425.77
+        height: 425.77
+    fill_68POHP:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(270deg, rgba(11, 31, 23, 0) 18%, rgba(63, 191, 140, 0.3) 100%)
+    layout_MXTAS1:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 372
+        y: 0
+      dimensions:
+        width: 496
+        height: 496
+    fill_A3QYJA:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(270deg, rgba(11, 31, 23, 0) 0%, rgba(63, 191, 140, 0.5) 100%)
+    stroke_T45J97:
+      colors:
+        - type: GRADIENT_LINEAR
+          gradient: linear-gradient(144deg, rgba(63, 191, 140, 1) 0%, rgba(15, 42, 32, 0) 89%)
+      strokeWeight: 3px
+    layout_20GR56:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 814
+        y: 35
+      dimensions:
+        width: 425.77
+        height: 425.77
+    layout_BJRO8Q:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 63
+        y: 149
+      dimensions:
+        width: 1108
+        height: 199
+    layout_CCLYNC:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 269
+        height: 199
+    layout_Y9505Y:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 173
+      dimensions:
+        width: 188
+        height: 26
+    layout_FCCA27:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 8
+      dimensions:
+        width: 15.14
+        height: 10.09
+    layout_1M3P38:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 15.14
+        height: 10.09
+    stroke_AH5ZR8:
+      colors:
+        - '#5EE0B6'
+      strokeWeight: 2px
+    layout_6TBGS9:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 25
+        y: 0
+      dimensions:
+        width: 163
+        height: 26
+    layout_PN1VQG:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 73
+      dimensions:
+        width: 269
+        height: 78
+    layout_PV1SES:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 269
+        height: 68
+    layout_CCQXWM:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 839
+        y: 0
+      dimensions:
+        width: 269
+        height: 199
+    layout_5XUM61:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 173
+      dimensions:
+        width: 191
+        height: 26
+    layout_K3NZF3:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 25
+        y: 0
+      dimensions:
+        width: 166
+        height: 26
+    layout_JNYCPS:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 73
+      dimensions:
+        width: 242
+        height: 78
+    layout_OXDYYQ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 418
+        y: 3
+      dimensions:
+        width: 255
+        height: 196
+    layout_VYOF0D:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 170
+      dimensions:
+        width: 178
+        height: 26
+    layout_8ITBJK:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 8
+      dimensions:
+        width: 15
+        height: 10
+    layout_KM7JWC:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 15
+        height: 10
+    layout_9RSNHS:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 25
+        y: 0
+      dimensions:
+        width: 153
+        height: 26
+    layout_2AUGAU:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 70
+      dimensions:
+        width: 255
+        height: 78
+    layout_L3L0Z5:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 23
+      dimensions:
+        width: 247
+        height: 34
+    layout_CTV6YW:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 118
+        height: 26
+    fill_772HKY:
+      - type: GRADIENT_RADIAL
+        gradient: radial-gradient(circle at 19% -21%, rgba(94, 224, 182, 1) 0%, rgba(15, 42, 32, 1) 100%)
+    layout_0SX49C:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 643
+        y: 4352
+      dimensions:
+        width: 154.77
+        height: 22
+    layout_396EI5:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 134
+        height: 22
+    layout_ZK4EDH:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 143
+        y: 5
+      dimensions:
+        width: 11.77
+        height: 12
+    layout_NC70OE:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 143
+        y: 4587
+      dimensions:
+        width: 1154
+        height: 737
+    layout_II1R41:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 327
+        y: 719
+      dimensions:
+        width: 499
+        height: 18
+    layout_MXUY4R:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 379
+        y: 0
+      dimensions:
+        width: 396
+        height: 40
+    layout_JSV6VP:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 246
+        y: 133
+      dimensions:
+        width: 663
+        height: 52
+    layout_2U9ESW:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 122
+        y: 54
+      dimensions:
+        width: 911
+        height: 63
+    layout_705I61:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 255
+      dimensions:
+        width: 1154
+        height: 394
+    layout_83O2DC:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 364
+        height: 394
+    fill_SL3ZXD:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(145deg, rgba(22, 54, 41, 0.05) 9%, rgba(15, 42, 32, 1) 91%)
+    layout_S07YKD:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 36
+        y: 154
+      dimensions:
+        width: 293
+        height: 0
+    layout_KSQOAZ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 36
+        y: 192
+      dimensions:
+        width: 18
+        height: 70
+    layout_IMUYYB:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 18
+        height: 18
+    effect_7G2SEO:
+      boxShadow: inset 0px 0px 2px 0px rgba(63, 191, 140, 0.5)
+    layout_8IZETP:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 4.85
+        y: 6.23
+      dimensions:
+        width: 8.31
+        height: 5.54
+    layout_ITJOHV:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 8.31
+        height: 5.54
+    stroke_WF3U8V:
+      colors:
+        - '#5EE0B6'
+      strokeWeight: 1px
+    layout_08XX0Q:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 26
+      dimensions:
+        width: 18
+        height: 18
+    layout_TG9UUJ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 52
+      dimensions:
+        width: 18
+        height: 18
+    layout_ITDSJK:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 60
+        y: 301.96
+      dimensions:
+        width: 244
+        height: 83.09
+    layout_QGTDWB:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 244
+        height: 42.07
+    layout_QAO87R:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 41.02
+      dimensions:
+        width: 244
+        height: 42.07
+    layout_UUMV77:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 20.84
+        y: 8.41
+      dimensions:
+        width: 201.93
+        height: 25.24
+    layout_KZQMHU:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 36
+        y: 41
+      dimensions:
+        width: 58
+        height: 18
+    style_7XJ1VA:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 600
+      fontSize: 14
+      lineHeight: 1.2649999346051897em
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    fill_VM521D:
+      - type: GRADIENT_RADIAL
+        gradient: radial-gradient(circle at 50% 50%, rgba(94, 224, 182, 1) 0%, rgba(15, 42, 32, 1) 100%)
+    layout_BWE968:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 36
+        y: 61
+      dimensions:
+        width: 183
+        height: 34
+    layout_WOSQ8D:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 36
+        y: 104
+      dimensions:
+        width: 236
+        height: 36
+    layout_KNIOD7:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 65
+        y: 188
+      dimensions:
+        width: 195
+        height: 78
+    layout_43ITQR:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 395
+        y: 0
+      dimensions:
+        width: 364
+        height: 394
+    effect_9RUZN1:
+      boxShadow: inset -6px 1px 13px 0px rgba(47, 143, 91, 1)
+    layout_GI23D1:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 77
+        y: 300
+      dimensions:
+        width: 210
+        height: 42
+    layout_IWMC76:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 210
+        height: 42
+    fill_DT2O9D:
+      - type: GRADIENT_LINEAR
+        gradient: linear-gradient(180deg, rgba(36, 122, 75, 1) 25%, rgba(63, 191, 140, 1) 100%)
+    effect_VY95DG:
+      boxShadow: 0px 8px 20px 0px rgba(63, 191, 140, 0.5), inset 0px 0px 5px 1px rgba(94, 224, 182, 0.5)
+    layout_1F023T:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 20.85
+        y: 9
+      dimensions:
+        width: 169
+        height: 24
+    layout_7N0T1B:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 36
+        y: 41
+      dimensions:
+        width: 104
+        height: 22
+    layout_91OPVK:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 36
+        y: 61
+      dimensions:
+        width: 169
+        height: 34
+    layout_LNA68E:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 36
+        y: 104
+      dimensions:
+        width: 266
+        height: 36
+    layout_PBFC8Z:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 65
+        y: 188
+      dimensions:
+        width: 227
+        height: 78
+    layout_POUJFT:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 790
+        y: 0
+      dimensions:
+        width: 364
+        height: 394
+    layout_MFJHZX:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 60
+        y: 302
+      dimensions:
+        width: 244
+        height: 83.09
+    layout_SVTGR5:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 36
+        y: 41
+      dimensions:
+        width: 90
+        height: 22
+    layout_LL25YY:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 36
+        y: 61
+      dimensions:
+        width: 146
+        height: 34
+    layout_Y9LT2M:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 65
+        y: 188
+      dimensions:
+        width: 206
+        height: 78
+    layout_7YGTHK:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 324
+        y: 5572
+      dimensions:
+        width: 792
+        height: 135
+    layout_1Y8S1D:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 83
+      dimensions:
+        width: 792
+        height: 52
+    layout_TJ6BMF:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 104
+        y: 0
+      dimensions:
+        width: 585
+        height: 63
+    layout_QUGBAY:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 5997
+      dimensions:
+        width: 1440
+        height: 1024
+    layout_4JXQ4H:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: -565.65
+        y: 6430.23
+      dimensions:
+        width: 2131.92
+        height: 2129.62
+    layout_AO8MC7:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 212.98
+        y: 346.01
+      dimensions:
+        width: 1705.97
+        height: 1437.6
+    layout_838YHN:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 195.99
+        y: 414.51
+      dimensions:
+        width: 1006.02
+        height: 1022.68
+    layout_XWRKF3:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 1006.02
+        height: 1022.68
+    layout_89KCWL:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 209.8
+        y: 218.74
+      dimensions:
+        width: 428.76
+        height: 463.57
+    layout_T2MDHK:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 111.87
+        y: 145.35
+      dimensions:
+        width: 438.09
+        height: 471.24
+    layout_QT8U82:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: -21
+        y: 6223
+      dimensions:
+        width: 1482
+        height: 597
+    layout_U5IZSY:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 372
+        y: 83
+      dimensions:
+        width: 739
+        height: 52
+    layout_KZPAWC:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 469
+        y: 0
+      dimensions:
+        width: 546
+        height: 63
+    effect_KRVWG5:
+      textShadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+    layout_Y855QX:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 237
+      dimensions:
+        width: 1482
+        height: 0
+    layout_HST098:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 144
+        y: 293
+      dimensions:
+        width: 57
+        height: 63
+    style_Y7UA3N:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 700
+      fontSize: 50
+      lineHeight: 1.265em
+      textCase: LOWER
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    layout_AW9WX1:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 144
+        y: 454
+      dimensions:
+        width: 264
+        height: 130
+    layout_0EOALR:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 144
+        y: 369
+      dimensions:
+        width: 264
+        height: 68
+    layout_AE86B3:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 469
+        y: 293
+      dimensions:
+        width: 69
+        height: 63
+    layout_E48Z1U:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 469
+        y: 454
+      dimensions:
+        width: 264
+        height: 104
+    layout_GMJGBC:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 469
+        y: 369
+      dimensions:
+        width: 187
+        height: 68
+    layout_YC4VN9:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 794
+        y: 293
+      dimensions:
+        width: 69
+        height: 63
+    layout_N2MRCU:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 794
+        y: 454
+      dimensions:
+        width: 264
+        height: 130
+    layout_VO9OTH:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 794
+        y: 369
+      dimensions:
+        width: 252
+        height: 68
+    layout_MR4JD9:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 1119
+        y: 293
+      dimensions:
+        width: 71
+        height: 63
+    layout_Z51FMD:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 1119
+        y: 454
+      dimensions:
+        width: 264
+        height: 104
+    layout_B0Q352:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 1119
+        y: 369
+      dimensions:
+        width: 238
+        height: 68
+    layout_X07D7K:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 100
+        y: 223
+      dimensions:
+        width: 28
+        height: 374
+    layout_Q3LAE6:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 14
+        y: 14.67
+      dimensions:
+        width: 0
+        height: 359.33
+    stroke_86P6GE:
+      colors:
+        - type: GRADIENT_LINEAR
+          gradient: linear-gradient(-90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%)
+      strokeWeight: 0.5px
+    layout_WV364R:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 28
+        height: 29.33
+    fill_YIH1J7:
+      - '#D9D9D9'
+    layout_AKDQWM:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 6
+        y: 6.29
+      dimensions:
+        width: 16
+        height: 16.76
+    layout_B4XOEA:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 425
+        y: 223
+      dimensions:
+        width: 28
+        height: 374
+    layout_SOWJE7:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 750
+        y: 223
+      dimensions:
+        width: 28
+        height: 374
+    layout_C6NOQM:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 1075
+        y: 223
+      dimensions:
+        width: 28
+        height: 374
+    layout_REYBX4:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: -40.67
+        y: 6451.99
+      dimensions:
+        width: 2071.04
+        height: 2068.48
+    layout_B4P73E:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 178.54
+        y: 290.06
+      dimensions:
+        width: 1713.97
+        height: 1488.36
+    layout_FH40T5:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 886.16
+        y: 680.97
+      dimensions:
+        width: 1015.74
+        height: 1025.54
+    layout_ADOZXN:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 1015.74
+        height: 1025.54
+    layout_EAEJE9:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 363.79
+        y: 348.36
+      dimensions:
+        width: 438.69
+        height: 459.17
+    layout_SNZ8BQ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 448.44
+        y: 419.05
+      dimensions:
+        width: 447.74
+        height: 467.23
+    layout_R9L4LN:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 253
+        y: 7113
+      dimensions:
+        width: 933
+        height: 215
+    layout_4W9MJS:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 302
+        y: 0
+      dimensions:
+        width: 328
+        height: 40
+    layout_GS2SZ4:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 166
+        y: 134
+      dimensions:
+        width: 601
+        height: 52
+    layout_M06462:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 55
+      dimensions:
+        width: 933
+        height: 63
+    layout_XRK8YY:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 377
+        y: 197
+      dimensions:
+        width: 179.77
+        height: 18
+    layout_AZY1YB:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 179.77
+        height: 18
+    layout_QY5JY1:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 159
+        height: 18
+    style_AHWFLL:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 400
+      fontSize: 14
+      lineHeight: 1.5714285714285714em
+      textCase: UPPER
+      textAlignHorizontal: LEFT
+      textAlignVertical: TOP
+    layout_DGEBN7:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 168
+        y: 3
+      dimensions:
+        width: 11.77
+        height: 12
+    layout_10LCO0:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 460
+        y: 8409
+      dimensions:
+        width: 521
+        height: 52
+    layout_98O31T:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 506
+        y: 8272
+      dimensions:
+        width: 426
+        height: 40
+    layout_D7L3RP:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 439
+        y: 8330
+      dimensions:
+        width: 562
+        height: 63
+    layout_VRQ40X:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: -36
+        y: 8419
+      dimensions:
+        width: 1512
+        height: 677.32
+    layout_9MWG8Q:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 1512
+        height: 677.32
+    fill_PJ5PMZ:
+      - '#13553C'
+    effect_3GGH1Y:
+      filter: blur(64px)
+    layout_3X7BCE:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 67.52
+      dimensions:
+        width: 1512
+        height: 519.25
+    effect_WESXN4:
+      filter: blur(36px)
+    layout_5ZVLU8:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 186.19
+      dimensions:
+        width: 1512
+        height: 284.91
+    layout_X5M0YD:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 880.04
+        y: 0
+      dimensions:
+        width: 631.96
+        height: 284.91
+    fill_ZKB4LR:
+      - rgba(245, 247, 246, 0.7)
+    layout_P707Y9:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 631.96
+        height: 284.91
+    layout_T0QZI3:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 100
+        y: 5778
+      dimensions:
+        width: 615
+        height: 219
+    layout_F14N59:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 615
+        height: 219
+    effect_E1EAP8:
+      boxShadow: inset 8px -4px 13px 0px rgba(47, 143, 91, 1)
+    layout_BKM6C7:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: -130
+        y: 120
+      dimensions:
+        width: 696.61
+        height: 135.55
+    layout_JQIKCJ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 32
+        y: 45
+      dimensions:
+        width: 551
+        height: 141
+    layout_Q1T26Z:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 40
+      dimensions:
+        width: 191
+        height: 22
+    fill_N5TMCA:
+      - type: GRADIENT_RADIAL
+        gradient: radial-gradient(circle at 3% -50%, rgba(94, 224, 182, 1) 0%, rgba(15, 42, 32, 1) 100%)
+    layout_ZHHK3N:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 111
+        height: 34
+    layout_NR9XRS:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 271
+        y: 37
+      dimensions:
+        width: 280
+        height: 104
+    layout_BOCDRD:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 271
+        y: 0
+      dimensions:
+        width: 150
+        height: 28
+    layout_C6ZJTH:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 732
+        y: 5778
+      dimensions:
+        width: 615
+        height: 219
+    layout_C645R4:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 40
+      dimensions:
+        width: 240
+        height: 22
+    layout_0CA24J:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 122
+        height: 34
+    layout_U03URN:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 271
+        y: 0
+      dimensions:
+        width: 211
+        height: 28
+    layout_PGSE1T:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 110
+        y: 7411
+      dimensions:
+        width: 1219
+        height: 439
+    layout_C1ILVQ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 389
+        height: 439
+    layout_3XZ23I:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 194
+      dimensions:
+        width: 389
+        height: 245
+    layout_NPZTLX:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 24
+        y: 252
+      dimensions:
+        width: 332
+        height: 153
+    layout_ND4MU3:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 68
+      dimensions:
+        width: 332
+        height: 44
+    layout_ZJV6BQ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 318
+        height: 60
+    layout_BW467J:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 135
+      dimensions:
+        width: 81.77
+        height: 18
+    layout_AQKWY5:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 61
+        height: 18
+    style_CEOYTE:
+      fontFamily: Be Vietnam Pro
+      fontWeight: 400
+      fontSize: 14
+      lineHeight: 1.2649999346051897em
+      textCase: UPPER
+      textAlignHorizontal: RIGHT
+      textAlignVertical: TOP
+    layout_ZU2ASK:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 70
+        y: 3
+      dimensions:
+        width: 11.77
+        height: 12
+    layout_DP5D3Z:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 389
+        height: 215
+    fill_W1FKA4:
+      - '#7BA195'
+    layout_PAWCLF:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 415
+        y: 0
+      dimensions:
+        width: 389
+        height: 439
+    layout_1RZEUL:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 301
+        height: 60
+    layout_C80LKF:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 830
+        y: 0
+      dimensions:
+        width: 389
+        height: 439
+    layout_HPGADW:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 320
+        height: 60
+    layout_3CCDEG:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 460
+        y: 8525
+      dimensions:
+        width: 519.15
+        height: 87
+    layout_X37G31:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0.05
+      dimensions:
+        width: 238.15
+        height: 43.9
+    layout_KLOZW6:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 238.15
+        height: 43.9
+    layout_2SIUVH:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 7.68
+        y: 8.78
+      dimensions:
+        width: 223.88
+        height: 26.34
+    layout_ADU8LH:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 266.06
+        y: 0
+      dimensions:
+        width: 253.09
+        height: 87
+    layout_DBKITM:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 20.58
+        y: 8.81
+      dimensions:
+        width: 212.97
+        height: 26.43
+    layout_YTQ0VW:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 253.09
+        height: 87
+    layout_5IKFTK:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 0
+      dimensions:
+        width: 253.09
+        height: 44.05
+    layout_THFTJQ:
+      mode: none
+      sizing: {}
+      locationRelativeToParent:
+        x: 0
+        y: 42.95
+      dimensions:
+        width: 253.09
+        height: 44.05

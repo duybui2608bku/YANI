@@ -104,6 +104,23 @@ function yani_enqueue_scripts() {
         );
     }
 
+    // Service page styles and scripts
+    if ( is_page_template( 'page-templates/page-service.php' ) ) {
+        wp_enqueue_style(
+            'yani-service-style',
+            YANI_THEME_URI . '/assets/css/page-service.css',
+            array( 'yani-main-style' ),
+            YANI_THEME_VERSION
+        );
+        wp_enqueue_script(
+            'yani-service-script',
+            YANI_THEME_URI . '/assets/js/page-service.js',
+            array(),
+            YANI_THEME_VERSION,
+            true
+        );
+    }
+
     // Theme stylesheet (style.css)
     wp_enqueue_style(
         'yani-style',

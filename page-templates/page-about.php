@@ -289,15 +289,15 @@ get_header();
                             <span class="about-team__label-text">Content Lead<br><?php esc_html_e('NGƯỜI CHỊU TRÁCH NHIỆM CHÍNH', 'yani-content'); ?></span>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Testimonial -->
-            <div class="about-team__testimonial">
-                <h5 class="about-team__testimonial-name"><?php esc_html_e('Anh Minh T.', 'yani-content'); ?></h5>
-                <p class="about-team__testimonial-text">
-                    <?php esc_html_e('"Điểm mình thích là làm rất rõ', 'yani-content'); ?>&nbsp;<strong><?php esc_html_e('dàn ý', 'yani-content'); ?></strong>&nbsp;<?php esc_html_e('và hướng triển khai trước khi viết. Nội dung không lan man, bám đúng vấn đề khách hàng hay hỏi, nên đội sales dùng lại được để tư vấn. Sau vài tuần, thời gian đọc và lượt liên hệ tăng thấy rõ."', 'yani-content'); ?>
-                </p>
+                    <!-- Testimonial: stacks below image in right column -->
+                    <div class="about-team__testimonial">
+                        <h5 class="about-team__testimonial-name"><?php esc_html_e('Anh Minh T.', 'yani-content'); ?></h5>
+                        <p class="about-team__testimonial-text">
+                            <?php esc_html_e('"Điểm mình thích là làm rất rõ', 'yani-content'); ?>&nbsp;<strong><?php esc_html_e('dàn ý', 'yani-content'); ?></strong>&nbsp;<?php esc_html_e('và hướng triển khai trước khi viết. Nội dung không lan man, bám đúng vấn đề khách hàng hay hỏi, nên đội sales dùng lại được để tư vấn. Sau vài tuần, thời gian đọc và lượt liên hệ tăng thấy rõ."', 'yani-content'); ?>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
