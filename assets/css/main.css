@@ -29,7 +29,7 @@
     --gradient-title-left: radial-gradient(circle at 33% 0%, rgba(94, 224, 182, 1) 0%, rgba(15, 42, 32, 1) 100%);
     --gradient-button: linear-gradient(180deg, rgba(36, 122, 75, 1) 25%, rgba(47, 143, 91, 1) 100%);
     --gradient-bg-radial: radial-gradient(circle at 50% -10%, rgba(20, 57, 44, 1) 0%, rgba(11, 31, 23, 1) 74%);
-    --gradient-bg-section: linear-gradient(180deg, rgba(11, 31, 23, 1) 47%, rgba(15, 42, 32, 1) 100%);
+    --gradient-bg-section: transparent;
     --gradient-icon: linear-gradient(141deg, rgba(94, 224, 182, 1) 0%, rgba(15, 42, 32, 1) 100%);
     --gradient-number: linear-gradient(135deg, rgba(94, 224, 182, 1) 0%, rgba(47, 143, 91, 0.7) 0%, rgba(15, 42, 32, 0) 100%);
     --gradient-border: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
