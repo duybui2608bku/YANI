@@ -32,11 +32,9 @@ get_header();
             </p>
 
             <div class="about-hero__actions">
-                <a href="#about-principle" class="btn btn-ghost" id="btn-xem-nangluc"><?php esc_html_e('Xem năng lực', 'yani-content'); ?></a>
-                <a href="<?php echo esc_url(home_url('/lien-he/')); ?>" class="btn btn-primary" id="btn-lien-he">
-                    <span><?php esc_html_e('Liên hệ ngay', 'yani-content'); ?></span>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/btn-arrow-gradient.svg" alt="" class="btn-primary__arrow">
-                </a>
+                <a href="#about-principle" class="btn btn-primary" id="btn-xem-nangluc"><?php esc_html_e('Xem năng lực', 'yani-content'); ?></a>
+                <a href="<?php echo esc_url(home_url('/lien-he/')); ?>" class="btn btn-ghost" id="btn-lien-he">
+                    <span><?php esc_html_e('Liên hệ ngay', 'yani-content'); ?></span>                </a>
             </div>
         </div>
     </section>
@@ -272,7 +270,7 @@ get_header();
                         <?php esc_html_e('Rõ trách nhiệm', 'yani-content'); ?>
                     </h2>
                     <p class="about-team__desc">
-                        <?php esc_html_e('Sợ nhất làm việc với Agency mà không biết ai đang nắm dự án của mình. Tại Yani Content, mọi thứ đều minh bạch.', 'yani-content'); ?>
+                        <?php esc_html_e('Một trong những lo ngại phổ biến khi làm việc với agency là không rõ ai đang trực tiếp phụ trách dự án. Tại Yani Content, mọi đầu việc đều được phân công minh bạch.', 'yani-content'); ?>
                     </p>
                     <p class="about-team__detail">
                         <?php esc_html_e('Mỗi dự án sẽ có một', 'yani-content'); ?>&nbsp;<strong><?php esc_html_e('Chủ trì (Project Owner)', 'yani-content'); ?></strong>&nbsp;<?php esc_html_e('đứng mũi chịu sào. Có vấn đề gì cứ "nắm đầu" người này, đảm bảo được giải quyết trong một nốt nhạc.', 'yani-content'); ?>
@@ -315,9 +313,7 @@ get_header();
                 <div class="about-cta__buttons">
                     <a href="#" class="btn btn-ghost" id="btn-zalo-consult"><?php esc_html_e('Chat Zalo tư vấn (Miễn phí)', 'yani-content'); ?></a>
                     <a href="<?php echo esc_url(home_url('/dich-vu/')); ?>" class="btn btn-primary" id="btn-service-price">
-                        <span><?php esc_html_e('Xem Dịch vụ & Báo giá', 'yani-content'); ?></span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/btn-arrow-gradient.svg" alt="" class="btn-primary__arrow">
-                    </a>
+                        <span><?php esc_html_e('Xem Dịch vụ & Báo giá', 'yani-content'); ?></span>                    </a>
                 </div>
 
                 <p class="about-cta__note"><?php esc_html_e('*Phản hồi nhanh trong 30 phút giờ hành chính. Làm việc cả Thứ 7.', 'yani-content'); ?></p>

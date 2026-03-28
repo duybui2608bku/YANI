@@ -47,6 +47,7 @@
     pointer-events: none;
     z-index: 0;
     opacity: 0.5;
+    display: none;
 }
 
 .about-spotlight--1 {
@@ -67,11 +68,13 @@
     position: absolute;
     pointer-events: none;
     top: 2093px;
-    left: -271px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 1982px;
     height: 1471px;
     opacity: 0.3;
     z-index: 0;
+    display: none;
 }
 
 /* ========================================
@@ -100,8 +103,13 @@
     justify-content: center;
     padding: 12px 46px;
     border-radius: 63px;
-    border: 0.5px solid var(--color-accent-green);
-    background: linear-gradient(-9deg, rgba(94, 224, 182, 1) 0%, rgba(15, 42, 32, 0) 100%);
+    border: 0.5px solid rgba(94, 224, 182, 0.5);
+
+    background: linear-gradient(180deg,
+            rgba(94, 224, 182, 0.35) 0%,
+            rgba(15, 42, 32, 0.6) 100%);
+
+    backdrop-filter: blur(6px);
     margin-bottom: 28px;
 }
 
@@ -298,8 +306,13 @@
     position: relative;
     padding: 9px 26px;
     border-radius: 63px;
-    border: 0.5px solid var(--color-accent-green);
-    background: linear-gradient(180deg, rgba(47, 143, 91, 0) 0%, rgba(47, 143, 91, 0.7) 40%, rgba(94, 224, 182, 0.8) 94%);
+    border: 0.5px solid rgba(94, 224, 182, 0.5);
+
+    background: linear-gradient(180deg,
+            rgba(94, 224, 182, 0.35) 0%,
+            rgba(15, 42, 32, 0.6) 100%);
+
+    backdrop-filter: blur(6px);
 }
 
 .about-truth__pill span {
@@ -351,8 +364,12 @@
     position: absolute;
     right: 0;
     top: 0;
+    left: 54%;
     z-index: 1;
 }
+
+
+
 
 /* ========================================
    Nguyên tắc 3 KHÔNG - 3 CÓ
@@ -617,7 +634,7 @@
     position: relative;
     text-align: left;
     padding-top: 16px;
-    padding-left: 0;
+    padding-left: 30px;
 }
 
 /* Step-line SVG: absolutely positioned, overflows upward to sit on the horizontal line */
@@ -675,20 +692,22 @@
 .about-kpi {
     position: relative;
     z-index: 1;
-    padding: 40px 0 80px;
+    padding: 40px 0 20px;
 }
 
 .about-kpi__header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    margin-bottom: 50px;
+    position: relative;
+    margin-bottom: 30px;
 }
 
 .about-kpi__bar {
     width: auto;
-    height: 100px;
+    max-width: 555px;
+    height: auto;
 }
 
 .about-kpi__main-title {
@@ -697,6 +716,12 @@
     font-size: var(--font-size-h4);
     line-height: var(--line-height-h4);
     letter-spacing: -0.2%;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
 }
 
 .about-kpi__grid {
@@ -768,6 +793,7 @@
     line-height: 1.607;
     letter-spacing: -0.003em;
     text-transform: uppercase;
+    color: #FFFFFF;
     margin-bottom: 24px;
 }
 
@@ -798,14 +824,14 @@
 
 .about-team__image-wrapper {
     position: relative;
-    /* glassmorphism card */
-    background: rgba(15, 42, 32, 0.2);
-    border: 0.2px solid rgba(255, 255, 255, 0.15);
+    /* Let the SVG handle its own border, shadow and background */
+    background: transparent;
+    border: none;
     border-radius: var(--radius-md);
-    box-shadow: inset -8px 1px 13px 0px rgba(47, 143, 91, 1), 0px 16px 28.5px 0px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
+    box-shadow: none;
+    overflow: visible;
     min-height: 267px;
-    padding: 30px 60px 50px 60px;
+    padding: 0;
 }
 
 .about-team__image {
@@ -813,28 +839,64 @@
     height: auto;
     object-fit: contain;
     display: block;
-    max-height: 200px;
 }
 
-/* Avatar circle overlaid on the card (x:663-601=62 from left of card, y:3557-3527=30 from top) */
-.about-team__avatar {
+/* Card content overlaid on the SVG */
+.about-team__card-content {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 50px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+
+.about-team__card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.about-team__avatar {
+    flex-shrink: 0;
 }
 
 .about-team__avatar-circle {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: #7BA195;
 }
 
-/* Label (x:665-601=64, y:3725-3527=198 from top of wrapper) */
+.about-team__card-name {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: var(--font-size-h6);
+    line-height: var(--line-height-h6);
+    color: var(--color-text-primary);
+}
+
+.about-team__card-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: var(--font-size-caption);
+    line-height: 2;
+    color: var(--color-text-secondary);
+}
+
+.about-team__card-list li {
+    margin-bottom: 4px;
+}
+
+/* Label positioned inside the SVG card area */
 .about-team__label {
-    position: absolute;
-    bottom: 16px;
-    left: 20px;
     display: flex;
     align-items: center;
     gap: 16px;
@@ -855,23 +917,15 @@
     color: var(--color-text-secondary);
 }
 
-/* Testimonial — sits inside the right column, below the image card */
-
-.about-team__testimonial-name {
+/* CTA link below the card */
+.about-team__cta {
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: var(--font-size-h6);
-    line-height: var(--line-height-h6);
-    color: var(--color-text-primary);
-    margin-bottom: 8px;
-}
-
-.about-team__testimonial-text {
-    font-family: var(--font-family);
-    font-weight: 400;
     font-size: var(--font-size-body-m);
     line-height: var(--line-height-body-m);
-    color: var(--color-text-secondary);
+    font-style: italic;
+    text-decoration: none;
+    display: inline-block;
 }
 
 /* ========================================
@@ -1151,7 +1205,20 @@
     }
 
     .about-team__image-wrapper {
-        padding: 24px 40px 40px;
+        min-height: 220px;
+    }
+
+    .about-team__card-content {
+        padding: 20px 30px 20px 30px;
+    }
+
+    .about-team__card-name {
+        font-size: 16px;
+    }
+
+    .about-team__card-list {
+        font-size: 13px;
+        line-height: 1.8;
     }
 
     .about-cta {
@@ -1277,17 +1344,23 @@
     .about-truth__solution {
         position: relative;
         max-width: 100%;
-        text-align: left;
+        text-align: center;
         font-size: 16px;
+        left: 0;
     }
 
-    /* Principle Section */
+    /* Principle Section - Card layout on mobile */
     .about-principle {
         padding: 30px 0 40px;
     }
 
     .about-principle__wrapper {
         padding: 24px 0 36px;
+    }
+
+    /* Hide the SVG background on mobile */
+    .about-principle__bg-svg {
+        display: none;
     }
 
     .about-principle__title {
@@ -1297,23 +1370,31 @@
 
     .about-principle__content {
         flex-direction: column;
-        gap: 24px;
+        gap: 16px;
     }
 
     .about-principle__col {
-        padding: 0 16px !important;
+        padding: 0 !important;
     }
 
     .about-principle__col--left,
     .about-principle__col--right {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .about-principle__divider {
-        width: 80%;
-        height: 1px;
-        align-self: center;
+        display: none;
+    }
+
+    /* Each principle item becomes a card */
+    .about-principle__item {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(94, 224, 182, 0.15);
+        border-radius: 12px;
+        padding: 16px 20px;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
     }
 
     .about-principle__item span {
@@ -1321,7 +1402,7 @@
     }
 
     .about-principle__list {
-        gap: 16px;
+        gap: 12px;
     }
 
     /* Expertise Section */
@@ -1490,30 +1571,62 @@
         font-size: 14px;
     }
 
+    /* Team Section - Card layout on mobile */
     .about-team__image-wrapper {
-        padding: 20px 24px 40px;
         min-height: auto;
     }
 
+    /* Hide SVG background on mobile */
     .about-team__image {
-        max-height: 160px;
+        display: none;
+    }
+
+    /* Card content becomes a standalone card */
+    .about-team__card-content {
+        position: relative;
+        padding: 20px 24px;
+        gap: 12px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(94, 224, 182, 0.2);
+        border-radius: 16px;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+
+    .about-team__card-header {
+        gap: 12px;
     }
 
     .about-team__avatar-circle {
-        width: 40px;
-        height: 40px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .about-team__card-name {
+        font-size: 15px;
+    }
+
+    .about-team__card-list {
+        font-size: 13px;
+        line-height: 1.8;
+        padding-left: 18px;
+    }
+
+    .about-team__card-list li {
+        margin-bottom: 2px;
     }
 
     .about-team__label-text {
         font-size: 11px;
     }
 
-    .about-team__testimonial-name {
-        font-size: 16px;
+    .about-team__label-line {
+        height: 24px;
     }
 
-    .about-team__testimonial-text {
+    .about-team__cta {
         font-size: 14px;
+        margin-top: 4px;
     }
 
     /* CTA Section */

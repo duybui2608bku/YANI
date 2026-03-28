@@ -1134,6 +1134,8 @@
     margin-bottom: 16px;
     border-radius: var(--radius-md);
     overflow: hidden;
+    border: 0.2px solid transparent;
+    transition: all 0.3s ease;
 }
 
 .service-faq__question {
@@ -1176,11 +1178,17 @@
     padding: 0 24px 18px;
 }
 
-.service-faq__item--open .service-faq__question {
+/* When open: border + glow on the ENTIRE item, not just the question */
+.service-faq__item--open {
     background: rgba(15, 42, 32, 0.2);
-    border: 0.2px solid;
+    border: 0.2px solid rgba(255, 255, 255, 0.15);
     border-image: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%) 1;
     box-shadow: inset -6px 1px 13px 0px rgba(47, 143, 91, 1);
+    border-radius: var(--radius-md);
+}
+
+.service-faq__item--open .service-faq__question {
+    background: transparent;
     border-radius: var(--radius-md) var(--radius-md) 0 0;
 }
 
