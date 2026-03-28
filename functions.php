@@ -6,37 +6,38 @@
  * @since 1.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
-define( 'YANI_THEME_VERSION', '1.0.0' );
-define( 'YANI_THEME_DIR', get_template_directory() );
-define( 'YANI_THEME_URI', get_template_directory_uri() );
+define('YANI_THEME_VERSION', '1.0.0');
+define('YANI_THEME_DIR', get_template_directory());
+define('YANI_THEME_URI', get_template_directory_uri());
 
 /**
  * Theme Setup
  */
-function yani_theme_setup() {
+function yani_theme_setup()
+{
     // Add default posts and comments RSS feed links to head
-    add_theme_support( 'automatic-feed-links' );
+    add_theme_support('automatic-feed-links');
 
     // Let WordPress manage the document title
-    add_theme_support( 'title-tag' );
+    add_theme_support('title-tag');
 
     // Enable support for Post Thumbnails
-    add_theme_support( 'post-thumbnails' );
+    add_theme_support('post-thumbnails');
 
     // Enable support for custom logo
-    add_theme_support( 'custom-logo', array(
-        'height'      => 25,
-        'width'       => 182,
+    add_theme_support('custom-logo', array(
+        'height' => 25,
+        'width' => 182,
         'flex-height' => true,
-        'flex-width'  => true,
-    ) );
+        'flex-width' => true,
+    ));
 
     // Enable HTML5 markup
-    add_theme_support( 'html5', array(
+    add_theme_support('html5', array(
         'search-form',
         'comment-form',
         'comment-list',
@@ -44,23 +45,24 @@ function yani_theme_setup() {
         'caption',
         'style',
         'script',
-    ) );
+    ));
 
     // Register navigation menus
-    register_nav_menus( array(
-        'primary' => esc_html__( 'Primary Menu', 'yani-content' ),
-        'footer'  => esc_html__( 'Footer Menu', 'yani-content' ),
-    ) );
+    register_nav_menus(array(
+        'primary' => esc_html__('Primary Menu', 'yani-content'),
+        'footer' => esc_html__('Footer Menu', 'yani-content'),
+    ));
 
     // Add editor style
-    add_editor_style( 'assets/css/editor-style.css' );
+    add_editor_style('assets/css/editor-style.css');
 }
-add_action( 'after_setup_theme', 'yani_theme_setup' );
+add_action('after_setup_theme', 'yani_theme_setup');
 
 /**
  * Enqueue scripts and styles
  */
-function yani_enqueue_scripts() {
+function yani_enqueue_scripts()
+{
     // Google Fonts - Be Vietnam Pro
     wp_enqueue_style(
         'yani-google-fonts',
@@ -73,26 +75,36 @@ function yani_enqueue_scripts() {
     wp_enqueue_style(
         'yani-main-style',
         YANI_THEME_URI . '/assets/css/main.css',
-        array( 'yani-google-fonts' ),
+        array('yani-google-fonts'),
         YANI_THEME_VERSION
     );
 
+    // Home page styles
+    if (is_page_template('page-templates/page-home.php') || is_front_page() || is_home()) {
+        wp_enqueue_style(
+            'yani-home-style',
+            YANI_THEME_URI . '/assets/css/page-home.css',
+            array('yani-main-style'),
+            YANI_THEME_VERSION
+        );
+    }
+
     // Contact page styles
-    if ( is_page_template( 'page-templates/page-contact.php' ) ) {
+    if (is_page_template('page-templates/page-contact.php')) {
         wp_enqueue_style(
             'yani-contact-style',
             YANI_THEME_URI . '/assets/css/page-contact.css',
-            array( 'yani-main-style' ),
+            array('yani-main-style'),
             YANI_THEME_VERSION
         );
     }
 
     // About page styles and scripts
-    if ( is_page_template( 'page-templates/page-about.php' ) ) {
+    if (is_page_template('page-templates/page-about.php')) {
         wp_enqueue_style(
             'yani-about-style',
             YANI_THEME_URI . '/assets/css/page-about.css',
-            array( 'yani-main-style' ),
+            array('yani-main-style'),
             YANI_THEME_VERSION
         );
         wp_enqueue_script(
@@ -105,11 +117,11 @@ function yani_enqueue_scripts() {
     }
 
     // Service page styles and scripts
-    if ( is_page_template( 'page-templates/page-service.php' ) ) {
+    if (is_page_template('page-templates/page-service.php')) {
         wp_enqueue_style(
             'yani-service-style',
             YANI_THEME_URI . '/assets/css/page-service.css',
-            array( 'yani-main-style' ),
+            array('yani-main-style'),
             YANI_THEME_VERSION
         );
         wp_enqueue_script(
@@ -125,7 +137,7 @@ function yani_enqueue_scripts() {
     wp_enqueue_style(
         'yani-style',
         get_stylesheet_uri(),
-        array( 'yani-main-style' ),
+        array('yani-main-style'),
         YANI_THEME_VERSION
     );
 
@@ -139,47 +151,49 @@ function yani_enqueue_scripts() {
     );
 
     // Localize script
-    wp_localize_script( 'yani-main-script', 'yaniData', array(
-        'ajaxUrl'  => admin_url( 'admin-ajax.php' ),
+    wp_localize_script('yani-main-script', 'yaniData', array(
+        'ajaxUrl' => admin_url('admin-ajax.php'),
         'themeUrl' => YANI_THEME_URI,
-        'nonce'    => wp_create_nonce( 'yani_nonce' ),
-    ) );
+        'nonce' => wp_create_nonce('yani_nonce'),
+    ));
 }
-add_action( 'wp_enqueue_scripts', 'yani_enqueue_scripts' );
+add_action('wp_enqueue_scripts', 'yani_enqueue_scripts');
 
 /**
  * Register widget areas
  */
-function yani_widgets_init() {
-    register_sidebar( array(
-        'name'          => esc_html__( 'Sidebar', 'yani-content' ),
-        'id'            => 'sidebar-1',
-        'description'   => esc_html__( 'Add widgets here.', 'yani-content' ),
+function yani_widgets_init()
+{
+    register_sidebar(array(
+        'name' => esc_html__('Sidebar', 'yani-content'),
+        'id' => 'sidebar-1',
+        'description' => esc_html__('Add widgets here.', 'yani-content'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</section>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
-    ) );
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
 
-    register_sidebar( array(
-        'name'          => esc_html__( 'Footer', 'yani-content' ),
-        'id'            => 'footer-1',
-        'description'   => esc_html__( 'Add footer widgets here.', 'yani-content' ),
+    register_sidebar(array(
+        'name' => esc_html__('Footer', 'yani-content'),
+        'id' => 'footer-1',
+        'description' => esc_html__('Add footer widgets here.', 'yani-content'),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="widget-title">',
-        'after_title'   => '</h3>',
-    ) );
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ));
 }
-add_action( 'widgets_init', 'yani_widgets_init' );
+add_action('widgets_init', 'yani_widgets_init');
 
 /**
  * Custom template tags
  */
-function yani_get_theme_svg( $svg_name ) {
+function yani_get_theme_svg($svg_name)
+{
     $svg_path = YANI_THEME_DIR . '/assets/images/' . $svg_name . '.svg';
-    if ( file_exists( $svg_path ) ) {
-        return file_get_contents( $svg_path );
+    if (file_exists($svg_path)) {
+        return file_get_contents($svg_path);
     }
     return '';
 }
@@ -187,22 +201,23 @@ function yani_get_theme_svg( $svg_name ) {
 /**
  * Handle contact form submission via AJAX
  */
-function yani_handle_contact_form() {
-    check_ajax_referer( 'yani_nonce', 'nonce' );
+function yani_handle_contact_form()
+{
+    check_ajax_referer('yani_nonce', 'nonce');
 
-    $name    = sanitize_text_field( $_POST['fullname'] ?? '' );
-    $email   = sanitize_email( $_POST['email'] ?? '' );
-    $phone   = sanitize_text_field( $_POST['phone'] ?? '' );
-    $website = esc_url_raw( $_POST['website'] ?? '' );
-    $message = sanitize_textarea_field( $_POST['message'] ?? '' );
+    $name = sanitize_text_field($_POST['fullname'] ?? '');
+    $email = sanitize_email($_POST['email'] ?? '');
+    $phone = sanitize_text_field($_POST['phone'] ?? '');
+    $website = esc_url_raw($_POST['website'] ?? '');
+    $message = sanitize_textarea_field($_POST['message'] ?? '');
 
-    if ( empty( $name ) || empty( $email ) || empty( $phone ) ) {
-        wp_send_json_error( array( 'message' => 'Vui lòng điền đầy đủ thông tin bắt buộc.' ) );
+    if (empty($name) || empty($email) || empty($phone)) {
+        wp_send_json_error(array('message' => 'Vui lòng điền đầy đủ thông tin bắt buộc.'));
     }
 
-    $to      = get_option( 'admin_email' );
-    $subject = sprintf( '[Yani Content] Yêu cầu mới từ %s', $name );
-    $body    = sprintf(
+    $to = get_option('admin_email');
+    $subject = sprintf('[Yani Content] Yêu cầu mới từ %s', $name);
+    $body = sprintf(
         "Họ tên: %s\nEmail: %s\nSĐT/Zalo: %s\nWebsite: %s\n\nNhu cầu:\n%s",
         $name,
         $email,
@@ -210,38 +225,40 @@ function yani_handle_contact_form() {
         $website,
         $message
     );
-    $headers = array( 'Content-Type: text/plain; charset=UTF-8' );
+    $headers = array('Content-Type: text/plain; charset=UTF-8');
 
-    $sent = wp_mail( $to, $subject, $body, $headers );
+    $sent = wp_mail($to, $subject, $body, $headers);
 
-    if ( $sent ) {
-        wp_send_json_success( array( 'message' => 'Cảm ơn bạn! Chúng tôi sẽ phản hồi trong vòng 1 ngày làm việc.' ) );
-    } else {
-        wp_send_json_error( array( 'message' => 'Có lỗi xảy ra. Vui lòng thử lại sau.' ) );
+    if ($sent) {
+        wp_send_json_success(array('message' => 'Cảm ơn bạn! Chúng tôi sẽ phản hồi trong vòng 1 ngày làm việc.'));
+    }
+    else {
+        wp_send_json_error(array('message' => 'Có lỗi xảy ra. Vui lòng thử lại sau.'));
     }
 }
-add_action( 'wp_ajax_yani_contact_form', 'yani_handle_contact_form' );
-add_action( 'wp_ajax_nopriv_yani_contact_form', 'yani_handle_contact_form' );
+add_action('wp_ajax_yani_contact_form', 'yani_handle_contact_form');
+add_action('wp_ajax_nopriv_yani_contact_form', 'yani_handle_contact_form');
 
 /**
  * Add custom body classes
  */
-function yani_body_classes( $classes ) {
-    if ( is_page_template( 'page-templates/page-contact.php' ) ) {
+function yani_body_classes($classes)
+{
+    if (is_page_template('page-templates/page-contact.php')) {
         $classes[] = 'page-contact';
     }
-    if ( is_page_template( 'page-templates/page-home.php' ) ) {
+    if (is_page_template('page-templates/page-home.php')) {
         $classes[] = 'page-home';
     }
-    if ( is_page_template( 'page-templates/page-service.php' ) ) {
+    if (is_page_template('page-templates/page-service.php')) {
         $classes[] = 'page-service';
     }
-    if ( is_page_template( 'page-templates/page-price.php' ) ) {
+    if (is_page_template('page-templates/page-price.php')) {
         $classes[] = 'page-price';
     }
-    if ( is_page_template( 'page-templates/page-about.php' ) ) {
+    if (is_page_template('page-templates/page-about.php')) {
         $classes[] = 'page-about';
     }
     return $classes;
 }
-add_filter( 'body_class', 'yani_body_classes' );
+add_filter('body_class', 'yani_body_classes');
