@@ -205,7 +205,7 @@ get_header();
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/step-line-2.svg" alt="" aria-hidden="true" class="about-process__step-line">
                     </div>
                     <span class="about-process__step-number text-gradient">02</span>
-                    <h4 class="about-process__step-title"><?php esc_html_e('Viết & Tối ưu hóa', 'yani-content'); ?></h4>
+                    <h4 class="about-process__step-title"><?php esc_html_e('Viết &', 'yani-content'); ?><br><?php esc_html_e('Tối ưu hóa', 'yani-content'); ?></h4>
                     <p class="about-process__step-desc"><?php esc_html_e('Triển khai bài viết chuyên sâu, trình bày đẹp mắt, dễ đọc trên điện thoại.', 'yani-content'); ?></p>
                 </div>
                 <div class="about-process__step" id="about-step-03">
@@ -265,12 +265,11 @@ get_header();
         <div class="container">
             <div class="about-team__content">
                 <div class="about-team__left">
-                    <h2 class="about-team__title text-gradient">
-                        <?php esc_html_e('Rõ người - Rõ việc', 'yani-content'); ?><br>
-                        <?php esc_html_e('Rõ trách nhiệm', 'yani-content'); ?>
+                    <h2 class="about-team__title">
+                        <?php esc_html_e('Rõ người - Rõ việc', 'yani-content'); ?><br><span class="text-gradient"><?php esc_html_e('Rõ trách nhiệm', 'yani-content'); ?></span>
                     </h2>
                     <p class="about-team__desc">
-                        <?php esc_html_e('Một trong những lo ngại phổ biến khi làm việc với agency là không rõ ai đang trực tiếp phụ trách dự án. Tại Yani Content, mọi đầu việc đều được phân công minh bạch.', 'yani-content'); ?>
+                        <?php esc_html_e('Sợ nhất làm việc với Agency mà không biết ai đang nắm dự án của mình. Tại Yani Content, mọi thứ đều minh bạch.', 'yani-content'); ?>
                     </p>
                     <p class="about-team__detail">
                         <?php esc_html_e('Mỗi dự án sẽ có một', 'yani-content'); ?>&nbsp;<strong><?php esc_html_e('Chủ trì (Project Owner)', 'yani-content'); ?></strong>&nbsp;<?php esc_html_e('đứng mũi chịu sào. Có vấn đề gì cứ "nắm đầu" người này, đảm bảo được giải quyết trong một nốt nhạc.', 'yani-content'); ?>
@@ -279,21 +278,24 @@ get_header();
                 <div class="about-team__right">
                     <div class="about-team__image-wrapper">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/team-image.svg" alt="<?php esc_attr_e('Đội ngũ Yani Content', 'yani-content'); ?>" class="about-team__image">
-                        <div class="about-team__avatar">
-                            <div class="about-team__avatar-circle"></div>
+                        <div class="about-team__card-content">
+                            <div class="about-team__card-header">
+                                <div class="about-team__avatar">
+                                    <div class="about-team__avatar-circle"></div>
+                                </div>
+                                <h5 class="about-team__card-name"><?php esc_html_e('Anh Minh T.', 'yani-content'); ?></h5>
+                            </div>
+                            <ul class="about-team__card-list">
+                                <li><?php esc_html_e('Lên chiến lược nội dung theo mục tiêu doanh nghiệp', 'yani-content'); ?></li>
+                                <li><?php esc_html_e('Duyệt chất lượng bài viết trước khi bàn giao', 'yani-content'); ?></li>
+                                <li><?php esc_html_e('Theo dõi và báo cáo hiệu suất định kỳ', 'yani-content'); ?></li>
+                            </ul>
+                            <div class="about-team__label">
+                                <span class="about-team__label-line" aria-hidden="true"></span>
+                                <span class="about-team__label-text">Content Lead<br><?php esc_html_e('Người chịu trách nhiệm chính', 'yani-content'); ?></span>
+                            </div>
+                            <a href="<?php echo esc_url(home_url('/lien-he/')); ?>" class="about-team__cta text-gradient"><?php esc_html_e('Liên hệ trao đổi ngay', 'yani-content'); ?></a>
                         </div>
-                        <div class="about-team__label">
-                            <span class="about-team__label-line" aria-hidden="true"></span>
-                            <span class="about-team__label-text">Content Lead<br><?php esc_html_e('NGƯỜI CHỊU TRÁCH NHIỆM CHÍNH', 'yani-content'); ?></span>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial: stacks below image in right column -->
-                    <div class="about-team__testimonial">
-                        <h5 class="about-team__testimonial-name"><?php esc_html_e('Anh Minh T.', 'yani-content'); ?></h5>
-                        <p class="about-team__testimonial-text">
-                            <?php esc_html_e('"Điểm mình thích là làm rất rõ', 'yani-content'); ?>&nbsp;<strong><?php esc_html_e('dàn ý', 'yani-content'); ?></strong>&nbsp;<?php esc_html_e('và hướng triển khai trước khi viết. Nội dung không lan man, bám đúng vấn đề khách hàng hay hỏi, nên đội sales dùng lại được để tư vấn. Sau vài tuần, thời gian đọc và lượt liên hệ tăng thấy rõ."', 'yani-content'); ?>
-                        </p>
                     </div>
                 </div>
             </div>
@@ -311,9 +313,8 @@ get_header();
                 </p>
 
                 <div class="about-cta__buttons">
+                    <a href="<?php echo esc_url(home_url('/dich-vu/')); ?>" class="btn btn-primary" id="btn-service-price"><?php esc_html_e('Xem Dịch vụ & Báo giá', 'yani-content'); ?></a>
                     <a href="#" class="btn btn-ghost" id="btn-zalo-consult"><?php esc_html_e('Chat Zalo tư vấn (Miễn phí)', 'yani-content'); ?></a>
-                    <a href="<?php echo esc_url(home_url('/dich-vu/')); ?>" class="btn btn-primary" id="btn-service-price">
-                        <span><?php esc_html_e('Xem Dịch vụ & Báo giá', 'yani-content'); ?></span>                    </a>
                 </div>
 
                 <p class="about-cta__note"><?php esc_html_e('*Phản hồi nhanh trong 30 phút giờ hành chính. Làm việc cả Thứ 7.', 'yani-content'); ?></p>
