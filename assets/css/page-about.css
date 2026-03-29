@@ -697,7 +697,6 @@
 
 .about-kpi__header {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -705,9 +704,16 @@
 }
 
 .about-kpi__bar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: auto;
     max-width: 555px;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .about-kpi__main-title {
@@ -716,12 +722,11 @@
     font-size: var(--font-size-h4);
     line-height: var(--line-height-h4);
     letter-spacing: -0.2%;
-    position: absolute;
-    top: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
+    position: relative;
     z-index: 1;
+    white-space: nowrap;
+    text-align: center;
+    padding: 14px 60px;
 }
 
 .about-kpi__grid {
@@ -824,35 +829,35 @@
 
 .about-team__image-wrapper {
     position: relative;
-    /* Let the SVG handle its own border, shadow and background */
     background: transparent;
     border: none;
     border-radius: var(--radius-md);
     box-shadow: none;
     overflow: visible;
-    min-height: 267px;
     padding: 0;
 }
 
 .about-team__image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
     display: block;
+    z-index: 0;
+    pointer-events: none;
 }
 
 /* Card content overlaid on the SVG */
 .about-team__card-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    position: relative;
+    z-index: 1;
     padding: 30px 50px 30px 50px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     gap: 10px;
+    min-height: 267px;
 }
 
 .about-team__card-header {
