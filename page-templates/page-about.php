@@ -33,8 +33,7 @@ get_header();
 
             <div class="about-hero__actions">
                 <a href="#about-principle" class="btn btn-primary" id="btn-xem-nangluc"><?php esc_html_e('Xem năng lực', 'yani-content'); ?></a>
-                <a href="<?php echo esc_url(home_url('/lien-he/')); ?>" class="btn btn-ghost" id="btn-lien-he">
-                    <span><?php esc_html_e('Liên hệ ngay', 'yani-content'); ?></span>                </a>
+                <a href="<?php echo esc_url(home_url('/lien-he/')); ?>" class="btn btn-ghost" id="btn-lien-he"><?php esc_html_e('Liên hệ ngay', 'yani-content'); ?></a>
             </div>
         </div>
     </section>

@@ -15,6 +15,17 @@ define('YANI_THEME_DIR', get_template_directory());
 define('YANI_THEME_URI', get_template_directory_uri());
 
 /**
+ * Helper: get file modification time as version for cache busting
+ */
+function yani_file_version($relative_path) {
+    $file = YANI_THEME_DIR . '/' . $relative_path;
+    if (file_exists($file)) {
+        return filemtime($file);
+    }
+    return YANI_THEME_VERSION;
+}
+
+/**
  * Theme Setup
  */
 function yani_theme_setup()
@@ -76,7 +87,7 @@ function yani_enqueue_scripts()
         'yani-main-style',
         YANI_THEME_URI . '/assets/css/main.css',
         array('yani-google-fonts'),
-        YANI_THEME_VERSION
+        yani_file_version('assets/css/main.css')
     );
 
     // Home page styles
@@ -85,7 +96,7 @@ function yani_enqueue_scripts()
             'yani-home-style',
             YANI_THEME_URI . '/assets/css/page-home.css',
             array('yani-main-style'),
-            YANI_THEME_VERSION
+            yani_file_version('assets/css/page-home.css')
         );
     }
 
@@ -95,7 +106,7 @@ function yani_enqueue_scripts()
             'yani-contact-style',
             YANI_THEME_URI . '/assets/css/page-contact.css',
             array('yani-main-style'),
-            YANI_THEME_VERSION
+            yani_file_version('assets/css/page-contact.css')
         );
     }
 
@@ -105,13 +116,13 @@ function yani_enqueue_scripts()
             'yani-about-style',
             YANI_THEME_URI . '/assets/css/page-about.css',
             array('yani-main-style'),
-            YANI_THEME_VERSION
+            yani_file_version('assets/css/page-about.css')
         );
         wp_enqueue_script(
             'yani-about-script',
             YANI_THEME_URI . '/assets/js/page-about.js',
             array(),
-            YANI_THEME_VERSION,
+            yani_file_version('assets/js/page-about.js'),
             true
         );
     }
@@ -122,13 +133,13 @@ function yani_enqueue_scripts()
             'yani-service-style',
             YANI_THEME_URI . '/assets/css/page-service.css',
             array('yani-main-style'),
-            YANI_THEME_VERSION
+            yani_file_version('assets/css/page-service.css')
         );
         wp_enqueue_script(
             'yani-service-script',
             YANI_THEME_URI . '/assets/js/page-service.js',
             array(),
-            YANI_THEME_VERSION,
+            yani_file_version('assets/js/page-service.js'),
             true
         );
     }
@@ -138,7 +149,7 @@ function yani_enqueue_scripts()
         'yani-style',
         get_stylesheet_uri(),
         array('yani-main-style'),
-        YANI_THEME_VERSION
+        yani_file_version('style.css')
     );
 
     // Main JS
@@ -146,7 +157,7 @@ function yani_enqueue_scripts()
         'yani-main-script',
         YANI_THEME_URI . '/assets/js/main.js',
         array(),
-        YANI_THEME_VERSION,
+        yani_file_version('assets/js/main.js'),
         true
     );
 
