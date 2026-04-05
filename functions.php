@@ -144,6 +144,36 @@ function yani_enqueue_scripts()
         );
     }
 
+    // Blog page styles
+    if (is_page_template('page-templates/page-blog.php')) {
+        wp_enqueue_style(
+            'yani-blog-style',
+            YANI_THEME_URI . '/assets/css/page-blog.css',
+            array('yani-main-style'),
+            yani_file_version('assets/css/page-blog.css')
+        );
+    }
+
+    // Blog Single post styles
+    if (is_singular('post')) {
+        wp_enqueue_style(
+            'yani-blog-single-style',
+            YANI_THEME_URI . '/assets/css/page-blog-single.css',
+            array('yani-main-style'),
+            yani_file_version('assets/css/page-blog-single.css')
+        );
+    }
+
+    // Strategy page styles
+    if (is_page_template('page-templates/page-strategy.php')) {
+        wp_enqueue_style(
+            'yani-strategy-style',
+            YANI_THEME_URI . '/assets/css/page-strategy.css',
+            array('yani-main-style'),
+            yani_file_version('assets/css/page-strategy.css')
+        );
+    }
+
     // Theme stylesheet (style.css)
     wp_enqueue_style(
         'yani-style',
@@ -210,6 +240,20 @@ function yani_get_theme_svg($svg_name)
 }
 
 /**
+ * Helper: Calculate reading time for a post
+ *
+ * @param string $content Post content
+ * @param int    $wpm     Words per minute (Vietnamese average)
+ * @return int Reading time in minutes
+ */
+function yani_get_reading_time($content = '', $wpm = 200)
+{
+    $word_count = str_word_count(strip_tags($content));
+    $reading_time = max(1, ceil($word_count / $wpm));
+    return $reading_time;
+}
+
+/**
  * Handle contact form submission via AJAX
  */
 function yani_handle_contact_form()
@@ -269,6 +313,15 @@ function yani_body_classes($classes)
     }
     if (is_page_template('page-templates/page-about.php')) {
         $classes[] = 'page-about';
+    }
+    if (is_page_template('page-templates/page-blog.php')) {
+        $classes[] = 'page-blog';
+    }
+    if (is_page_template('page-templates/page-strategy.php')) {
+        $classes[] = 'page-strategy';
+    }
+    if (is_singular('post')) {
+        $classes[] = 'page-blog-single';
     }
     return $classes;
 }
