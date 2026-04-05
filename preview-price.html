@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/page-price.css">
+    <link rel="stylesheet" href="assets/css/page-price.css?v=6">
 </head>
 
 <body class="page-price">
@@ -55,103 +55,116 @@
             <!-- ===== SECTION 2: TÓM TẮT 30 GIÂY ===== -->
             <section class="price-summary" id="price-summary">
                 <div class="container">
-                    <h2 class="price-summary__title"><span class="text-gradient">TÓM TẮT 30 GIÂY</span></h2>
-                    <div class="price-summary__grid">
-                        <!-- Row 1: 2 cards -->
-                        <!-- Card 1: Mức giá phổ biến -->
-                        <div class="price-summary__card price-summary__card--price" id="summary-price-range">
-                            <h3 class="price-summary__card-title">Mức giá phổ biến</h3>
-                            <span class="price-summary__card-sub">(tính theo 1.000 từ)</span>
-                            <div class="price-summary__card-body">
-                                <div class="price-summary__range-item">
-                                    <span class="price-summary__range-pill">120.000đ – 180.000đ</span>
-                                    <span class="price-summary__range-label">giá rẻ</span>
-                                </div>
-                                <div class="price-summary__range-item">
-                                    <span class="price-summary__range-pill">250.000đ – 300.000đ</span>
-                                    <span class="price-summary__range-label">tầm trung</span>
-                                </div>
-                                <div class="price-summary__range-item">
-                                    <span class="price-summary__range-pill">300.000đ – 500.000đ</span>
-                                    <span class="price-summary__range-label">bài "đinh" cần độ tin cậy/chuyển đổi</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 2: Chọn nhanh theo mục tiêu -->
-                        <div class="price-summary__card price-summary__card--goal" id="summary-quick-pick">
-                            <h3 class="price-summary__card-title">Chọn nhanh theo mục tiêu</h3>
-                            <div class="price-summary__card-body">
-                                <div class="price-summary__goal-item">
-                                    <span class="price-summary__goal-pill">Giá rẻ</span>
-                                    <span class="price-summary__goal-desc">duy trì nội dung</span>
-                                </div>
-                                <div class="price-summary__goal-divider"></div>
-                                <div class="price-summary__goal-item">
-                                    <span class="price-summary__goal-pill">Tầm trung</span>
-                                    <span class="price-summary__goal-desc">kéo lượt truy cập/giữ chất lượng ổn định</span>
-                                </div>
-                                <div class="price-summary__goal-divider"></div>
-                                <div class="price-summary__goal-item">
-                                    <span class="price-summary__goal-pill">Cao</span>
-                                    <span class="price-summary__goal-desc">bài "đinh" để tăng tin tưởng và điều hướng liên hệ</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Row 2: 3 cards -->
-                        <!-- Card 3: Giá thường bao gồm -->
-                        <div class="price-summary__card price-summary__card--include" id="summary-includes">
-                            <h3 class="price-summary__card-title">Giá thường bao gồm:</h3>
-                            <div class="price-summary__card-divider"></div>
-                            <div class="price-summary__card-body">
-                                <div class="price-summary__checklist">
-                                    <img src="assets/images/price/icon-check-list.svg" alt="" class="price-summary__checklist-icon">
-                                    <ul class="price-summary__checklist-list">
-                                        <li>Nghiên cứu từ khóa theo nhu cầu tìm kiếm.</li>
-                                        <li>Dàn ý (tùy mức).</li>
-                                        <li>Viết nội dung không trùng lặp.</li>
-                                        <li>Tối ưu tiêu đề–bố cục.</li>
-                                        <li>1–2 lần chỉnh sửa.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 4: Giá thường không bao gồm -->
-                        <div class="price-summary__card price-summary__card--exclude" id="summary-excludes">
-                            <h3 class="price-summary__card-title">Giá thường không bao gồm:</h3>
-                            <div class="price-summary__card-divider"></div>
-                            <div class="price-summary__card-body">
-                                <div class="price-summary__checklist price-summary__checklist--x">
-                                    <img src="assets/images/price/icon-x-list.svg" alt="" class="price-summary__checklist-icon">
-                                    <ul class="price-summary__checklist-list">
-                                        <li>Thiết kế hình ảnh độc quyền.</li>
-                                        <li>Đăng bài &amp; căn chỉnh giao diện trên website.</li>
-                                        <li>Tối ưu kỹ thuật toàn website (nếu có sẽ báo rõ trước).</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 5: Thời gian bàn giao -->
-                        <div class="price-summary__card price-summary__card--delivery" id="summary-delivery">
-                            <h3 class="price-summary__card-title">Thời gian bàn giao:</h3>
-                            <div class="price-summary__card-divider"></div>
-                            <div class="price-summary__card-body">
-                                <div class="price-summary__delivery">
-                                    <div class="price-summary__delivery-item">
-                                        <img src="assets/images/price/icon-clock-1.svg" alt="" class="price-summary__delivery-icon">
-                                        <p>Thường&nbsp;1–2 ngày/bài<br>(tùy mức &amp; độ khó).</p>
+                    <div class="price-summary__outer">
+                        <h2 class="price-summary__title"><span class="text-gradient">TÓM TẮT 30 GIÂY – MỨC GIÁ
+                                CONTENT</span></h2>
+                        <div class="price-summary__grid">
+                            <!-- Row 1: 2 cards -->
+                            <!-- Card 1: Mức giá phổ biến -->
+                            <div class="price-summary__card price-summary__card--price" id="summary-price-range">
+                                <h3 class="price-summary__card-title">Mức giá phổ biến</h3>
+                                <span class="price-summary__card-sub">(tính theo 1.000 từ)</span>
+                                <div class="price-summary__card-body">
+                                    <div class="price-summary__range-item">
+                                        <span class="price-summary__range-pill">120.000đ – 180.000đ</span>
+                                        <span class="price-summary__range-label">giá rẻ</span>
                                     </div>
-                                    <div class="price-summary__delivery-item">
-                                        <img src="assets/images/price/icon-clock-2.svg" alt="" class="price-summary__delivery-icon">
-                                        <p>Bài gấp/ngoài giờ có thể phát sinh phí.</p>
+                                    <div class="price-summary__range-item">
+                                        <span class="price-summary__range-pill">250.000đ – 300.000đ</span>
+                                        <span class="price-summary__range-label">tầm trung</span>
+                                    </div>
+                                    <div class="price-summary__range-item">
+                                        <span class="price-summary__range-pill">300.000đ – 500.000đ</span>
+                                        <span class="price-summary__range-label">bài "đinh" cần độ tin cậy/chuyển
+                                            đổi</span>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Card 2: Chọn nhanh theo mục tiêu -->
+                            <div class="price-summary__card price-summary__card--goal" id="summary-quick-pick">
+                                <h3 class="price-summary__card-title">Chọn nhanh theo mục tiêu</h3>
+                                <div class="price-summary__card-sub-spacer"></div>
+                                <div class="price-summary__card-body">
+                                    <div class="price-summary__goal-item">
+                                        <span class="price-summary__goal-pill">Giá rẻ</span>
+                                        <span class="price-summary__goal-desc">duy trì nội dung</span>
+                                    </div>
+                                    <div class="price-summary__goal-item">
+                                        <span class="price-summary__goal-pill">Tầm trung</span>
+                                        <span class="price-summary__goal-desc">kéo lượt truy cập/giữ chất lượng ổn
+                                            định</span>
+                                    </div>
+                                    <div class="price-summary__goal-item">
+                                        <span class="price-summary__goal-pill">Cao</span>
+                                        <span class="price-summary__goal-desc">bài “đinh” để tăng tin tưởng và điều
+                                            hướng liên hệ</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Row 2: 3 cards -->
+                            <!-- Card 3: Giá thường bao gồm -->
+                            <div class="price-summary__card price-summary__card--include" id="summary-includes">
+                                <h3 class="price-summary__card-title">Giá thường bao gồm:</h3>
+                                <div class="price-summary__card-divider"></div>
+                                <div class="price-summary__card-body">
+                                    <ul class="price-summary__checklist-list">
+                                        <li><img src="assets/images/price/price-faq-toggle.svg" alt=""
+                                                class="price-summary__checklist-icon">Nghiên cứu từ khóa theo nhu cầu
+                                            tìm kiếm.</li>
+                                        <li><img src="assets/images/price/price-faq-toggle.svg" alt=""
+                                                class="price-summary__checklist-icon">Dàn ý (tùy mức).</li>
+                                        <li><img src="assets/images/price/price-faq-toggle.svg" alt=""
+                                                class="price-summary__checklist-icon">Viết nội dung không trùng lặp.
+                                        </li>
+                                        <li><img src="assets/images/price/price-faq-toggle.svg" alt=""
+                                                class="price-summary__checklist-icon">Tối ưu tiêu đề–bố cục.</li>
+                                        <li><img src="assets/images/price/price-faq-toggle.svg" alt=""
+                                                class="price-summary__checklist-icon">1–2 lần chỉnh sửa.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Card 4: Giá thường không bao gồm -->
+                            <div class="price-summary__card price-summary__card--exclude" id="summary-excludes">
+                                <h3 class="price-summary__card-title">Giá thường không bao gồm:</h3>
+                                <div class="price-summary__card-divider"></div>
+                                <div class="price-summary__card-body">
+                                    <ul class="price-summary__checklist-list">
+                                        <li><img src="assets/images/price/price-faq-toggle.svg" alt=""
+                                                class="price-summary__checklist-icon">Thiết kế hình ảnh độc quyền.</li>
+                                        <li><img src="assets/images/price/price-faq-toggle.svg" alt=""
+                                                class="price-summary__checklist-icon">Đăng bài &amp; căn chỉnh giao diện
+                                            trên website.</li>
+                                        <li><img src="assets/images/price/price-faq-toggle.svg" alt=""
+                                                class="price-summary__checklist-icon">Tối ưu kỹ thuật toàn website (nếu
+                                            có sẽ báo rõ trước).</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Card 5: Thời gian bàn giao -->
+                            <div class="price-summary__card price-summary__card--delivery" id="summary-delivery">
+                                <h3 class="price-summary__card-title">Thời gian bàn giao:</h3>
+                                <div class="price-summary__card-divider"></div>
+                                <div class="price-summary__card-body">
+                                    <div class="price-summary__delivery">
+                                        <div class="price-summary__delivery-item">
+                                            <img src="assets/images/price/icon-clock-1.svg" alt=""
+                                                class="price-summary__delivery-icon">
+                                            <p>Thường&nbsp;1–2 ngày/bài<br>(tùy mức &amp; độ khó).</p>
+                                        </div>
+                                        <div class="price-summary__delivery-item">
+                                            <img src="assets/images/price/icon-clock-2.svg" alt=""
+                                                class="price-summary__delivery-icon">
+                                            <p>Bài gấp/ngoài giờ có thể phát sinh phí.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </div><!-- /.price-summary__outer -->
                 </div>
             </section>
 
@@ -186,13 +199,11 @@
             <section class="price-tiers" id="price-tiers">
                 <div class="container">
                     <div class="price-tiers__header">
-                        <span class="price-tiers__label text-gradient">theo mục tiêu</span>
-                        <h2 class="price-tiers__title">Chọn mức đầu tư</h2>
+                        <span class="price-tiers__label">Chọn mức đầu tư</span>
+                        <h2 class="price-tiers__title text-gradient">THEO MỤC TIÊU</h2>
                         <p class="price-tiers__desc">Đừng chọn gói rẻ nhất — hãy chọn gói giúp bạn&nbsp;đạt mục tiêu
                             nhanh hơn&nbsp;(tăng lượt truy cập, ra lead, hay chốt chuyển đổi). Dưới đây là 3 cấp độ nội
                             dung phổ biến tại Yani Content.</p>
-                        <p class="price-tiers__note">*Mức giá hiển thị theo "1000 từ" để bạn dễ dự toán. Chi phí chốt
-                            cuối cùng dựa trên độ khó ngành, mục tiêu bài viết và phạm vi công việc.</p>
                     </div>
 
                     <div class="price-tiers__grid">
@@ -222,6 +233,11 @@
                                     <li><img src="assets/images/price/check-features.svg" alt=""
                                             class="price-tiers__check">Bàn giao: 1–2 ngày</li>
                                 </ul>
+                                <div class="price-tiers__card-action">
+                                    <a href="#price-table-section"
+                                        class="price-tiers__btn-outline price-tiers__btn-card" id="btn-xem-bang-gia">Xem
+                                        giá theo độ dài &amp; số lượng</a>
+                                </div>
                             </div>
                         </div>
 
@@ -229,7 +245,7 @@
                         <div class="price-tiers__card price-tiers__card--featured" id="tier-growth">
                             <div class="price-tiers__card-badge">Khuyên dùng B2B</div>
                             <div class="price-tiers__card-frame">
-                                <img src="assets/images/price/pricing-card-bg.svg" alt="" class="price-tiers__card-bg">
+                                <!-- <img src="assets/images/price/pricing-card-bg.svg" alt="" class="price-tiers__card-bg"> -->
                                 <div class="price-tiers__card-header">
                                     <div class="price-tiers__card-divider"></div>
                                     <span class="price-tiers__card-level">TĂNG TRƯỞNG (GROWTH)</span>
@@ -253,8 +269,11 @@
                                     <li><img src="assets/images/price/check-features-3.svg" alt="">Bàn giao: 2–3 ngày
                                     </li>
                                 </ul>
+                                <div class="price-tiers__card-action">
+                                    <a href="#" class="price-tiers__btn-primary price-tiers__btn-card"
+                                        id="btn-tu-van">Tư vấn gói phù hợp mục tiêu</a>
+                                </div>
                             </div>
-                            <p class="price-tiers__card-trust">Được doanh nghiệp lựa chọn vì hiệu quả dài hạn</p>
                         </div>
 
                         <!-- Tier 3: Authority / Sales -->
@@ -294,17 +313,16 @@
                                             class="price-tiers__stat-label">Nghiệm thu theo checklist rõ ràng</span>
                                     </div>
                                 </div>
+                                <div class="price-tiers__card-action">
+                                    <a href="#" class="price-tiers__btn-outline price-tiers__btn-card"
+                                        id="btn-bao-gia">Nhận báo giá theo yêu cầu</a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Action buttons -->
-                    <div class="price-tiers__actions">
-                        <a href="#" class="price-tiers__btn-primary" id="btn-tu-van">Tư vấn gói phù hợp mục tiêu</a>
-                        <a href="#price-table-section" class="price-tiers__btn-outline" id="btn-xem-bang-gia">Xem bảng
-                            giá theo độ dài &amp; số lượng</a>
-                        <a href="#" class="price-tiers__btn-cta" id="btn-bao-gia">Nhận báo giá theo yêu cầu</a>
-                    </div>
+                    <p class="price-tiers__note price-tiers__note--below">*Mức giá hiển thị theo "1000 từ" để bạn dễ dự
+                        toán. Chi phí chốt cuối cùng dựa trên độ khó ngành, mục tiêu bài viết và phạm vi công việc.</p>
                 </div>
             </section>
 
@@ -368,70 +386,82 @@
                             <div class="price-table__head-cell price-table__head-cell--label">GHI CHÚ</div>
                         </div>
 
-                        <!-- Standard Row -->
-                        <div class="price-table__section-label">Mức giá phổ biến</div>
-                        <div class="price-table__row">
-                            <div class="price-table__cell price-table__cell--label">
-                                <strong>800 – 1.000 từ</strong>
+                        <div class="price-table__body">
+                            <!-- Card 1: Mức giá phổ biến -->
+                            <div class="price-table__card">
+                                <div class="price-table__section-label">Mức giá phổ biến</div>
+                                <div class="price-table__row">
+                                    <div class="price-table__cell price-table__cell--label">
+                                        <span class="price-table__pill">800 – 1.000 từ</span>
+                                    </div>
+                                    <div class="price-table__cell">150.000đ</div>
+                                    <div class="price-table__cell price-table__cell--highlight">145.000đ</div>
+                                    <div class="price-table__cell">140.000đ</div>
+                                    <div class="price-table__cell price-table__cell--note">Đủ ý, dễ đọc</div>
+                                </div>
+                                <div class="price-table__row">
+                                    <div class="price-table__cell price-table__cell--label">
+                                        <span class="price-table__pill">1.000 – 1.200 từ</span>
+                                    </div>
+                                    <div class="price-table__cell">180.000đ</div>
+                                    <div class="price-table__cell price-table__cell--highlight">170.000đ</div>
+                                    <div class="price-table__cell">160.000đ</div>
+                                    <div class="price-table__cell price-table__cell--note">Nội dung nền ổn định</div>
+                                </div>
                             </div>
-                            <div class="price-table__cell">150.000đ</div>
-                            <div class="price-table__cell price-table__cell--highlight">145.000đ</div>
-                            <div class="price-table__cell">140.000đ</div>
-                            <div class="price-table__cell price-table__cell--note" rowspan="2">Đủ ý, dễ đọc</div>
-                        </div>
-                        <div class="price-table__row">
-                            <div class="price-table__cell price-table__cell--label">
-                                <strong>1.000 – 1.200 từ</strong>
-                            </div>
-                            <div class="price-table__cell">180.000đ</div>
-                            <div class="price-table__cell price-table__cell--highlight">170.000đ</div>
-                            <div class="price-table__cell">160.000đ</div>
-                            <div class="price-table__cell price-table__cell--note">Nội dung nền ổn định</div>
-                        </div>
 
-                        <!-- Pro SEO Row -->
-                        <div class="price-table__section-label price-table__section-label--pro">PRO SEO (Traffic, bài
-                            dịch vụ, bài kỹ thuật)</div>
-                        <div class="price-table__row">
-                            <div class="price-table__cell price-table__cell--label">
-                                <strong>1.000 từ&nbsp;(phổ biến)</strong>
+                            <!-- Card 2: PRO SEO -->
+                            <div class="price-table__card">
+                                <div class="price-table__section-label price-table__section-label--pro">PRO SEO
+                                    (Traffic, bài dịch vụ, bài kỹ thuật)</div>
+                                <div class="price-table__row">
+                                    <div class="price-table__cell price-table__cell--label">
+                                        <span class="price-table__pill">1.000 từ&nbsp;(phổ biến)</span>
+                                    </div>
+                                    <div class="price-table__cell">250.000đ</div>
+                                    <div class="price-table__cell price-table__cell--highlight">240.000đ</div>
+                                    <div class="price-table__cell">230.000đ</div>
+                                    <div class="price-table__cell price-table__cell--note">Dàn ý duyệt trước + biên tập
+                                    </div>
+                                </div>
+                                <div class="price-table__row">
+                                    <div class="price-table__cell price-table__cell--label">
+                                        <span class="price-table__pill">1.500 từ</span>
+                                    </div>
+                                    <div class="price-table__cell">375.000đ</div>
+                                    <div class="price-table__cell price-table__cell--highlight">360.000đ</div>
+                                    <div class="price-table__cell">350.000đ</div>
+                                    <div class="price-table__cell price-table__cell--note">Phủ ngữ nghĩa liên quan</div>
+                                </div>
+                                <div class="price-table__row">
+                                    <div class="price-table__cell price-table__cell--label">
+                                        <span class="price-table__pill">2.000 từ</span>
+                                    </div>
+                                    <div class="price-table__cell">500.000đ</div>
+                                    <div class="price-table__cell price-table__cell--highlight">480.000đ</div>
+                                    <div class="price-table__cell">460.000đ</div>
+                                    <div class="price-table__cell price-table__cell--note">Chủ đề khó / cần kiểm tra kỹ
+                                    </div>
+                                </div>
                             </div>
-                            <div class="price-table__cell">250.000đ</div>
-                            <div class="price-table__cell price-table__cell--highlight">240.000đ</div>
-                            <div class="price-table__cell">230.000đ</div>
-                            <div class="price-table__cell price-table__cell--note" rowspan="3">Dàn ý duyệt trước + biên
-                                tập</div>
-                        </div>
-                        <div class="price-table__row">
-                            <div class="price-table__cell price-table__cell--label">
-                                <strong>1.500 từ</strong>
-                            </div>
-                            <div class="price-table__cell">375.000đ</div>
-                            <div class="price-table__cell price-table__cell--highlight">360.000đ</div>
-                            <div class="price-table__cell">350.000đ</div>
-                            <div class="price-table__cell price-table__cell--note">Phủ ngữ nghĩa liên quan</div>
-                        </div>
-                        <div class="price-table__row">
-                            <div class="price-table__cell price-table__cell--label">
-                                <strong>2.000 từ</strong>
-                            </div>
-                            <div class="price-table__cell">500.000đ</div>
-                            <div class="price-table__cell price-table__cell--highlight">480.000đ</div>
-                            <div class="price-table__cell">460.000đ</div>
-                            <div class="price-table__cell price-table__cell--note">Chủ đề khó / cần kiểm tra kỹ</div>
-                        </div>
 
-                        <!-- Authority Row -->
-                        <div class="price-table__section-label">AUTHORITY (LANDING/PILLAR, CHUYỂN ĐỔI, BRANDING)</div>
-                        <div class="price-table__row">
-                            <div class="price-table__cell price-table__cell--label">
-                                <strong>2.500 – 3.000+ từ</strong>
+                            <!-- Card 3: Authority -->
+                            <div class="price-table__card">
+                                <div class="price-table__section-label">AUTHORITY (Landing/Pillar, chuyển đổi, Branding)
+                                </div>
+                                <div class="price-table__row">
+                                    <div class="price-table__cell price-table__cell--label">
+                                        <span class="price-table__pill">2.500 – 3.000+ từ</span>
+                                    </div>
+                                    <div class="price-table__cell">800.000đ+</div>
+                                    <div class="price-table__cell price-table__cell--highlight">Deal riêng</div>
+                                    <div class="price-table__cell">Deal riêng</div>
+                                    <div class="price-table__cell price-table__cell--note">Khác biệt nội dung + trải
+                                        nghiệm trang</div>
+                                </div>
+                                <p class="price-table__card-note">Định giá dựa trên độ khó ngành và yêu cầu chuyên môn
+                                    cao</p>
                             </div>
-                            <div class="price-table__cell">800.000đ+</div>
-                            <div class="price-table__cell price-table__cell--highlight">Deal riêng</div>
-                            <div class="price-table__cell">Deal riêng</div>
-                            <div class="price-table__cell price-table__cell--note">Khác biệt nội dung + trải nghiệm
-                                trang</div>
                         </div>
                     </div>
 
@@ -447,8 +477,8 @@
             <section class="price-choose" id="price-choose">
                 <div class="container">
                     <div class="price-choose__header">
-                        <span class="price-choose__label text-gradient">cho đúng mục tiêu?</span>
                         <h2 class="price-choose__title">Nên chọn mức giá nào</h2>
+                        <span class="price-choose__label text-gradient">cho đúng mục tiêu?</span>
                         <p class="price-choose__desc">Chọn gói theo mục tiêu là cách tránh lãng phí. Bạn chỉ cần trả lời
                             2 câu:&nbsp;bài này để kéo người đọc hay để ra lead/chốt sale?&nbsp;và&nbsp;đây là bài phủ
                             số lượng hay bài "đinh"?</p>
@@ -456,100 +486,110 @@
 
                     <!-- Mục tiêu 1: Traffic -->
                     <div class="price-choose__block" id="choose-traffic">
-                        <div class="price-choose__block-header">
-                            <span class="price-choose__block-tag">Mục tiêu</span>
+                        <!-- Left: header -->
+                        <div class="price-choose__block-left">
+                            <span class="price-choose__block-tag">MỤC TIÊU</span>
                             <h3 class="price-choose__block-title">Tăng lượt truy cập (Traffic)</h3>
                             <p class="price-choose__block-desc">Bạn cần phủ chủ đề rộng, ưu tiên bài giải đáp nhanh và
                                 từ khóa dài để kéo traffic đều theo thời gian.</p>
                             <div class="price-choose__block-badge">Khuyên dùng: Mức Cơ bản hoặc Tiêu chuẩn</div>
                         </div>
-                        <div class="price-choose__block-compare">
-                            <img src="assets/images/price/icon-compare.svg" alt="" class="price-choose__compare-img">
-                            <div class="price-choose__compare-col">
-                                <h4 class="price-choose__compare-title">Chọn&nbsp;Cơ bản&nbsp;khi:</h4>
-                                <ul class="price-choose__compare-list">
-                                    <li><img src="assets/images/price/icon-check-green.svg" alt="">Chủ đề phổ thông, mục
-                                        tiêu "đăng đều"</li>
-                                    <li><img src="assets/images/price/icon-check-green-2.svg" alt="">Bạn cần số lượng
-                                        bài để phủ long-tail</li>
-                                </ul>
+                        <!-- Right: compare card -->
+                        <div class="price-choose__block-right">
+                            <div class="price-choose__compare-inner">
+                                <div class="price-choose__compare-col">
+                                    <h4 class="price-choose__compare-title">Chọn&nbsp;Cơ bản&nbsp;khi:</h4>
+                                    <ul class="price-choose__compare-list">
+                                        <li><img src="assets/images/price/icon-check-green.svg" alt="">Chủ đề phổ thông,
+                                            mục tiêu "đăng đều"</li>
+                                        <li><img src="assets/images/price/icon-check-green-2.svg" alt="">Bạn cần số
+                                            lượng bài để phủ long-tail</li>
+                                    </ul>
+                                </div>
+                                <div class="price-choose__compare-col">
+                                    <h4 class="price-choose__compare-title">Chọn&nbsp;Tiêu chuẩn&nbsp;khi:</h4>
+                                    <ul class="price-choose__compare-list">
+                                        <li><img src="assets/images/price/icon-check-green.svg" alt="">Muốn bài đủ sâu
+                                            để giữ người đọc, giảm thoát trang</li>
+                                        <li><img src="assets/images/price/icon-check-green-2.svg" alt="">Cần cấu trúc rõ
+                                            + tối ưu trải nghiệm đọc để lên hạng ổn định</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="price-choose__compare-col">
-                                <h4 class="price-choose__compare-title">Chọn&nbsp;Tiêu chuẩn&nbsp;khi:</h4>
-                                <ul class="price-choose__compare-list">
-                                    <li><img src="assets/images/price/icon-check-green.svg" alt="">Muốn bài đủ sâu để
-                                        giữ người đọc, giảm thoát trang</li>
-                                    <li><img src="assets/images/price/icon-check-green-2.svg" alt="">Cần cấu trúc rõ +
-                                        tối ưu trải nghiệm đọc để lên hạng ổn định</li>
-                                </ul>
-                            </div>
+                            <p class="price-choose__tip">Gợi ý nhanh:&nbsp;Dùng&nbsp;Tiêu chuẩn cho ~20%&nbsp;bài quan
+                                trọng nhất, còn lại dùng&nbsp;Cơ bản&nbsp;để phủ chủ đề.</p>
                         </div>
-                        <p class="price-choose__tip">Gợi ý nhanh:&nbsp;Dùng&nbsp;Tiêu chuẩn cho ~20%&nbsp;bài quan trọng
-                            nhất, còn lại dùng&nbsp;Cơ bản&nbsp;để phủ chủ đề.</p>
                     </div>
 
                     <!-- Mục tiêu 2: Leads -->
                     <div class="price-choose__block" id="choose-leads">
-                        <div class="price-choose__block-divider"></div>
-                        <div class="price-choose__block-header">
-                            <span class="price-choose__block-tag">Mục tiêu</span>
+                        <!-- Left: header -->
+                        <div class="price-choose__block-left">
+                            <span class="price-choose__block-tag">MỤC TIÊU</span>
                             <h3 class="price-choose__block-title">Có khách hàng<br>tiềm năng (Leads)</h3>
                             <p class="price-choose__block-desc">Bạn muốn người đọc không chỉ xem mà
                                 còn&nbsp;tin,&nbsp;hiểu&nbsp;và chủ động để lại thông tin/liên hệ.</p>
                             <div class="price-choose__block-badge">Khuyên dùng: Mức Tiêu chuẩn hoặc Chuyên sâu</div>
                         </div>
-                        <div class="price-choose__block-compare">
-                            <div class="price-choose__compare-col">
-                                <h4 class="price-choose__compare-title">Chọn&nbsp;Tiêu chuẩn&nbsp;khi:</h4>
-                                <ul class="price-choose__compare-list">
-                                    <li><img src="assets/images/price/icon-check-green.svg" alt="">Dịch vụ dễ hiểu, nhu
-                                        cầu tìm kiếm rõ</li>
-                                    <li><img src="assets/images/price/icon-check-green-2.svg" alt="">Cần "giải thích +
-                                        dẫn dắt hành động" là đủ</li>
+                        <!-- Right: compare card -->
+                        <div class="price-choose__block-right">
+                            <div class="price-choose__compare-inner">
+                                <div class="price-choose__compare-col">
+                                    <h4 class="price-choose__compare-title">Chọn&nbsp;Tiêu chuẩn&nbsp;khi:</h4>
+                                    <ul class="price-choose__compare-list">
+                                        <li><img src="assets/images/price/icon-check-green.svg" alt="">Dịch vụ dễ hiểu,
+                                            nhu cầu tìm kiếm rõ</li>
+                                        <li><img src="assets/images/price/icon-check-green-2.svg" alt="">Cần "giải thích
+                                            + dẫn dắt hành động" là đủ</li>
+                                    </ul>
+                                </div>
+                                <div class="price-choose__compare-col">
+                                    <h4 class="price-choose__compare-title">Chọn&nbsp;Chuyên sâu&nbsp;khi:</h4>
+                                    <ul class="price-choose__compare-list">
+                                        <li><img src="assets/images/price/icon-check-green.svg" alt="">Ngành khó / cần
+                                            ví dụ sát ngành để tăng tin tưởng</li>
+                                        <li><img src="assets/images/price/icon-check-green-2.svg" alt="">Bạn muốn tối ưu
+                                            CTA + điều hướng để ra lead tốt hơn</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-choose__lead-checklist">
+                                <h4>Để tránh "viết xong rồi để đó", bài Lead nên có tối thiểu:</h4>
+                                <ul>
+                                    <li><img src="assets/images/price/icon-check-green.svg" alt="">Nêu rõ vấn đề → giải
+                                        pháp (đúng ngữ cảnh doanh nghiệp)</li>
+                                    <li><img src="assets/images/price/icon-check-green.svg" alt="">CTA tự nhiên (tư vấn
+                                        / nhận báo giá / checklist / gọi lại)</li>
+                                    <li><img src="assets/images/price/icon-check-green.svg" alt="">Điều hướng đọc mạch
+                                        lạc để người xem đi đến hành động</li>
                                 </ul>
                             </div>
-                            <div class="price-choose__compare-col">
-                                <h4 class="price-choose__compare-title">Chọn&nbsp;Chuyên sâu&nbsp;khi:</h4>
-                                <ul class="price-choose__compare-list">
-                                    <li><img src="assets/images/price/icon-check-green.svg" alt="">Ngành khó / cần ví dụ
-                                        sát ngành để tăng tin tưởng</li>
-                                    <li><img src="assets/images/price/icon-check-green-2.svg" alt="">Bạn muốn tối ưu CTA
-                                        + điều hướng để ra lead tốt hơn</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="price-choose__lead-checklist">
-                            <h4>Để tránh "viết xong rồi để đó", bài Lead nên có tối thiểu:</h4>
-                            <ul>
-                                <li><img src="assets/images/price/icon-shield.svg" alt="">Nêu rõ vấn đề → giải pháp
-                                    (đúng ngữ cảnh doanh nghiệp)</li>
-                                <li><img src="assets/images/price/icon-shield.svg" alt="">CTA tự nhiên (tư vấn / nhận
-                                    báo giá / checklist / gọi lại)</li>
-                                <li><img src="assets/images/price/icon-shield.svg" alt="">Điều hướng đọc mạch lạc để
-                                    người xem đi đến hành động</li>
-                            </ul>
                         </div>
                     </div>
 
                     <!-- Mục tiêu 3: Authority -->
                     <div class="price-choose__block" id="choose-authority">
-                        <div class="price-choose__block-header">
-                            <span class="price-choose__block-tag">Mục tiêu</span>
+                        <!-- Left: header -->
+                        <div class="price-choose__block-left">
+                            <span class="price-choose__block-tag">MỤC TIÊU</span>
                             <h3 class="price-choose__block-title">Xây uy tín thương hiệu (Authority/Branding)</h3>
                             <p class="price-choose__block-desc">Bạn cần bài "đinh" để thể hiện năng lực: lập luận rõ, ví
                                 dụ cụ thể và ngôn ngữ đúng ngành.</p>
                             <div class="price-choose__block-badge">Ưu tiên: Mức Chuyên sâu</div>
                         </div>
-                        <div class="price-choose__block-signs">
-                            <h4>Dấu hiệu bạn nên chọn&nbsp;Chuyên sâu:</h4>
-                            <ul>
-                                <li><img src="assets/images/price/icon-shield-2.svg" alt="">Đối thủ đang viết rất sâu và
-                                    có ví dụ/số liệu</li>
-                                <li><img src="assets/images/price/icon-shield-2.svg" alt="">Ngành có rủi ro sai thông
-                                    tin (y tế, pháp lý, kỹ thuật, B2B phức tạp)</li>
-                                <li><img src="assets/images/price/icon-shield-2.svg" alt="">Đây là trang trụ
-                                    cột/landing/pillar ảnh hưởng trực tiếp chuyển đổi</li>
-                            </ul>
+                        <!-- Right: signs card -->
+                        <div class="price-choose__block-right">
+                            <div class="price-choose__block-signs">
+                                <h4>Dấu hiệu bạn nên chọn&nbsp;Chuyên sâu:</h4>
+                                <ul>
+                                    <li><img src="assets/images/price/icon-check-green.svg" alt="">Đối thủ đang viết rất
+                                        sâu và có ví dụ/số liệu</li>
+                                    <li><img src="assets/images/price/icon-check-green.svg" alt="">Ngành có rủi ro sai
+                                        thông tin (y tế, pháp lý, kỹ thuật, B2B phức tạp)</li>
+                                    <li><img src="assets/images/price/icon-check-green.svg" alt="">Đây là trang trụ
+                                        cột/landing/pillar ảnh hưởng trực tiếp chuyển đổi</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -608,64 +648,89 @@
                         </div>
                     </div>
 
-                    <!-- Not included -->
-                    <div class="price-includes__excluded">
-                        <h4 class="price-includes__excluded-title">Những hạng mục thường&nbsp;không&nbsp;bao gồm</h4>
-                        <div class="price-includes__excluded-content">
-                            <img src="assets/images/price/icon-x-list-2.svg" alt=""
-                                class="price-includes__excluded-icon">
-                            <ul>
-                                <li>Thiết kế hình ảnh độc quyền theo bộ nhận diện</li>
-                                <li>Đăng bài và căn chỉnh giao diện trên website</li>
-                                <li>Tối ưu kỹ thuật toàn website</li>
-                                <li>Seeding / chạy quảng cáo</li>
-                            </ul>
-                        </div>
-                        <p class="price-includes__excluded-note">Nếu bạn cần các hạng mục trên, có thể báo giá riêng
-                            theo phạm vi — không tự động phát sinh.</p>
-                    </div>
+                    <!-- Bottom 2-col grid -->
+                    <div class="price-includes__bottom-grid">
 
-                    <!-- Extra costs -->
-                    <div class="price-includes__extra">
-                        <h3 class="price-includes__extra-title">Trường hợp có thể phát sinh chi phí</h3>
-                        <div class="price-includes__extra-grid">
-                            <div class="price-includes__extra-item">
-                                <h4 class="price-includes__extra-name text-gradient">Bài gấp</h4>
-                                <p class="price-includes__extra-desc">Cần bài trong&nbsp;24h&nbsp;hoặc ngoài giờ làm
-                                    việc.</p>
-                                <span class="price-includes__extra-badge">tùy thời điểm</span>
+                        <!-- Left column: excluded + delivery stacked -->
+                        <div class="price-includes__left-col">
+                            <!-- Not included -->
+                            <div class="price-includes__excluded">
+                                <h4 class="price-includes__excluded-title">Những hạng mục thường&nbsp;không&nbsp;bao gồm
+                                </h4>
+                                <div class="price-includes__excluded-content">
+                                    <ul>
+                                        <li><img src="assets/images/price/price-check-circle-2.svg" alt=""
+                                                class="price-includes__list-icon">Thiết kế hình ảnh độc quyền theo bộ
+                                            nhận diện</li>
+                                        <li><img src="assets/images/price/price-check-circle-2.svg" alt=""
+                                                class="price-includes__list-icon">Đăng bài và căn chỉnh giao diện trên
+                                            website</li>
+                                        <li><img src="assets/images/price/price-check-circle-2.svg" alt=""
+                                                class="price-includes__list-icon">Tối ưu kỹ thuật toàn website</li>
+                                        <li><img src="assets/images/price/price-check-circle-2.svg" alt=""
+                                                class="price-includes__list-icon">Seeding / chạy quảng cáo</li>
+                                    </ul>
+                                </div>
+                                <p class="price-includes__excluded-note">Nếu bạn cần các hạng mục trên, có thể báo giá
+                                    riêng
+                                    theo phạm vi — không tự động phát sinh.</p>
                             </div>
-                            <div class="price-includes__extra-item">
-                                <h4 class="price-includes__extra-name text-gradient">Tham vấn / phỏng vấn để lấy thông
-                                    tin</h4>
-                                <p class="price-includes__extra-desc">Cần hỏi người có chuyên môn hoặc lấy dữ liệu thực
-                                    tế để đảm bảo đúng bối cảnh ngành.</p>
-                                <span class="price-includes__extra-badge">khi cần dữ liệu thật</span>
-                            </div>
-                            <div class="price-includes__extra-item">
-                                <h4 class="price-includes__extra-name text-gradient">Đổi hướng sau khi chốt dàn ý</h4>
-                                <p class="price-includes__extra-desc">Thay toàn bộ chủ đề/hướng triển khai khi bài đã
-                                    viết gần xong (hai bên sẽ thống nhất lại trước khi làm tiếp).</p>
-                                <span class="price-includes__extra-badge">tránh phát sinh</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Delivery time -->
-                    <div class="price-includes__delivery">
-                        <h4 class="price-includes__delivery-title">Thời gian bàn giao tham khảo</h4>
-                        <div class="price-includes__delivery-content">
-                            <img src="assets/images/price/icon-delivery.svg" alt=""
-                                class="price-includes__delivery-icon">
-                            <ul>
-                                <li>&nbsp;Cơ bản: 1–2 ngày</li>
-                                <li>Tiêu chuẩn: 2–3 ngày</li>
-                                <li>Chuyên sâu: 3–5 ngày</li>
-                            </ul>
-                        </div>
-                        <p class="price-includes__delivery-note">Mốc thời gian có thể thay đổi theo số lượng và độ khó
-                            chủ đề. Nếu cần gấp, vui lòng báo trước để xếp lịch.</p>
-                    </div>
+                            <!-- Delivery time -->
+                            <div class="price-includes__delivery">
+                                <h4 class="price-includes__delivery-title">Thời gian bàn giao tham khảo</h4>
+                                <div class="price-includes__delivery-content">
+                                    <ul>
+                                        <li><img src="assets/images/price/Group 321.png" alt=""
+                                                class="price-includes__list-icon">Cơ bản: 1–2 ngày</li>
+                                        <li><img src="assets/images/price/Group 321.png" alt=""
+                                                class="price-includes__list-icon">Tiêu chuẩn: 2–3 ngày</li>
+                                        <li><img src="assets/images/price/Group 321.png" alt=""
+                                                class="price-includes__list-icon">Chuyên sâu: 3–5 ngày</li>
+                                    </ul>
+                                </div>
+                                <p class="price-includes__delivery-note">Mốc thời gian có thể thay đổi theo số lượng và
+                                    độ khó
+                                    chủ đề. Nếu cần gấp, vui lòng báo trước để xếp lịch.</p>
+                            </div>
+                        </div><!-- /.price-includes__left-col -->
+
+                        <!-- Right column: extra costs -->
+                        <div class="price-includes__extra">
+                            <h3 class="price-includes__extra-title">Trường hợp có thể phát sinh chi phí</h3>
+                            <div class="price-includes__extra-list">
+                                <div class="price-includes__extra-item">
+                                    <div class="price-includes__extra-item-body">
+                                        <h4 class="price-includes__extra-name text-gradient">Bài gấp</h4>
+                                        <p class="price-includes__extra-desc">Cần bài trong&nbsp;24h&nbsp;hoặc ngoài giờ
+                                            làm việc.</p>
+                                    </div>
+                                    <span class="price-includes__extra-badge">tùy thời điểm</span>
+                                </div>
+                                <div class="price-includes__extra-item">
+                                    <div class="price-includes__extra-item-body">
+                                        <h4 class="price-includes__extra-name text-gradient">Tham vấn / phỏng vấn để lấy
+                                            thông tin</h4>
+                                        <p class="price-includes__extra-desc">Cần hỏi người có chuyên môn hoặc lấy dữ
+                                            liệu thực
+                                            tế để đảm bảo đúng bối cảnh ngành.</p>
+                                    </div>
+                                    <span class="price-includes__extra-badge">khi cần dữ liệu thật</span>
+                                </div>
+                                <div class="price-includes__extra-item">
+                                    <div class="price-includes__extra-item-body">
+                                        <h4 class="price-includes__extra-name text-gradient">Đổi hướng sau khi chốt dàn
+                                            ý</h4>
+                                        <p class="price-includes__extra-desc">Thay toàn bộ chủ đề/hướng triển khai khi
+                                            bài đã
+                                            viết gần xong (hai bên sẽ thống nhất lại trước khi làm tiếp).</p>
+                                    </div>
+                                    <span class="price-includes__extra-badge">tránh phát sinh</span>
+                                </div>
+                            </div>
+                        </div><!-- /.price-includes__extra -->
+
+                    </div><!-- /.price-includes__bottom-grid -->
                 </div>
             </section>
 
@@ -681,19 +746,30 @@
                             sửa/viết lại.</p>
                     </div>
 
-                    <div class="price-why__factors">
-                        <div class="price-why__factor">
-                            <img src="assets/images/price/icon-scope.svg" alt="" class="price-why__factor-icon">
-                            <div class="price-why__factor-content">
+                    <!-- 2-col 3-row grid for factors -->
+                    <div class="price-why__factors-grid">
+
+                        <!-- Card 1: Phạm vi công việc -->
+                        <div class="price-why__factor-card">
+                            <div class="price-why__factor-card-icon-wrap">
+                                <img src="assets/images/price/icon-mask-1.svg" alt=""
+                                    class="price-why__factor-card-icon">
+                            </div>
+                            <div class="price-why__factor-card-body">
                                 <h4 class="price-why__factor-title">Phạm vi công việc "gồm gì/không gồm gì"</h4>
                                 <p class="price-why__factor-desc">Có nơi chỉ viết theo từ khóa bạn đưa. Có nơi bao gồm
                                     thêm dàn ý duyệt trước, tối ưu tiêu đề–bố cục, gợi ý liên kết nội bộ, và chỉnh sửa
                                     theo góp ý.&nbsp;Phạm vi càng rõ&nbsp;thì giá càng sát thực tế và ít phát sinh.</p>
                             </div>
                         </div>
-                        <div class="price-why__factor">
-                            <img src="assets/images/price/icon-goal.svg" alt="" class="price-why__factor-icon">
-                            <div class="price-why__factor-content">
+
+                        <!-- Card 2: Mục tiêu bài viết -->
+                        <div class="price-why__factor-card">
+                            <div class="price-why__factor-card-icon-wrap">
+                                <img src="assets/images/price/icon-mask-2.svg" alt=""
+                                    class="price-why__factor-card-icon">
+                            </div>
+                            <div class="price-why__factor-card-body">
                                 <h4 class="price-why__factor-title">Mục tiêu bài viết: cung cấp thông tin hay tạo khách
                                     hàng?</h4>
                                 <p class="price-why__factor-desc">Nếu mục tiêu chỉ là duy trì nội dung, bài sẽ ưu tiên
@@ -702,9 +778,14 @@
                                     thì yêu cầu về&nbsp;thuyết phục&nbsp;và&nbsp;chỉnh sửa&nbsp;càng cao.</p>
                             </div>
                         </div>
-                        <div class="price-why__factor">
-                            <img src="assets/images/price/icon-depth.svg" alt="" class="price-why__factor-icon">
-                            <div class="price-why__factor-content">
+
+                        <!-- Card 3: Độ sâu nội dung -->
+                        <div class="price-why__factor-card">
+                            <div class="price-why__factor-card-icon-wrap">
+                                <img src="assets/images/price/icon-mask-3.svg" alt=""
+                                    class="price-why__factor-card-icon">
+                            </div>
+                            <div class="price-why__factor-card-body">
                                 <h4 class="price-why__factor-title">Độ sâu nội dung: "đủ đọc" hay "đủ thuyết phục"</h4>
                                 <p class="price-why__factor-desc">Bài tổng hợp cơ bản thường chỉ trả lời bề mặt. Bài
                                     chất lượng cao cần ví dụ rõ, lập luận mạch lạc và trả lời đúng câu hỏi người tìm
@@ -712,9 +793,13 @@
                                     không phải nhồi chữ.</p>
                             </div>
                         </div>
-                        <div class="price-why__factor">
-                            <img src="assets/images/price/icon-revision.svg" alt="" class="price-why__factor-icon">
-                            <div class="price-why__factor-content">
+
+                        <!-- Card 4: Số lần chỉnh sửa -->
+                        <div class="price-why__factor-card">
+                            <div class="price-why__factor-card-icon-wrap">
+                                <img src="assets/images/price/vali.png" alt="" class="price-why__factor-card-icon">
+                            </div>
+                            <div class="price-why__factor-card-body">
                                 <h4 class="price-why__factor-title">Số lần chỉnh sửa &amp; trách nhiệm sau bàn giao</h4>
                                 <p class="price-why__factor-desc">Giá rẻ thường "giao xong là hết". Giá cao hơn thường
                                     đi kèm quy định rõ về số lần chỉnh sửa, tiêu chí nghiệm thu và cách xử lý khi bài
@@ -722,9 +807,13 @@
                                     ro&nbsp;và tiết kiệm thời gian vận hành về sau.</p>
                             </div>
                         </div>
-                        <div class="price-why__factor">
-                            <img src="assets/images/price/icon-difficulty.svg" alt="" class="price-why__factor-icon">
-                            <div class="price-why__factor-content">
+
+                        <!-- Card 5: Độ khó ngành -->
+                        <div class="price-why__factor-card">
+                            <div class="price-why__factor-card-icon-wrap">
+                                <img src="assets/images/price/search.png" alt="" class="price-why__factor-card-icon">
+                            </div>
+                            <div class="price-why__factor-card-body">
                                 <h4 class="price-why__factor-title">Độ khó ngành &amp; mức độ kiểm chứng thông tin</h4>
                                 <p class="price-why__factor-desc">Ngành càng đặc thù hoặc dễ gây hiểu nhầm (kỹ thuật, y
                                     tế, pháp lý, B2B…) càng cần kiểm tra ngữ cảnh và độ chính xác kỹ hơn. Chi phí tăng
@@ -732,21 +821,21 @@
                                     hơn".</p>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Quick tips -->
-                    <div class="price-why__tips">
-                        <img src="assets/images/price/icon-quick-tip.svg" alt="" class="price-why__tips-icon">
-                        <h4 class="price-why__tips-title">Gợi ý chọn nhanh<br>để không<br>"thấy đắt":</h4>
-                        <ul class="price-why__tips-list">
-                            <li>Nếu bạn cần&nbsp;đăng đều&nbsp;và chủ đề đơn giản: ưu tiên phạm vi gọn, bàn giao nhanh.
-                            </li>
-                            <li>Nếu bạn cần&nbsp;tăng traffic: hãy hỏi rõ có dàn ý duyệt trước, tối ưu bố cục và liên
-                                kết nội bộ hay không.</li>
-                            <li>Nếu bạn cần&nbsp;lead/uy tín: ưu tiên tiêu chuẩn nghiệm thu và số lần chỉnh sửa thay vì
-                                chỉ so "giá/1000 từ".</li>
-                        </ul>
-                    </div>
+                        <!-- Card 6: Quick Tips (bottom-right cell) -->
+                        <div class="price-why__factor-card price-why__factor-card--tips">
+                            <h4 class="price-why__tips-title">Gợi ý chọn nhanh<br>để không<br>"thấy đắt":</h4>
+                            <ul class="price-why__tips-list">
+                                <li>Nếu bạn cần&nbsp;đăng đều&nbsp;và chủ đề đơn giản: ưu tiên phạm vi gọn, bàn giao
+                                    nhanh.</li>
+                                <li>Nếu bạn cần&nbsp;tăng traffic: hãy hỏi rõ có dàn ý duyệt trước, tối ưu bố cục và
+                                    liên kết nội bộ hay không.</li>
+                                <li>Nếu bạn cần&nbsp;lead/uy tín: ưu tiên tiêu chuẩn nghiệm thu và số lần chỉnh sửa thay
+                                    vì chỉ so "giá/1000 từ".</li>
+                            </ul>
+                        </div>
+
+                    </div><!-- /.price-why__factors-grid -->
                 </div>
             </section>
 
@@ -831,8 +920,6 @@
                                 lại — tiết kiệm chi phí vận hành về sau.</p>
                         </div>
                     </div>
-                    <a href="#" class="price-compare__cta-link">Nhận tư vấn chọn mức phù hợp <img
-                            src="assets/images/price/cta-arrow.svg" alt=""></a>
                 </div>
             </section>
 
