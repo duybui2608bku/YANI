@@ -174,6 +174,16 @@ function yani_enqueue_scripts()
         );
     }
 
+    // Price page styles
+    if (is_page_template('page-templates/page-price.php')) {
+        wp_enqueue_style(
+            'yani-price-style',
+            YANI_THEME_URI . '/assets/css/page-price.css',
+            array('yani-main-style'),
+            yani_file_version('assets/css/page-price.css')
+        );
+    }
+
     // Theme stylesheet (style.css)
     wp_enqueue_style(
         'yani-style',
