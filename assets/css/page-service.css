@@ -132,6 +132,12 @@
     object-fit: fill;
 }
 
+@media (max-width: 1200px) {
+    .service-hero__infinity {
+        display: none;
+    }
+}
+
 .service-hero__breadcrumb {
     font-family: var(--font-family);
     font-weight: 600;
@@ -277,8 +283,8 @@
 
 .service-packages__grid {
     display: grid;
-    grid-template-columns: 364px 420px 364px;
-    gap: 0;
+    grid-template-columns: 365px 420px 365px;
+    gap: 30px;
     justify-content: center;
     align-items: start;
     position: relative;
@@ -294,10 +300,18 @@
     position: relative;
     background: var(--color-bg-card-solid);
     border-radius: var(--radius-md);
-    border: 0.2px solid;
-    border-image: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%) 1;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 4px 20px,
+        rgba(0, 0, 0, 0.4) 0px 2px 6px,
+        rgba(255, 255, 255, 0.06) 0px 0px 0px 1px inset,
+        rgba(255, 255, 255, 0.08) 0px 1px 2px inset,
+        rgba(0, 255, 180, 0.12) 0px 0px 10px inset;
     padding: 36px;
     min-height: 641px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .service-packages__card--featured .service-packages__card-inner {
@@ -560,11 +574,16 @@
 }
 
 .service-problems__card-inner {
-    background: linear-gradient(145deg, rgba(22, 54, 41, 0.05) 9%, rgba(11, 31, 23, 0.6) 91%);
-    border-radius: var(--radius-md);
-    border: 0.2px solid;
-    border-image: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%) 1;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 4px 20px,
+        rgba(0, 0, 0, 0.4) 0px 2px 6px,
+        rgba(255, 255, 255, 0.06) 0px 0px 0px 1px inset,
+        rgba(255, 255, 255, 0.08) 0px 1px 2px inset,
+        rgba(0, 255, 180, 0.12) 0px 0px 10px inset;
     padding: 40px 32px;
+    border-radius: var(--radius-md);
     height: 100%;
     text-align: center;
 }
@@ -676,6 +695,13 @@
     gap: 0;
 }
 
+
+@media (max-width: 1200px) {
+    .service-fs__left {
+        gap: 20px;
+    }
+}
+
 .service-fs__right {
     position: relative;
 }
@@ -704,11 +730,7 @@
 }
 
 .service-features__card-mask {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    pointer-events: none;
+    display: none;
 }
 
 .service-features__card-mask img {
@@ -718,12 +740,7 @@
 .service-features__card-content {
     position: relative;
     z-index: 2;
-    padding-left: 126px;
-}
-
-.service-features__card:nth-child(2) .service-features__card-content {
-    padding-left: 0;
-    padding-top: 10px;
+    padding-left: 130px;
 }
 
 .service-features__card:nth-child(2) .service-features__card-mask {
@@ -884,10 +901,25 @@
     inset: 0;
     background: rgba(15, 42, 32, 0.2);
     border-radius: var(--radius-md);
-    border: 0.2px solid;
-    border-image: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%) 1;
-    box-shadow: inset 10px 1px 13px 0px rgba(47, 143, 91, 1);
+    /* box-shadow: inset 10px 1px 13px 0px rgba(47, 143, 91, 1); */
     z-index: -1;
+}
+
+/* Middle column (col2) full-height highlight strip */
+.service-comparison__table::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 33.333%;
+    width: 33.334%;
+    background-image: url('../images/service/comparison-col-highlight.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    pointer-events: none;
+    border-radius: var(--radius-md);
 }
 
 .service-comparison__table-header {
@@ -895,6 +927,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 16px 20px;
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    z-index: 1;
 }
 
 .service-comparison__table-header span {
@@ -919,6 +953,8 @@
     padding: 16px 20px;
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .service-comparison__table-row:last-child {
@@ -938,7 +974,6 @@
 
 /* Highlight col2 in rows */
 .service-comparison__table-row .service-comparison__table-col2 {
-    background: linear-gradient(145deg, rgba(22, 54, 41, 0) 9%, rgba(15, 42, 32, 1) 91%);
     padding: 12px;
     border-radius: var(--radius-md);
 }
@@ -989,7 +1024,6 @@
 }
 
 .service-testimonials__stars {
-    text-align: center;
     margin-bottom: 32px;
 }
 
@@ -1148,6 +1182,8 @@
     border: none;
     cursor: pointer;
     border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: none;
     transition: all 0.3s ease;
 }
 
@@ -1156,7 +1192,7 @@
     font-weight: 600;
     font-size: var(--font-size-h5);
     line-height: var(--line-height-h5);
-    color: var(--color-text-primary);
+    color: #5EE0B6;
     text-align: left;
 }
 
@@ -1182,7 +1218,6 @@
 .service-faq__item--open {
     background: rgba(15, 42, 32, 0.2);
     border: 0.2px solid rgba(255, 255, 255, 0.15);
-    border-image: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%) 1;
     box-shadow: inset -6px 1px 13px 0px rgba(47, 143, 91, 1);
     border-radius: var(--radius-md);
 }
@@ -1193,7 +1228,7 @@
 }
 
 .service-faq__item--open .service-faq__question span {
-    background: radial-gradient(circle at 17% -19%, rgba(94, 224, 182, 1) 0%, rgba(15, 42, 32, 1) 100%);
+    background: radial-gradient(circle, #5EE0B6 0%, #5EE0B6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1713,7 +1748,111 @@
     .service-bgr-banggia {
         display: none;
     }
+
+    /* ===== FEATURE CARDS: Ẩn background image, dùng CSS gradient ===== */
+    .service-features__card-bg {
+        display: none;
+    }
+
+    .service-features__card {
+        background: linear-gradient(135deg, rgba(22, 54, 41, 0.6) 0%, rgba(15, 42, 32, 0.9) 100%);
+        border: 1px solid rgba(94, 224, 182, 0.12);
+        box-shadow:
+            rgba(0, 0, 0, 0.3) 0px 4px 20px,
+            rgba(94, 224, 182, 0.06) 0px 0px 0px 1px inset;
+    }
+
+    .service-features__card-content {
+        padding-left: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    /* ===== COMPARISON TABLE: Mobile layout ===== */
+    /* Ẩn highlight pseudo-element ở mobile */
+    .service-comparison__table::after {
+        display: none;
+    }
+
+    /* Mỗi row = 1 card stacked dọc */
+    .service-comparison__table-header {
+        display: none;
+    }
+
+    .service-comparison__table-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        border-bottom: none;
+        background: rgba(15, 42, 32, 0.3);
+        border-radius: var(--radius-md);
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .service-comparison__table-row:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Tiêu chí (col1) = header của card */
+    .service-comparison__table-row .service-comparison__table-col1 {
+        display: block;
+        background: rgba(94, 224, 182, 0.08);
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+        padding: 10px 16px;
+        font-size: var(--font-size-body-s);
+        font-weight: 600;
+        color: #5EE0B6;
+        text-align: left;
+    }
+
+    /* Wrapper cho 2 cột so sánh */
+    .service-comparison__table-row .service-comparison__table-col2,
+    .service-comparison__table-row .service-comparison__table-col3 {
+        display: block;
+        padding: 10px 16px;
+        font-size: var(--font-size-body-s);
+        text-align: left;
+        border-radius: 0;
+    }
+
+    /* Col2 (Yani) có label trước */
+    .service-comparison__table-row .service-comparison__table-col2::before {
+        content: 'Yani Content';
+        display: block;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #5EE0B6;
+        margin-bottom: 4px;
+        opacity: 0.8;
+    }
+
+    /* Col3 có label và divider */
+    .service-comparison__table-row .service-comparison__table-col3::before {
+        content: 'Giải pháp đại trà';
+        display: block;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: rgba(255, 255, 255, 0.4);
+        margin-bottom: 4px;
+        opacity: 0.8;
+    }
+
+    .service-comparison__table-row .service-comparison__table-col3 {
+        border-top: 0.5px solid rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.45);
+    }
+
+    /* Col2 text nổi bật hơn */
+    .service-comparison__table-row .service-comparison__table-col2 {
+        color: var(--color-text-primary);
+    }
 }
+
 
 @media (max-width: 575px) {
 
@@ -1758,5 +1897,15 @@
     .container {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    /* Comparison table extra small adjustments */
+    .service-comparison__table-row .service-comparison__table-col1 {
+        font-size: 13px;
+    }
+
+    .service-comparison__table-row .service-comparison__table-col2,
+    .service-comparison__table-row .service-comparison__table-col3 {
+        font-size: 13px;
     }
 }

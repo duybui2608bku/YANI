@@ -1195,7 +1195,7 @@
 /* ========================================
    RESPONSIVE - Tablet (≤991px)
    ======================================== */
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
     .strategy-hero__title {
         font-size: 28px;
     }
@@ -1220,7 +1220,8 @@
     }
 
     .strategy-method__pillar:not(:last-child)::before {
-        padding-right: 0.5px; /* restore right border */
+        padding-right: 0.5px;
+        /* restore right border */
     }
 
     .strategy-scope__table-header,
@@ -1289,7 +1290,7 @@
 /* ========================================
    RESPONSIVE - Mobile (≤767px)
    ======================================== */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .strategy-hero {
         padding: 40px 0 30px;
     }
@@ -1372,7 +1373,8 @@
     }
 
     .strategy-expect__item:not(:last-child)::before {
-        padding-right: 0.5px; /* restore right border */
+        padding-right: 0.5px;
+        /* restore right border */
     }
 
     .strategy-overview__objective-items {
@@ -1395,7 +1397,7 @@
 /* ========================================
    RESPONSIVE - Small Mobile (≤575px)
    ======================================== */
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
     .strategy-hero__title {
         font-size: 20px;
     }
@@ -1403,5 +1405,662 @@
     .strategy-next__cta-btn {
         font-size: 12px;
         padding: 6px 16px;
+    }
+}
+
+/* ========================================
+   EDITABLE INPUT / PRINT STYLES
+   ======================================== */
+.editable-input {
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px dashed rgba(94, 224, 182, 0.3);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    outline: none;
+    transition: 0.2s;
+}
+
+.editable-input:focus {
+    border-color: #5EE0B6;
+    background: rgba(94, 224, 182, 0.05);
+}
+
+/* ========================================
+   PRINT-ONLY HEADER (logo công ty)
+   ======================================== */
+.print-header {
+    display: none; /* Ẩn trên web */
+}
+
+/* ========================================
+   PRINT STYLES - Hóa đơn thuần (Invoice)
+   ======================================== */
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 12mm 15mm;
+    }
+
+    /* === RESET NỀN: trắng, chữ đen === */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+        background: transparent !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    html, body {
+        width: 100% !important;
+        min-width: 0 !important;
+        background: #fff !important;
+        background-color: #fff !important;
+        color: #1a1a1a !important;
+        font-size: 12px !important;
+        line-height: 1.5 !important;
+    }
+
+    body {
+        zoom: 1 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* === HIỆN logo header cho bản in === */
+    .print-header {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 16px 0;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #2a7d5a;
+    }
+
+    .print-header__logo img {
+        height: 32px;
+        width: auto;
+    }
+
+    .print-header__info {
+        text-align: right;
+        font-size: 10px;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    /* === ẨN các phần không cần === */
+    .site-header,
+    .site-footer,
+    #wpadminbar,
+    .strategy-next__cta-btn,
+    .strategy-hero__logo,
+    .strategy-hero__badge,
+    .strategy-next,
+    .strategy-overview__quote-icon,
+    .strategy-method__pillar::before,
+    .strategy-expect__item::before,
+    .strategy-status__risk-card::before,
+    .strategy-status__risk-card::after,
+    .strategy-scope__table::before,
+    .strategy-delivery__card::before,
+    .strategy-pricing__box::before,
+    .strategy-next__content::before,
+    .strategy-next__launch-number::before,
+    .strategy-overview__objective-card .strategy-overview__objective-item img,
+    .strategy-delivery__column-item img,
+    .strategy-status__risk-item img,
+    .strategy-expect__item-icon {
+        display: none !important;
+    }
+
+    /* === Container reset === */
+    .container {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+
+    .strategy-page {
+        overflow: visible !important;
+    }
+
+    /* === Màu chữ toàn bộ === */
+    h1, h2, h3, h4, h5, h6,
+    p, span, div, label, a,
+    .strategy-section-header__title,
+    .strategy-section-header__number,
+    .strategy-hero__title,
+    .strategy-hero__desc,
+    .strategy-overview__info-label,
+    .strategy-overview__info-value,
+    .strategy-overview__quote-text,
+    .strategy-overview__objective-label,
+    .strategy-overview__objective-item span,
+    .strategy-status__item-label,
+    .strategy-status__item-value,
+    .strategy-status__risk-label,
+    .strategy-status__risk-item,
+    .strategy-method__pillar-tag,
+    .strategy-method__pillar-title,
+    .strategy-method__pillar-desc,
+    .strategy-scope__subtitle,
+    .strategy-scope__package-label,
+    .strategy-scope__table-header-cell,
+    .strategy-scope__table-cell,
+    .strategy-scope__table-cell--label,
+    .strategy-scope__table-cell--muted,
+    .strategy-scope__table-cell--strikethrough,
+    .strategy-timeline__week-label,
+    .strategy-timeline__week-desc,
+    .strategy-timeline__report-label,
+    .strategy-timeline__report-value,
+    .strategy-delivery__column-item,
+    .strategy-expect__item-text,
+    .strategy-expect__note,
+    .strategy-pricing__number-big,
+    .strategy-pricing__section-title,
+    .strategy-pricing__box-label,
+    .strategy-pricing__box-value,
+    .strategy-next__note {
+        color: #1a1a1a !important;
+        -webkit-text-fill-color: #1a1a1a !important;
+        background: none !important;
+        -webkit-background-clip: unset !important;
+        background-clip: unset !important;
+    }
+
+    /* Các text label muted nhạt hơn 1 chút */
+    .strategy-overview__info-label,
+    .strategy-status__item-label,
+    .strategy-status__risk-label,
+    .strategy-scope__subtitle,
+    .strategy-timeline__report-label,
+    .strategy-expect__note,
+    .strategy-next__note,
+    .strategy-scope__table-cell--muted {
+        color: #555 !important;
+        -webkit-text-fill-color: #555 !important;
+    }
+
+    /* === HERO section dạng tiêu đề hóa đơn === */
+    .strategy-hero {
+        padding: 0 !important;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .strategy-hero__title {
+        font-size: 22px !important;
+        font-weight: 700 !important;
+        color: #1a1a1a !important;
+        -webkit-text-fill-color: #1a1a1a !important;
+        margin-bottom: 8px !important;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 8px;
+    }
+
+    .strategy-hero__desc {
+        font-size: 11px !important;
+        color: #555 !important;
+        -webkit-text-fill-color: #555 !important;
+        max-width: 100% !important;
+    }
+
+    /* === SECTION HEADER (số + tiêu đề) === */
+    .strategy-section-header {
+        margin-bottom: 12px !important;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 6px;
+        flex-direction: row !important;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .strategy-section-header__number {
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        color: #2a7d5a !important;
+        -webkit-text-fill-color: #2a7d5a !important;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+    }
+
+    .strategy-section-header__title {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+    }
+
+    /* === Sections padding giảm === */
+    section {
+        padding: 12px 0 !important;
+    }
+
+    /* === 01 - TỔNG QUAN: bảng thông tin === */
+    .strategy-overview__info-grid {
+        display: table !important;
+        width: 100% !important;
+        border-collapse: collapse !important;
+        margin-bottom: 16px !important;
+    }
+
+    .strategy-overview__info-item {
+        display: table-cell !important;
+        border: 1px solid #ddd !important;
+        padding: 8px 12px !important;
+        vertical-align: top;
+        width: 25%;
+    }
+
+    .strategy-overview__info-item::before {
+        display: none !important;
+    }
+
+    .strategy-overview__info-label {
+        font-size: 10px !important;
+        font-weight: 700 !important;
+        margin-bottom: 4px !important;
+    }
+
+    .strategy-overview__info-value {
+        font-size: 11px !important;
+    }
+
+    /* Quote text */
+    .strategy-overview__quote {
+        margin-bottom: 16px !important;
+        padding: 10px 14px;
+        border-left: 3px solid #2a7d5a;
+        gap: 0 !important;
+    }
+
+    .strategy-overview__quote-text {
+        font-size: 11px !important;
+        font-style: italic;
+    }
+
+    /* Mục tiêu dự án */
+    .strategy-overview__objective-card {
+        border: 1px solid #ddd !important;
+        border-radius: 0 !important;
+        padding: 10px 14px !important;
+        gap: 8px !important;
+    }
+
+    .strategy-overview__objective-label {
+        border: none !important;
+        padding: 0 !important;
+        font-size: 12px !important;
+        font-weight: 700 !important;
+    }
+
+    .strategy-overview__objective-item {
+        gap: 6px !important;
+    }
+
+    .strategy-overview__objective-item span {
+        font-size: 11px !important;
+    }
+
+    .strategy-overview__objective-item::before {
+        content: "✓";
+        color: #2a7d5a;
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    /* === 02 - HIỆN TRẠNG : bảng === */
+    .strategy-status__grid {
+        display: table !important;
+        width: 100% !important;
+        border-collapse: collapse !important;
+        margin-bottom: 12px !important;
+    }
+
+    .strategy-status__item {
+        display: table-cell !important;
+        border: 1px solid #ddd !important;
+        padding: 8px 12px !important;
+        vertical-align: top;
+    }
+
+    .strategy-status__item::before {
+        display: none !important;
+    }
+
+    .strategy-status__item-label {
+        font-size: 10px !important;
+        font-weight: 700 !important;
+    }
+
+    .strategy-status__item-value {
+        font-size: 11px !important;
+    }
+
+    /* Rủi ro card */
+    .strategy-status__risk-card {
+        border: 1px solid #ddd !important;
+        border-radius: 0 !important;
+        padding: 10px 14px !important;
+        gap: 6px !important;
+    }
+
+    .strategy-status__risk-label {
+        border: none !important;
+        padding: 0 !important;
+        font-weight: 700 !important;
+        font-size: 12px !important;
+    }
+
+    .strategy-status__risk-item {
+        font-size: 11px !important;
+    }
+
+    .strategy-status__risk-item::before {
+        content: "⚠";
+        margin-right: 6px;
+        font-size: 11px;
+    }
+
+    /* === 03 - PHƯƠNG PHÁP: bảng 3 cột === */
+    .strategy-method__pillars {
+        display: table !important;
+        width: 100% !important;
+        border-collapse: collapse !important;
+        max-width: 100% !important;
+    }
+
+    .strategy-method__pillar {
+        display: table-cell !important;
+        border: 1px solid #ddd !important;
+        border-radius: 0 !important;
+        padding: 10px 14px !important;
+        margin-left: 0 !important;
+        min-height: 0 !important;
+        vertical-align: top;
+        width: 33.33%;
+    }
+
+    .strategy-method__pillar:hover {
+        transform: none !important;
+    }
+
+    .strategy-method__pillar-tag {
+        font-size: 10px !important;
+        font-weight: 700 !important;
+        color: #2a7d5a !important;
+        -webkit-text-fill-color: #2a7d5a !important;
+        margin-bottom: 4px !important;
+    }
+
+    .strategy-method__pillar-title {
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        margin-bottom: 4px !important;
+    }
+
+    .strategy-method__pillar-desc {
+        font-size: 11px !important;
+        padding-right: 0 !important;
+    }
+
+    /* === 04 - PHẠM VI: bảng thuần === */
+    .strategy-scope__package-label {
+        font-size: 13px !important;
+        margin-top: 8px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .strategy-scope__table {
+        border: 1px solid #ddd !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        overflow: visible !important;
+    }
+
+    .strategy-scope__table-header {
+        display: grid !important;
+        grid-template-columns: 1.4fr 1fr 1.2fr 1fr !important;
+        border-bottom: 2px solid #2a7d5a !important;
+        padding: 8px 12px !important;
+    }
+
+    .strategy-scope__table-header-cell {
+        font-size: 10px !important;
+        font-weight: 700 !important;
+        color: #2a7d5a !important;
+        -webkit-text-fill-color: #2a7d5a !important;
+        display: block !important;
+    }
+
+    .strategy-scope__table-row {
+        display: grid !important;
+        grid-template-columns: 1.4fr 1fr 1.2fr 1fr !important;
+        border: none !important;
+        border-bottom: 1px solid #eee !important;
+        border-radius: 0 !important;
+        padding: 6px 12px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .strategy-scope__table-row:last-child {
+        border-bottom: none !important;
+    }
+
+    .strategy-scope__table-cell {
+        font-size: 11px !important;
+    }
+
+    .strategy-scope__table-cell--strikethrough {
+        text-decoration: line-through !important;
+        color: #999 !important;
+        -webkit-text-fill-color: #999 !important;
+    }
+
+    .strategy-scope__table-cell::before {
+        display: none !important;
+    }
+
+    /* === 05 - QUY TRÌNH === */
+    .strategy-timeline__content {
+        display: table !important;
+        width: 100% !important;
+        border-collapse: collapse !important;
+    }
+
+    .strategy-timeline__block {
+        display: table-cell !important;
+        border: 1px solid #ddd !important;
+        border-radius: 0 !important;
+        padding: 8px 12px !important;
+        vertical-align: top;
+    }
+
+    .strategy-timeline__block::before {
+        display: none !important;
+    }
+
+    .strategy-timeline__week-label {
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        color: #2a7d5a !important;
+        -webkit-text-fill-color: #2a7d5a !important;
+        margin-bottom: 4px !important;
+    }
+
+    .strategy-timeline__week-desc {
+        font-size: 11px !important;
+    }
+
+    .strategy-timeline__report {
+        margin-top: 10px !important;
+    }
+
+    .strategy-timeline__report-item {
+        padding: 6px 0 !important;
+    }
+
+    .strategy-timeline__report-item::before {
+        display: none !important;
+    }
+
+    .strategy-timeline__report-label {
+        font-size: 10px !important;
+        font-weight: 700 !important;
+    }
+
+    .strategy-timeline__report-value {
+        font-size: 11px !important;
+    }
+
+    /* === 06 - TIÊU CHUẨN BÀN GIAO === */
+    .strategy-delivery__card {
+        border: 1px solid #ddd !important;
+        border-radius: 0 !important;
+        padding: 10px 14px !important;
+    }
+
+    .strategy-delivery__columns {
+        gap: 20px !important;
+    }
+
+    .strategy-delivery__column-item {
+        font-size: 11px !important;
+        gap: 6px !important;
+        line-height: 1.8 !important;
+    }
+
+    .strategy-delivery__column-item::before {
+        content: "✓";
+        color: #2a7d5a;
+        font-weight: 700;
+        font-size: 12px;
+        flex-shrink: 0;
+    }
+
+    /* === 07 - KỲ VỌNG === */
+    .strategy-expect__grid {
+        display: table !important;
+        width: 100% !important;
+        border-collapse: collapse !important;
+        max-width: 100% !important;
+        margin: 0 0 10px !important;
+    }
+
+    .strategy-expect__item {
+        display: table-cell !important;
+        border: 1px solid #ddd !important;
+        border-radius: 0 !important;
+        padding: 8px 12px !important;
+        margin-left: 0 !important;
+        min-height: 0 !important;
+        vertical-align: top;
+    }
+
+    .strategy-expect__item:hover {
+        transform: none !important;
+    }
+
+    .strategy-expect__item-text {
+        font-size: 11px !important;
+        padding: 0 !important;
+        text-align: left !important;
+    }
+
+    .strategy-expect__note {
+        font-size: 10px !important;
+        text-transform: none !important;
+    }
+
+    /* === 08 & 09 - BÁO GIÁ & ĐẦU MỐI === */
+    .strategy-pricing__divider {
+        display: none !important;
+    }
+
+    .strategy-pricing__header-row {
+        margin-bottom: 12px !important;
+        gap: 12px !important;
+    }
+
+    .strategy-pricing__number-big {
+        font-size: 22px !important;
+        color: #2a7d5a !important;
+        -webkit-text-fill-color: #2a7d5a !important;
+    }
+
+    .strategy-pricing__section-title {
+        font-size: 14px !important;
+    }
+
+    .strategy-pricing__boxes {
+        gap: 12px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .strategy-pricing__box {
+        border: 1px solid #ddd !important;
+        border-radius: 0 !important;
+    }
+
+    .strategy-pricing__contact-item {
+        padding: 6px 12px !important;
+        border-bottom: 1px solid #eee !important;
+    }
+
+    .strategy-pricing__contact-item:last-child {
+        border-bottom: none !important;
+    }
+
+    .strategy-pricing__box-label {
+        font-size: 10px !important;
+        font-weight: 700 !important;
+        color: #2a7d5a !important;
+        -webkit-text-fill-color: #2a7d5a !important;
+        margin-bottom: 2px !important;
+    }
+
+    .strategy-pricing__box-value {
+        font-size: 12px !important;
+        border: none !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    /* === INPUT xóa viền === */
+    .editable-input {
+        border: none !important;
+        padding: 0 !important;
+        background: transparent !important;
+        color: #1a1a1a !important;
+        -webkit-text-fill-color: #1a1a1a !important;
+    }
+
+    /* === Chống cắt trang === */
+    section,
+    .strategy-method__pillar,
+    .strategy-expect__item,
+    .strategy-status__risk-card,
+    .strategy-scope__table-row,
+    .strategy-delivery__card,
+    .strategy-overview__objective-card,
+    .strategy-pricing__boxes {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    /* === Footer ghi chú cho bản in === */
+    .strategy-next__note {
+        font-size: 10px !important;
+        border-top: 1px solid #ddd;
+        padding-top: 8px;
+        margin-top: 8px !important;
     }
 }

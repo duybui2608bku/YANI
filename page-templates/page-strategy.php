@@ -41,19 +41,19 @@ get_header();
             <div class="strategy-overview__info-grid">
                 <div class="strategy-overview__info-item" id="info-khach-hang">
                     <div class="strategy-overview__info-label">KHÁCH HÀNG</div>
-                    <div class="strategy-overview__info-value">Nhập tên doanh nghiệp...</div>
+                    <div class="strategy-overview__info-value"><input type="text" class="editable-input" placeholder="Nhập tên doanh nghiệp..."></div>
                 </div>
                 <div class="strategy-overview__info-item" id="info-website">
                     <div class="strategy-overview__info-label">WEBSITE</div>
-                    <div class="strategy-overview__info-value">www.yourwebsite.com</div>
+                    <div class="strategy-overview__info-value"><input type="text" class="editable-input" value="www.yourwebsite.com"></div>
                 </div>
                 <div class="strategy-overview__info-item" id="info-nganh-nghe">
                     <div class="strategy-overview__info-label">NGÀNH NGHỀ</div>
-                    <div class="strategy-overview__info-value">Ví dụ: Xây dựng, B2B,...</div>
+                    <div class="strategy-overview__info-value"><input type="text" class="editable-input" placeholder="Ví dụ: Xây dựng, B2B,..."></div>
                 </div>
                 <div class="strategy-overview__info-item" id="info-thoi-gian">
                     <div class="strategy-overview__info-label">THỜI GIAN ĐỀ XUẤT</div>
-                    <div class="strategy-overview__info-value">Ví dụ: Tháng 03/2026...</div>
+                    <div class="strategy-overview__info-value"><input type="text" class="editable-input" placeholder="Ví dụ: Tháng 03/2026..."></div>
                 </div>
             </div>
 
@@ -104,15 +104,15 @@ get_header();
             <div class="strategy-status__grid">
                 <div class="strategy-status__item" id="status-traffic">
                     <div class="strategy-status__item-label">TRAFFIC HIỆN TẠI<br>(SỐ LIỆU / CHƯA CÓ DỮ LIỆU)</div>
-                    <div class="strategy-status__item-value">...</div>
+                    <div class="strategy-status__item-value"><input type="text" class="editable-input" placeholder="..."></div>
                 </div>
                 <div class="strategy-status__item" id="status-baiviet">
                     <div class="strategy-status__item-label">SỐ LƯỢNG BÀI VIẾT HIỆN CÓ</div>
-                    <div class="strategy-status__item-value">...</div>
+                    <div class="strategy-status__item-value"><input type="text" class="editable-input" placeholder="..."></div>
                 </div>
                 <div class="strategy-status__item" id="status-tinhtrang">
                     <div class="strategy-status__item-label">TÌNH TRẠNG NỘI DUNG HIỆN TẠI</div>
-                    <div class="strategy-status__item-value">...</div>
+                    <div class="strategy-status__item-value"><input type="text" class="editable-input" placeholder="..."></div>
                 </div>
             </div>
 
@@ -182,7 +182,7 @@ get_header();
                 <p class="strategy-scope__subtitle">Phạm vi dịch vụ trên tập trung vào Content chiến lược và tối ưu onpage nội dung, không bao gồm SEO technical tổng thể hoặc hoạt động backlink.</p>
             </div>
 
-            <p class="strategy-scope__package-label">Gói đề xuất: ...&nbsp;</p>
+            <p class="strategy-scope__package-label">Gói đề xuất: <input type="text" class="editable-input" style="width: auto; min-width: 200px;" placeholder="...">&nbsp;</p>
 
             <div class="strategy-scope__table" id="scope-table">
                 <div class="strategy-scope__table-header">
@@ -194,21 +194,21 @@ get_header();
 
                 <div class="strategy-scope__table-row">
                     <span class="strategy-scope__table-cell strategy-scope__table-cell--label" data-label="HẠNG MỤC">RESEARCH TỪ KHÓA</span>
-                    <span class="strategy-scope__table-cell strategy-scope__table-cell--muted" data-label="KHỐI LƯỢNG">...</span>
+                    <span class="strategy-scope__table-cell strategy-scope__table-cell--muted" data-label="KHỐI LƯỢNG"><input type="text" class="editable-input" placeholder="..."></span>
                     <span class="strategy-scope__table-cell" data-label="BAO GỒM">RESEARCH TỪ KHÓA</span>
                     <span class="strategy-scope__table-cell strategy-scope__table-cell--strikethrough" data-label="KHÔNG BAO GỒM">Seo technical tổng thể</span>
                 </div>
 
                 <div class="strategy-scope__table-row">
                     <span class="strategy-scope__table-cell strategy-scope__table-cell--label" data-label="HẠNG MỤC">VIẾT BÀI SEO</span>
-                    <span class="strategy-scope__table-cell strategy-scope__table-cell--muted" data-label="KHỐI LƯỢNG">... bài/tháng</span>
+                    <span class="strategy-scope__table-cell strategy-scope__table-cell--muted" data-label="KHỐI LƯỢNG"><input type="text" class="editable-input" placeholder="... bài/tháng"></span>
                     <span class="strategy-scope__table-cell" data-label="BAO GỒM">1.500–3.000+ TỪ/BÀI</span>
                     <span class="strategy-scope__table-cell strategy-scope__table-cell--strikethrough" data-label="KHÔNG BAO GỒM">Thiết kế banner</span>
                 </div>
 
                 <div class="strategy-scope__table-row">
                     <span class="strategy-scope__table-cell strategy-scope__table-cell--label" data-label="HẠNG MỤC">TỐI ƯU ONPAGE</span>
-                    <span class="strategy-scope__table-cell strategy-scope__table-cell--muted" data-label="KHỐI LƯỢNG">Bao gồm</span>
+                    <span class="strategy-scope__table-cell strategy-scope__table-cell--muted" data-label="KHỐI LƯỢNG"><input type="text" class="editable-input" value="Bao gồm"></span>
                     <span class="strategy-scope__table-cell" data-label="BAO GỒM">TITLE, META, HEADING, INTERNAL LINK</span>
                     <span class="strategy-scope__table-cell strategy-scope__table-cell--strikethrough" data-label="KHÔNG BAO GỒM">Seo technical tổng thể</span>
                 </div>
@@ -355,29 +355,29 @@ get_header();
                 <div class="strategy-pricing__box" id="pricing-box-left">
                     <div class="strategy-pricing__contact-item">
                         <div class="strategy-pricing__box-label">GÓI PHÙ HỢP</div>
-                        <div class="strategy-pricing__box-value">...</div>
+                        <div class="strategy-pricing__box-value"><input type="text" class="editable-input" placeholder="..."></div>
                     </div>
                     <div class="strategy-pricing__contact-item">
                         <div class="strategy-pricing__box-label">NGÂN SÁCH (VNĐ/THÁNG)</div>
-                        <div class="strategy-pricing__box-value">0.000.000</div>
+                        <div class="strategy-pricing__box-value"><input type="text" class="editable-input" value="0.000.000"></div>
                     </div>
                     <div class="strategy-pricing__contact-item" style="border-bottom: none;">
                         <div class="strategy-pricing__box-label">THỜI GIAN TỐI THIỂU KHUYẾN NGHỊ</div>
-                        <div class="strategy-pricing__box-value">3–6 tháng</div>
+                        <div class="strategy-pricing__box-value"><input type="text" class="editable-input" value="3–6 tháng"></div>
                     </div>
                 </div>
                 <div class="strategy-pricing__box" id="pricing-box-right">
                     <div class="strategy-pricing__contact-item">
                         <div class="strategy-pricing__box-label">PROJECT OWNER</div>
-                        <div class="strategy-pricing__box-value">...</div>
+                        <div class="strategy-pricing__box-value"><input type="text" class="editable-input" placeholder="..."></div>
                     </div>
                     <div class="strategy-pricing__contact-item">
                         <div class="strategy-pricing__box-label">SĐT / ZALO</div>
-                        <div class="strategy-pricing__box-value">...</div>
+                        <div class="strategy-pricing__box-value"><input type="text" class="editable-input" placeholder="..."></div>
                     </div>
                     <div class="strategy-pricing__contact-item" style="border-bottom: none;">
                         <div class="strategy-pricing__box-label">EMAIL</div>
-                        <div class="strategy-pricing__box-value">...</div>
+                        <div class="strategy-pricing__box-value"><input type="text" class="editable-input" placeholder="..."></div>
                     </div>
                 </div>
             </div>
@@ -405,7 +405,7 @@ get_header();
                 </div>
 
                 <!-- Right: CTA button -->
-                <a href="#" class="strategy-next__cta-btn" id="btn-approve">Phê duyệt đề xuất (in pdf)</a>
+                <a href="#" onclick="window.print(); return false;" class="strategy-next__cta-btn" id="btn-approve">Phê duyệt đề xuất (in pdf)</a>
 
             </div>
 

@@ -244,12 +244,14 @@
 .home-partner__card {
     width: 397px;
     border-radius: 8px;
-    /* Glassmorphism effect */
-    background: rgba(22, 54, 41, 0.25);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 4px 20px,
+        rgba(0, 0, 0, 0.4) 0px 2px 6px,
+        rgba(255, 255, 255, 0.06) 0px 0px 0px 1px inset,
+        rgba(255, 255, 255, 0.08) 0px 1px 2px inset,
+        rgba(0, 255, 180, 0.12) 0px 0px 10px inset;
     position: relative;
     padding: 40px 40px 37px;
     display: flex;
@@ -380,25 +382,23 @@
     inset: 0;
     border-radius: 8px;
     padding: 1px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask-composite: exclude;
-    pointer-events: none;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 4px 20px,
+        rgba(0, 0, 0, 0.4) 0px 2px 6px,
+        rgba(255, 255, 255, 0.06) 0px 0px 0px 1px inset,
+        rgba(255, 255, 255, 0.08) 0px 1px 2px inset,
+        rgba(0, 255, 180, 0.12) 0px 0px 10px inset;
 }
 
-/* Green glow at bottom of card */
-.home-pain__card::after {
+Green glow at bottom of card .home-pain__card::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 10%;
     width: 80%;
     height: 1px;
-    background: linear-gradient(90deg, transparent 0%, rgba(47, 143, 91, 0.8) 50%, transparent 100%);
-    box-shadow: 0 0 15px 3px rgba(47, 143, 91, 0.4), 0 0 30px 6px rgba(47, 143, 91, 0.2);
-    pointer-events: none;
 }
 
 /* Pain card icons — large decorative illustration style from Figma */
@@ -951,6 +951,22 @@
     padding: 80px 0 100px;
 }
 
+.home-pricing::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1982px;
+    height: 1500px;
+    background-image: url('../images/home/bgr-bang-gia.svg');
+    background-size: 1982px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    pointer-events: none;
+}
+
 .home-pricing .container {
     position: relative;
     z-index: 2;
@@ -969,7 +985,6 @@
     letter-spacing: -0.3%;
     text-transform: uppercase;
     color: #E6F4EE;
-    /* match the services header */
     margin: 0 0 2px 0;
 }
 
@@ -1008,7 +1023,13 @@
 
 .home-pricing__card {
     border-radius: 8px;
-    background: linear-gradient(145deg, rgba(22, 54, 41, 0.05) 9%, rgba(15, 42, 32, 1) 91%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 2px 1px rgba(255, 255, 255, 0.2);
     padding: 32px 28px;
     display: flex;
     flex-direction: column;
@@ -1903,7 +1924,7 @@
         gap: 8px;
     }
 
-    .home-case__card-company > div {
+    .home-case__card-company>div {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1926,8 +1947,10 @@
 
     .home-case__card-arrow {
         transform: rotate(90deg);
-        margin: -12px auto; /* Pull it slightly vertically and center horizontally */
-        width: 40px; /* Resize arrow to fit mobile */
+        margin: -12px auto;
+        /* Pull it slightly vertically and center horizontally */
+        width: 40px;
+        /* Resize arrow to fit mobile */
         height: 40px;
     }
 

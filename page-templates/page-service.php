@@ -13,13 +13,6 @@ $img = $t . '/assets/images/service';
 
 <main id="primary" class="site-main service-page">
 
-    <!-- Background decorations -->
-    <img src="<?php echo $img; ?>/spotlight-hero.svg" class="service-spotlight service-spotlight--hero" alt="" aria-hidden="true">
-    <img src="<?php echo $img; ?>/spotlight-2.svg" class="service-spotlight service-spotlight--2" alt="" aria-hidden="true">
-    <img src="<?php echo $img; ?>/spotlight-3.svg" class="service-spotlight service-spotlight--3" alt="" aria-hidden="true">
-    <img src="<?php echo $img; ?>/spotlight-4.svg" class="service-spotlight service-spotlight--4" alt="" aria-hidden="true">
-    <img src="<?php echo $img; ?>/spotlight-5.svg" class="service-spotlight service-spotlight--5" alt="" aria-hidden="true">
-
     <!-- Background gradient vectors -->
     <div class="service-bgr-banggia" aria-hidden="true">
         <img src="<?php echo $img; ?>/bgr-vector-1.svg" class="service-bgr-banggia__v1" alt="">
@@ -282,7 +275,7 @@ $img = $t . '/assets/images/service';
                 <div class="service-fs__left">
                     <div class="service-features__card" id="feature-intent">
                         <div class="service-features__card-bg">
-                            <img src="<?php echo $img; ?>/feature-card-bg.svg" alt="" aria-hidden="true">
+                            <img src="<?php echo $img; ?>/phan-tich-nhu-cau.png" alt="" aria-hidden="true">
                         </div>
                         <div class="service-features__card-mask">
                             <img src="<?php echo $img; ?>/feature-mask-1.svg" alt="" aria-hidden="true">
@@ -295,7 +288,7 @@ $img = $t . '/assets/images/service';
 
                     <div class="service-features__card" id="feature-tone">
                         <div class="service-features__card-bg">
-                            <img src="<?php echo $img; ?>/feature-card-bg-2.svg" alt="" aria-hidden="true">
+                            <img src="<?php echo $img; ?>/bg-van-phong-chuyen-nghiep.png" alt="" aria-hidden="true">
                         </div>
                         <div class="service-features__card-mask">
                             <img src="<?php echo $img; ?>/feature-mask-2.svg" alt="" aria-hidden="true">
@@ -308,7 +301,7 @@ $img = $t . '/assets/images/service';
 
                     <div class="service-features__card" id="feature-cluster">
                         <div class="service-features__card-bg">
-                            <img src="<?php echo $img; ?>/feature-card-bg-3.svg" alt="" aria-hidden="true">
+                            <img src="<?php echo $img; ?>/bg-bai-tru-cot.png" alt="" aria-hidden="true">
                         </div>
                         <div class="service-features__card-mask">
                             <img src="<?php echo $img; ?>/feature-mask-3.svg" alt="" aria-hidden="true">
