@@ -13,7 +13,19 @@ get_header();
 
 <main id="primary" class="site-main strategy-page">
 
+    <!-- ===== PRINT-ONLY HEADER (chỉ hiện khi in PDF) ===== -->
+    <div class="print-header">
+        <div class="print-header__logo">
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/header/Group 7.png" alt="Yani Content">
+        </div>
+        <div class="print-header__info">
+            Yani Content &mdash; Giải pháp nội dung SEO<br>
+            www.yanicontent.com
+        </div>
+    </div>
+
     <!-- ===== HERO SECTION ===== -->
+
     <section class="strategy-hero" id="strategy-hero">
         <div class="container">
             <div class="strategy-hero__logo">

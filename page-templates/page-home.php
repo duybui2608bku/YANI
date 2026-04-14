@@ -14,8 +14,7 @@ get_header();
             <!-- Background decorations -->
             <div class="home-bg-vo-cuc home-bg-vo-cuc--top" aria-hidden="true"></div>
             <div class="home-bg-vo-cuc home-bg-vo-cuc--bottom" aria-hidden="true"></div>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/home/spotlight-hero.svg" class="home-spotlight home-spotlight--hero" alt=""
-                aria-hidden="true">
+            <?php /* spotlight-hero disabled */ ?>
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/home/spotlight-2.svg" class="home-spotlight home-spotlight--2" alt=""
                 aria-hidden="true">
 
