@@ -486,49 +486,47 @@ get_header();
                     </div>
 
                     <div class="home-blog__grid">
-                        <!-- Blog card 1 -->
-                        <div class="home-blog__card" id="blog-card-1">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/home/blog-card-img-1.svg" alt="" class="home-blog__card-img">
+                        <?php
+                        $fallback_imgs = array(
+                            'blog-card-img-1.svg',
+                            'blog-card-img-2.svg',
+                            'blog-card-img-3.svg',
+                        );
+                        $home_blog_query = new WP_Query(array(
+                            'post_type'      => 'post',
+                            'posts_per_page' => 3,
+                            'post_status'    => 'publish',
+                            'orderby'        => 'date',
+                            'order'          => 'DESC',
+                        ));
+                        $card_index = 0;
+                        if ($home_blog_query->have_posts()):
+                            while ($home_blog_query->have_posts()): $home_blog_query->the_post();
+                                $fallback = $fallback_imgs[$card_index % 3];
+                        ?>
+                        <div class="home-blog__card" id="blog-card-<?php echo $card_index + 1; ?>">
+                            <?php if (has_post_thumbnail()): ?>
+                                <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>"
+                                    alt="<?php the_title_attribute(); ?>" class="home-blog__card-img">
+                            <?php else: ?>
+                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/home/<?php echo esc_attr($fallback); ?>"
+                                    alt="" class="home-blog__card-img">
+                            <?php endif; ?>
                             <div class="home-blog__card-body">
-                                <h3 class="home-blog__card-title">Cách chọn mức giá viết bài chuẩn SEO để không "mua
-                                    sai"</h3>
-                                <p class="home-blog__card-desc">Checklist chọn gói theo mục tiêu: traffic – lead –
-                                    branding. Tránh phí ẩn và giảm chi phí sửa lại.</p>
-                                <a href="#" class="home-blog__card-link">
+                                <h3 class="home-blog__card-title"><?php the_title(); ?></h3>
+                                <p class="home-blog__card-desc"><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
+                                <a href="<?php the_permalink(); ?>" class="home-blog__card-link">
                                     ĐỌC BÀI
                                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/home/arrow-right-green.svg" alt="">
                                 </a>
                             </div>
                         </div>
-
-                        <!-- Blog card 2 -->
-                        <div class="home-blog__card" id="blog-card-2">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/home/blog-card-img-2.svg" alt="" class="home-blog__card-img">
-                            <div class="home-blog__card-body">
-                                <h3 class="home-blog__card-title">Nội dung "người thật" khác gì nội dung tổng hợp?</h3>
-                                <p class="home-blog__card-desc">Dấu hiệu nhận biết bài có insight, ví dụ sát ngành và
-                                    tạo tin tưởng — nhất là B2B/YMYL.</p>
-                                <a href="#" class="home-blog__card-link">
-                                    ĐỌC BÀI
-                                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/home/arrow-right-green.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Blog card 3 -->
-                        <div class="home-blog__card" id="blog-card-3">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/home/blog-card-img-3.svg" alt="" class="home-blog__card-img">
-                            <div class="home-blog__card-body">
-                                <h3 class="home-blog__card-title">5 thay đổi UX nhỏ giúp bài viết tăng thời gian đọc
-                                </h3>
-                                <p class="home-blog__card-desc">Tối ưu bố cục và điều hướng CTA giúp tăng trải nghiệm
-                                    đọc cho người dùng.</p>
-                                <a href="#" class="home-blog__card-link">
-                                    ĐỌC BÀI
-                                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/home/arrow-right-green.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
+                        <?php
+                                $card_index++;
+                            endwhile;
+                            wp_reset_postdata();
+                        endif;
+                        ?>
                     </div>
                 </div>
             </section>
