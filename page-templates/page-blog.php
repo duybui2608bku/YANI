@@ -64,6 +64,9 @@ if (!empty($current_cat) && $current_cat !== 'tat-ca') {
     $posts_args['category_name'] = $current_cat;
 }
 $posts_query = new WP_Query($posts_args);
+
+$featured_post_id = 0;
+$topic_post_ids = array();
 ?>
 
 <main id="primary" class="site-main blog-page">
@@ -101,30 +104,76 @@ $posts_query = new WP_Query($posts_args);
             <div class="blog-main__layout">
 
                 <!-- LEFT: Featured Pillar Card -->
-                <?php if ($pillar_query->have_posts()): while ($pillar_query->have_posts()): $pillar_query->the_post();
-                    $cats = get_the_category();
-                    $cat_name = !empty($cats) ? $cats[0]->name : 'Bài trụ cột (Pillar)';
-                    $reading_time = yani_get_reading_time(get_the_content());
+                <?php
+                $featured_rendered = false;
+                if ($pillar_query->have_posts()):
+                    while ($pillar_query->have_posts()): $pillar_query->the_post();
+                        $featured_post_id = get_the_ID();
+                        $featured_rendered = true;
+                        $cats = get_the_category();
+                        $cat_name = !empty($cats) ? $cats[0]->name : 'Bài trụ cột (Pillar)';
+                        $reading_time = yani_get_reading_time(get_the_content());
                 ?>
-                    <a href="<?php the_permalink(); ?>" class="blog-featured-card" id="featured-pillar">
-                        <?php if (has_post_thumbnail()): ?>
-                            <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>"
-                                alt="<?php the_title_attribute(); ?>" class="blog-featured-card__img">
-                        <?php else: ?>
-                            <img src="<?php echo $theme_url; ?>/assets/images/blog/blog-featured-img-1.svg"
-                                alt="<?php the_title_attribute(); ?>" class="blog-featured-card__img">
-                        <?php endif; ?>
-                        <div class="blog-featured-card__body">
-                            <span class="blog-featured-card__category"><?php echo esc_html($cat_name); ?></span>
-                            <h2 class="blog-featured-card__title"><?php the_title(); ?></h2>
-                            <p class="blog-featured-card__excerpt"><?php echo wp_trim_words(get_the_excerpt(), 30); ?></p>
-                            <div class="blog-featured-card__meta">
-                                <span class="blog-featured-card__badge">Cập nhật <?php echo esc_html(get_the_modified_date('Y')); ?></span>
-                                <span class="blog-featured-card__badge"><?php echo esc_html($reading_time); ?> phút đọc</span>
+                        <a href="<?php the_permalink(); ?>" class="blog-featured-card" id="featured-pillar">
+                            <?php if (has_post_thumbnail()): ?>
+                                <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>"
+                                    alt="<?php the_title_attribute(); ?>" class="blog-featured-card__img">
+                            <?php else: ?>
+                                <img src="<?php echo $theme_url; ?>/assets/images/blog/blog-featured-img-1.svg"
+                                    alt="<?php the_title_attribute(); ?>" class="blog-featured-card__img">
+                            <?php endif; ?>
+                            <div class="blog-featured-card__body">
+                                <span class="blog-featured-card__category"><?php echo esc_html($cat_name); ?></span>
+                                <h2 class="blog-featured-card__title"><?php the_title(); ?></h2>
+                                <p class="blog-featured-card__excerpt"><?php echo wp_trim_words(get_the_excerpt(), 30); ?></p>
+                                <div class="blog-featured-card__meta">
+                                    <span class="blog-featured-card__badge">Cập nhật <?php echo esc_html(get_the_modified_date('Y')); ?></span>
+                                    <span class="blog-featured-card__badge"><?php echo esc_html($reading_time); ?> phút đọc</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                <?php endwhile; wp_reset_postdata(); endif; ?>
+                        </a>
+                <?php
+                    endwhile;
+                    wp_reset_postdata();
+                endif;
+
+                if (!$featured_rendered):
+                    $featured_fallback_query = new WP_Query(array(
+                        'post_type'      => 'post',
+                        'posts_per_page' => 1,
+                        'post_status'    => 'publish',
+                    ));
+                    if ($featured_fallback_query->have_posts()):
+                        while ($featured_fallback_query->have_posts()): $featured_fallback_query->the_post();
+                            $featured_post_id = get_the_ID();
+                            $cats = get_the_category();
+                            $cat_name = !empty($cats) ? $cats[0]->name : 'Bài trụ cột (Pillar)';
+                            $reading_time = yani_get_reading_time(get_the_content());
+                ?>
+                            <a href="<?php the_permalink(); ?>" class="blog-featured-card" id="featured-pillar">
+                                <?php if (has_post_thumbnail()): ?>
+                                    <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>"
+                                        alt="<?php the_title_attribute(); ?>" class="blog-featured-card__img">
+                                <?php else: ?>
+                                    <img src="<?php echo $theme_url; ?>/assets/images/blog/blog-featured-img-1.svg"
+                                        alt="<?php the_title_attribute(); ?>" class="blog-featured-card__img">
+                                <?php endif; ?>
+                                <div class="blog-featured-card__body">
+                                    <span class="blog-featured-card__category"><?php echo esc_html($cat_name); ?></span>
+                                    <h2 class="blog-featured-card__title"><?php the_title(); ?></h2>
+                                    <p class="blog-featured-card__excerpt"><?php echo wp_trim_words(get_the_excerpt(), 30); ?></p>
+                                    <div class="blog-featured-card__meta">
+                                        <span class="blog-featured-card__badge">Cập nhật <?php echo esc_html(get_the_modified_date('Y')); ?></span>
+                                        <span class="blog-featured-card__badge"><?php echo esc_html($reading_time); ?> phút đọc</span>
+                                    </div>
+                                </div>
+                            </a>
+                <?php
+                        endwhile;
+                        wp_reset_postdata();
+                    endif;
+                endif;
+                ?>
 
                 <!-- RIGHT: 2×2 Topic Cluster Cards -->
                 <div class="blog-main__topics">
@@ -137,25 +186,64 @@ $posts_query = new WP_Query($posts_args);
                     );
                     $topic_index = 0;
                     if ($topic_query->have_posts()): while ($topic_query->have_posts()): $topic_query->the_post();
-                        $cats = get_the_category();
-                        $cat_name = !empty($cats) ? $cats[0]->name : 'Chiến lược';
-                        $fallback_img = $topic_fallback_images[$topic_index % count($topic_fallback_images)];
-                    ?>
-                        <a href="<?php the_permalink(); ?>" class="blog-topic-card" id="topic-card-<?php echo $topic_index; ?>">
-                            <?php if (has_post_thumbnail()): ?>
-                                <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>"
-                                    alt="<?php the_title_attribute(); ?>" class="blog-topic-card__img">
-                            <?php else: ?>
-                                <img src="<?php echo $theme_url; ?>/assets/images/blog/<?php echo esc_attr($fallback_img); ?>"
-                                    alt="<?php the_title_attribute(); ?>" class="blog-topic-card__img">
-                            <?php endif; ?>
-                            <div class="blog-topic-card__body">
-                                <span class="blog-topic-card__category"><?php echo esc_html($cat_name); ?></span>
-                                <h3 class="blog-topic-card__title"><?php the_title(); ?></h3>
-                                <p class="blog-topic-card__excerpt"><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
-                            </div>
-                        </a>
+                            $topic_post_ids[] = get_the_ID();
+                            $cats = get_the_category();
+                            $cat_name = !empty($cats) ? $cats[0]->name : 'Chiến lược';
+                            $fallback_img = $topic_fallback_images[$topic_index % count($topic_fallback_images)];
+                        ?>
+                            <a href="<?php the_permalink(); ?>" class="blog-topic-card" id="topic-card-<?php echo $topic_index; ?>">
+                                <?php if (has_post_thumbnail()): ?>
+                                    <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>"
+                                        alt="<?php the_title_attribute(); ?>" class="blog-topic-card__img">
+                                <?php else: ?>
+                                    <img src="<?php echo $theme_url; ?>/assets/images/blog/<?php echo esc_attr($fallback_img); ?>"
+                                        alt="<?php the_title_attribute(); ?>" class="blog-topic-card__img">
+                                <?php endif; ?>
+                                <div class="blog-topic-card__body">
+                                    <span class="blog-topic-card__category"><?php echo esc_html($cat_name); ?></span>
+                                    <h3 class="blog-topic-card__title"><?php the_title(); ?></h3>
+                                    <p class="blog-topic-card__excerpt"><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
+                                </div>
+                            </a>
                     <?php $topic_index++; endwhile; wp_reset_postdata(); endif; ?>
+
+                    <?php
+                    if ($topic_index < 4):
+                        $topic_fallback_args = array(
+                            'post_type'      => 'post',
+                            'posts_per_page' => 4 - $topic_index,
+                            'post_status'    => 'publish',
+                            'post__not_in'   => array_merge(array($featured_post_id), $topic_post_ids),
+                        );
+                        $topic_fallback_query = new WP_Query($topic_fallback_args);
+                        if ($topic_fallback_query->have_posts()):
+                            while ($topic_fallback_query->have_posts()): $topic_fallback_query->the_post();
+                                $topic_post_ids[] = get_the_ID();
+                                $cats = get_the_category();
+                                $cat_name = !empty($cats) ? $cats[0]->name : 'Chiến lược';
+                                $fallback_img = $topic_fallback_images[$topic_index % count($topic_fallback_images)];
+                    ?>
+                                <a href="<?php the_permalink(); ?>" class="blog-topic-card" id="topic-card-<?php echo $topic_index; ?>">
+                                    <?php if (has_post_thumbnail()): ?>
+                                        <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>"
+                                            alt="<?php the_title_attribute(); ?>" class="blog-topic-card__img">
+                                    <?php else: ?>
+                                        <img src="<?php echo $theme_url; ?>/assets/images/blog/<?php echo esc_attr($fallback_img); ?>"
+                                            alt="<?php the_title_attribute(); ?>" class="blog-topic-card__img">
+                                    <?php endif; ?>
+                                    <div class="blog-topic-card__body">
+                                        <span class="blog-topic-card__category"><?php echo esc_html($cat_name); ?></span>
+                                        <h3 class="blog-topic-card__title"><?php the_title(); ?></h3>
+                                        <p class="blog-topic-card__excerpt"><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
+                                    </div>
+                                </a>
+                    <?php
+                            $topic_index++;
+                            endwhile;
+                            wp_reset_postdata();
+                        endif;
+                    endif;
+                    ?>
                 </div>
 
             </div>
@@ -202,30 +290,71 @@ $posts_query = new WP_Query($posts_args);
                 );
                 $post_index = 0;
                 if ($posts_query->have_posts()): while ($posts_query->have_posts()): $posts_query->the_post();
-                    $cats = get_the_category();
-                    $cat_name = !empty($cats) ? $cats[0]->name : 'Content SEO';
-                    $reading_time = yani_get_reading_time(get_the_content());
-                    $fallback_img = $post_fallback_images[$post_index % count($post_fallback_images)];
-                ?>
-                    <a href="<?php the_permalink(); ?>" class="blog-post-card" id="post-card-<?php echo $post_index; ?>">
-                        <?php if (has_post_thumbnail()): ?>
-                            <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>"
-                                alt="<?php the_title_attribute(); ?>" class="blog-post-card__img">
-                        <?php else: ?>
-                            <img src="<?php echo $theme_url; ?>/assets/images/blog/<?php echo esc_attr($fallback_img); ?>"
-                                alt="<?php the_title_attribute(); ?>" class="blog-post-card__img">
-                        <?php endif; ?>
-                        <div class="blog-post-card__body">
-                            <span class="blog-post-card__category"><?php echo esc_html($cat_name); ?></span>
-                            <h3 class="blog-post-card__title"><?php the_title(); ?></h3>
-                            <p class="blog-post-card__excerpt"><?php echo wp_trim_words(get_the_excerpt(), 25); ?></p>
-                            <div class="blog-post-card__meta">
-                                <span class="blog-post-card__badge"><?php echo esc_html(get_the_date('d/m/Y')); ?></span>
-                                <span class="blog-post-card__badge"><?php echo esc_html($reading_time); ?> phút đọc</span>
+                        $cats = get_the_category();
+                        $cat_name = !empty($cats) ? $cats[0]->name : 'Content SEO';
+                        $reading_time = yani_get_reading_time(get_the_content());
+                        $fallback_img = $post_fallback_images[$post_index % count($post_fallback_images)];
+                    ?>
+                        <a href="<?php the_permalink(); ?>" class="blog-post-card" id="post-card-<?php echo $post_index; ?>">
+                            <?php if (has_post_thumbnail()): ?>
+                                <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>"
+                                    alt="<?php the_title_attribute(); ?>" class="blog-post-card__img">
+                            <?php else: ?>
+                                <img src="<?php echo $theme_url; ?>/assets/images/blog/<?php echo esc_attr($fallback_img); ?>"
+                                    alt="<?php the_title_attribute(); ?>" class="blog-post-card__img">
+                            <?php endif; ?>
+                            <div class="blog-post-card__body">
+                                <span class="blog-post-card__category"><?php echo esc_html($cat_name); ?></span>
+                                <h3 class="blog-post-card__title"><?php the_title(); ?></h3>
+                                <p class="blog-post-card__excerpt"><?php echo wp_trim_words(get_the_excerpt(), 25); ?></p>
+                                <div class="blog-post-card__meta">
+                                    <span class="blog-post-card__badge"><?php echo esc_html(get_the_date('d/m/Y')); ?></span>
+                                    <span class="blog-post-card__badge"><?php echo esc_html($reading_time); ?> phút đọc</span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
                 <?php $post_index++; endwhile; endif; ?>
+
+                <?php
+                if ($post_index === 0):
+                    $regular_fallback_query = new WP_Query(array(
+                        'post_type'      => 'post',
+                        'posts_per_page' => 6,
+                        'post_status'    => 'publish',
+                        'post__not_in'   => array_merge(array($featured_post_id), $topic_post_ids),
+                    ));
+                    if ($regular_fallback_query->have_posts()):
+                        while ($regular_fallback_query->have_posts()): $regular_fallback_query->the_post();
+                            $cats = get_the_category();
+                            $cat_name = !empty($cats) ? $cats[0]->name : 'Content SEO';
+                            $reading_time = yani_get_reading_time(get_the_content());
+                            $fallback_img = $post_fallback_images[$post_index % count($post_fallback_images)];
+                ?>
+                            <a href="<?php the_permalink(); ?>" class="blog-post-card" id="post-card-<?php echo $post_index; ?>">
+                                <?php if (has_post_thumbnail()): ?>
+                                    <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>"
+                                        alt="<?php the_title_attribute(); ?>" class="blog-post-card__img">
+                                <?php else: ?>
+                                    <img src="<?php echo $theme_url; ?>/assets/images/blog/<?php echo esc_attr($fallback_img); ?>"
+                                        alt="<?php the_title_attribute(); ?>" class="blog-post-card__img">
+                                <?php endif; ?>
+                                <div class="blog-post-card__body">
+                                    <span class="blog-post-card__category"><?php echo esc_html($cat_name); ?></span>
+                                    <h3 class="blog-post-card__title"><?php the_title(); ?></h3>
+                                    <p class="blog-post-card__excerpt"><?php echo wp_trim_words(get_the_excerpt(), 25); ?></p>
+                                    <div class="blog-post-card__meta">
+                                        <span class="blog-post-card__badge"><?php echo esc_html(get_the_date('d/m/Y')); ?></span>
+                                        <span class="blog-post-card__badge"><?php echo esc_html($reading_time); ?> phút đọc</span>
+                                    </div>
+                                </div>
+                            </a>
+                <?php
+                        $post_index++;
+                        endwhile;
+                        wp_reset_postdata();
+                    endif;
+                endif;
+                ?>
             </div>
         </div>
     </section>

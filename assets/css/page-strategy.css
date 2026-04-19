@@ -2064,3 +2064,9 @@
         margin-top: 8px !important;
     }
 }
+
+/* Remove custom line-height on main page title classes */
+[class$="__title"],
+[class*="__title "] {
+    line-height: normal !important;
+}

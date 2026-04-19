@@ -1598,6 +1598,7 @@
     width: 70px;
     height: 70px;
     margin-bottom: 16px;
+    justify-self: center;
 }
 
 .price-includes__item-title {
@@ -3792,4 +3793,10 @@
         font-size: 12px;
         padding: 8px 12px;
     }
+}
+
+/* Remove custom line-height on main page title classes */
+[class$="__title"],
+[class*="__title "] {
+    line-height: normal !important;
 }

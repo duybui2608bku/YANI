@@ -1915,3 +1915,9 @@
     opacity: 1;
     transform: translateX(0);
 }
+
+/* Remove custom line-height on main page title classes */
+[class$="__title"],
+[class*="__title "] {
+    line-height: normal !important;
+}

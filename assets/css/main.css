@@ -25,7 +25,7 @@
     --color-accent-green-dark: #017340;
     --color-white: #FFFFFF;
 
-    --gradient-title: radial-gradient(circle at 50% 50%, rgba(94, 224, 182, 1) 0%, rgba(15, 42, 32, 1) 100%);
+    --gradient-title: #4db795;
     --gradient-title-left: radial-gradient(circle at 33% 0%, rgba(94, 224, 182, 1) 0%, rgba(15, 42, 32, 1) 100%);
     --gradient-button: linear-gradient(180deg, rgba(36, 122, 75, 1) 25%, rgba(47, 143, 91, 1) 100%);
     --gradient-bg-radial: radial-gradient(circle at 50% -10%, rgba(20, 57, 44, 1) 0%, rgba(11, 31, 23, 1) 74%);
