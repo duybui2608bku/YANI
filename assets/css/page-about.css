@@ -575,6 +575,188 @@
 }
 
 /* ========================================
+   Điểm khác biệt Section
+   ======================================== */
+.about-diff {
+    position: relative;
+    z-index: 1;
+    padding: 60px 0 80px;
+}
+
+.about-diff__header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-diff__title {
+    margin-bottom: 8px;
+}
+
+.about-diff__title-gradient {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: var(--font-size-h2);
+    /* line-height: var(--line-height-h2); */
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.about-diff__subtitle {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-h4);
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+    letter-spacing: -0.2%;
+    margin-bottom: 20px;
+}
+
+.about-diff__desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: var(--font-size-body-m);
+    line-height: var(--line-height-body-m);
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Bordered box */
+.about-diff__box {
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+    padding: 40px 30px 48px;
+    max-width: 1238px;
+    margin: 0 auto 40px;
+    position: relative;
+}
+
+
+.about-diff__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 1238px;
+    margin: 0 auto 40px;
+}
+
+
+.about-diff__label-card {
+    border-radius: var(--radius-md);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 4px 20px,
+        rgba(0, 0, 0, 0.4) 0px 2px 6px,
+        rgba(255, 255, 255, 0.06) 0px 0px 0px 1px inset,
+        rgba(255, 255, 255, 0.08) 0px 1px 2px inset,
+        rgba(0, 255, 180, 0.12) 0px 0px 10px inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 28px;
+    text-align: center;
+    width: 100%;
+}
+
+.about-diff__label-card span {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: var(--font-size-h5);
+    line-height: var(--line-height-h5);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+}
+
+
+.about-diff__cards-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+
+.about-diff__card {
+    border-radius: var(--radius-md);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 4px 20px,
+        rgba(0, 0, 0, 0.4) 0px 2px 6px,
+        rgba(255, 255, 255, 0.06) 0px 0px 0px 1px inset,
+        rgba(255, 255, 255, 0.08) 0px 1px 2px inset,
+        rgba(0, 255, 180, 0.12) 0px 0px 10px inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 36px 20px 32px;
+    gap: 24px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-diff__card:hover {
+    border-color: rgba(94, 224, 182, 0.3);
+    box-shadow: 0 0 20px rgba(94, 224, 182, 0.08);
+}
+
+.about-diff__card-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.about-diff__card-icon img {
+    width: auto;
+    height: auto;
+    max-width: 61px;
+    max-height: 48px;
+    object-fit: contain;
+}
+
+.about-diff__card-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: var(--font-size-body-m);
+    line-height: var(--line-height-body-m);
+    color: var(--color-text-secondary);
+}
+
+/* Bottom pill */
+.about-diff__bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.about-diff__bottom-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 36px;
+    border-radius: 63px;
+    border: 0.5px solid rgba(94, 224, 182, 0.5);
+    background: linear-gradient(180deg,
+            rgba(94, 224, 182, 0.15) 0%,
+            rgba(15, 42, 32, 0.4) 100%);
+    backdrop-filter: blur(6px);
+    max-width: 700px;
+}
+
+.about-diff__bottom-pill span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: var(--font-size-body-m);
+    line-height: var(--line-height-body-m);
+    color: var(--color-text-secondary);
+    text-align: center;
+}
+
+/* ========================================
    Quy trình "Bao Sài" Section
    ======================================== */
 .about-process {
@@ -599,7 +781,7 @@
     font-family: var(--font-family);
     font-weight: 700;
     font-size: var(--font-size-h2);
-    line-height: var(--line-height-h2);
+    /* line-height: var(--line-height-h2); */
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 16px;

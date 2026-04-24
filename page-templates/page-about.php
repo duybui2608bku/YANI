@@ -65,6 +65,65 @@ get_header();
         </div>
     </section>
 
+    <!-- ===== ĐIỂM KHÁC BIỆT ===== -->
+    <section class="about-diff" id="about-diff">
+        <div class="container">
+            <div class="about-diff__header">
+                <h2 class="about-diff__title">
+                    <span class="about-diff__title-gradient text-gradient"><?php esc_html_e('Điểm khác biệt', 'yani-content'); ?></span>
+                </h2>
+                <h3 class="about-diff__subtitle"><?php esc_html_e('Khi triển khai tại Yani Content', 'yani-content'); ?></h3>
+                <p class="about-diff__desc">
+                    <?php esc_html_e('Không chỉ dừng ở việc viết bài, mỗi dự án tại Yani Content được kiểm soát theo quy trình rõ ràng để đảm bảo nội dung đi đúng hướng và phục vụ mục tiêu kinh doanh.', 'yani-content'); ?>
+                </p>
+            </div>
+
+            <div class="about-diff__grid">
+                <!-- Card label riêng biệt -->
+                <div class="about-diff__label-card">
+                    <span><?php esc_html_e('Những điểm được khách hàng đánh giá cao', 'yani-content'); ?></span>
+                </div>
+
+                <!-- 4 card icon hàng dưới -->
+                <div class="about-diff__cards-row">
+                    <div class="about-diff__card" id="diff-card-1">
+                        <div class="about-diff__card-icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/Every-user (众多用户).svg" alt="<?php esc_attr_e('Có người phụ trách nội dung', 'yani-content'); ?>" width="48" height="48">
+                        </div>
+                        <p class="about-diff__card-text"><?php esc_html_e('Có người phụ trách', 'yani-content'); ?><br><?php esc_html_e('nội dung theo từng ngành', 'yani-content'); ?></p>
+                    </div>
+
+                    <div class="about-diff__card" id="diff-card-2">
+                        <div class="about-diff__card-icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/Group 374.svg" alt="<?php esc_attr_e('Duyệt dàn ý chi tiết', 'yani-content'); ?>" width="61" height="36">
+                        </div>
+                        <p class="about-diff__card-text"><?php esc_html_e('Duyệt dàn ý chi tiết', 'yani-content'); ?><br><?php esc_html_e('trước khi bắt đầu viết', 'yani-content'); ?></p>
+                    </div>
+
+                    <div class="about-diff__card" id="diff-card-3">
+                        <div class="about-diff__card-icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/Check-correct (对勾).svg" alt="<?php esc_attr_e('Checklist nghiệm thu', 'yani-content'); ?>" width="43" height="43">
+                        </div>
+                        <p class="about-diff__card-text"><?php esc_html_e('Checklist nghiệm thu', 'yani-content'); ?><br><?php esc_html_e('rõ ràng trước khi bàn giao', 'yani-content'); ?></p>
+                    </div>
+
+                    <div class="about-diff__card" id="diff-card-4">
+                        <div class="about-diff__card-icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/Newlybuild (创建).svg" alt="<?php esc_attr_e('Xây cụm chủ đề', 'yani-content'); ?>" width="47" height="47">
+                        </div>
+                        <p class="about-diff__card-text"><?php esc_html_e('Xây cụm chủ đề & liên kết', 'yani-content'); ?><br><?php esc_html_e('nội bộ theo hành trình', 'yani-content'); ?><br><?php esc_html_e('khách hàng', 'yani-content'); ?></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-diff__bottom">
+                <div class="about-diff__bottom-pill">
+                    <span><?php esc_html_e('Nhờ đó nội dung không bị rời rạc và dễ hỗ trợ đội sales trong quá trình tư vấn.', 'yani-content'); ?></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ===== SỰ THẬT MẤT LÒNG SECTION ===== -->
     <section class="about-truth" id="about-truth">
         <div class="container">
@@ -178,6 +237,7 @@ get_header();
             </div>
         </div>
     </section>
+
 
     <!-- ===== QUY TRÌNH "BAO SÀI" ===== -->
     <section class="about-process" id="about-process">

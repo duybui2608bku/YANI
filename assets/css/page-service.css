@@ -68,7 +68,8 @@
 .service-bgr-banggia {
     position: absolute;
     top: 945px;
-    left: -30px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 1545px;
     height: 898px;
     opacity: 0.8;
