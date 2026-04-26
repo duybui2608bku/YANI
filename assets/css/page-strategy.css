@@ -94,10 +94,7 @@
     line-height: 1.265;
     text-transform: uppercase;
     text-align: center;
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
     margin-bottom: 16px;
 }
 
@@ -452,10 +449,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.5;
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
     margin-bottom: 12px;
     display: inline-block;
 }
@@ -542,10 +536,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.667;
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
     text-transform: uppercase;
 }
 
@@ -970,10 +961,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.667;
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
     margin-bottom: 8px;
 }
 
@@ -1139,10 +1127,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 1.667;
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
 }
 
 .strategy-next__launch-label-bottom {
@@ -1351,10 +1336,7 @@
         font-size: 12px;
         color: var(--color-text-muted);
         margin-bottom: 2px;
-        background: var(--gradient-title);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: var(--gradient-title);
     }
 
     .strategy-scope__table-cell--strikethrough {

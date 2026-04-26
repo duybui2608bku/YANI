@@ -62,10 +62,7 @@
 
 .blog-hero__title-gradient {
     display: block;
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
 }
 
 .blog-hero__title-white {
@@ -173,10 +170,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.667;
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
     margin-bottom: 8px;
 }
 
@@ -264,10 +258,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.667;
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
     margin-bottom: 8px;
 }
 
@@ -450,10 +441,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.667;
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
     margin-bottom: 8px;
 }
 
@@ -537,17 +525,11 @@
 
 .blog-pagination__item:hover,
 .blog-pagination__item--active {
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
 }
 
 .blog-pagination__item--active a {
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
 }
 
 /* ========================================

@@ -337,10 +337,7 @@
     display: inline-block;
     font-size: var(--font-size-body-s);
     line-height: 1.5714;
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
     margin-bottom: 8px;
 }
 
@@ -659,10 +656,7 @@
     line-height: 1.375;
     letter-spacing: -0.5%;
     text-transform: uppercase;
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
     margin-bottom: 16px;
 }
 
@@ -1321,10 +1315,7 @@
     font-weight: 600;
     font-size: var(--font-size-h4);
     line-height: var(--line-height-h4);
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
     text-transform: uppercase;
 }
 
@@ -1425,10 +1416,7 @@
     font-size: 50px;
     line-height: 1.265;
     text-transform: uppercase;
-    background: var(--gradient-title);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gradient-title);
 }
 
 .service-cta__desc {
