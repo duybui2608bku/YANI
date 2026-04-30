@@ -99,9 +99,18 @@ if (!class_exists('Yani_Settings_Dynamic_Text_Plugin')) {
                 update_option(self::OPTION_KEY, $rules, false);
             }
             ?>
-            <div class="wrap">
+            <div class="wrap yani-settings-wrap">
                 <h1>Yani Settings - Dynamic Text CRUD</h1>
                 <p>Quan ly noi dung text (khong bao gom anh) cho 8 trang trong theme Yani.</p>
+                <style>
+                    .yani-settings-wrap .nav-tab-wrapper { margin-top: 18px; border-bottom: 1px solid #dcdcde; }
+                    .yani-settings-wrap .nav-tab { border-radius: 8px 8px 0 0; padding: 8px 14px; }
+                    .yani-settings-wrap .yani-tab-panel { margin-top: 14px; background: #fff; border: 1px solid #dcdcde; border-radius: 10px; padding: 16px; box-shadow: 0 1px 2px rgba(0, 0, 0, .04); }
+                    .yani-settings-wrap .widefat th { font-weight: 600; }
+                    .yani-settings-wrap .widefat td { vertical-align: top; }
+                    .yani-settings-wrap textarea { border-radius: 8px; border: 1px solid #c3c4c7; min-height: 90px; }
+                    .yani-settings-wrap .button-secondary { border-radius: 8px; }
+                </style>
 
                 <?php if (!empty($_GET['saved'])): ?>
                     <div class="notice notice-success is-dismissible">
@@ -147,9 +156,8 @@ if (!class_exists('Yani_Settings_Dynamic_Text_Plugin')) {
                             <table class="widefat striped">
                                 <thead>
                                 <tr>
-                                    <th style="width:20%;">Key (quan ly noi bo)</th>
-                                    <th style="width:35%;">Text goc can tim</th>
-                                    <th style="width:35%;">Text thay the</th>
+                                    <th style="width:45%;">Text goc can tim</th>
+                                    <th style="width:45%;">Text thay the</th>
                                     <th style="width:10%;">Xoa?</th>
                                 </tr>
                                 </thead>
@@ -158,12 +166,9 @@ if (!class_exists('Yani_Settings_Dynamic_Text_Plugin')) {
                                     <?php foreach ($page_rules as $index => $rule): ?>
                                         <tr>
                                             <td>
-                                                <input type="text" class="regular-text"
+                                                <input type="hidden"
                                                        name="rules[<?php echo esc_attr($page_key); ?>][<?php echo esc_attr($index); ?>][key]"
-                                                       value="<?php echo esc_attr($rule['key'] ?? ''); ?>"
-                                                       placeholder="vd: hero_title" />
-                                            </td>
-                                            <td>
+                                                       value="<?php echo esc_attr($rule['key'] ?? ''); ?>" />
                                                 <textarea rows="3" style="width:100%;"
                                                           name="rules[<?php echo esc_attr($page_key); ?>][<?php echo esc_attr($index); ?>][find]"><?php echo esc_textarea($rule['find'] ?? ''); ?></textarea>
                                             </td>
@@ -186,12 +191,9 @@ if (!class_exists('Yani_Settings_Dynamic_Text_Plugin')) {
                                 <?php for ($new = 0; $new < 3; $new++): ?>
                                     <tr>
                                         <td>
-                                            <input type="text" class="regular-text"
+                                            <input type="hidden"
                                                    name="rules[<?php echo esc_attr($page_key); ?>][new_<?php echo esc_attr($new); ?>][key]"
-                                                   value=""
-                                                   placeholder="them key moi" />
-                                        </td>
-                                        <td>
+                                                   value="" />
                                             <textarea rows="3" style="width:100%;"
                                                       name="rules[<?php echo esc_attr($page_key); ?>][new_<?php echo esc_attr($new); ?>][find]"
                                                       placeholder="dan dung text goc tren template"></textarea>
@@ -331,7 +333,16 @@ if (!class_exists('Yani_Settings_Dynamic_Text_Plugin')) {
                     if ($find === '') {
                         continue;
                     }
-                    $html = str_replace($find, $replace, $html);
+                    $updated_html = str_replace($find, $replace, $html);
+                    $exact_replaced = ($updated_html !== $html);
+                    $html = $updated_html;
+
+                    // Chi fallback regex neu exact match khong thay doi gi,
+                    // tranh replace 2 lan gay duplicate text.
+                    if ($exact_replaced) {
+                        continue;
+                    }
+
                     $pattern = $this->build_flexible_text_pattern($find);
                     if ($pattern !== '') {
                         $updated_html = preg_replace($pattern, $replace, $html);
