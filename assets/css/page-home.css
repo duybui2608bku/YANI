@@ -1881,6 +1881,10 @@ Green glow at bottom of card .home-pain__card::after {
 
 @media (max-width: 768px) {
 
+    #service-eeat::before {
+        display: none;
+    }
+
     .home-bg-vo-cuc,
     .home-bg-vo-cuc--bottom,
     .home-bg-vo-cuc--top,

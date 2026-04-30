@@ -291,7 +291,6 @@ get_header();
     <section class="about-kpi" id="about-kpi">
         <div class="container">
             <div class="about-kpi__header">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/kpi-bar.svg" alt="" class="about-kpi__bar" aria-hidden="true">
                 <h3 class="about-kpi__main-title text-gradient"><?php esc_html_e('Tiêu chuẩn bàn giao (KPI)', 'yani-content'); ?></h3>
             </div>
 
