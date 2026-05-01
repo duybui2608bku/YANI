@@ -89,46 +89,9 @@ get_header();
                         Chia sẻ sơ lược về nhu cầu của bạn. Chúng tôi sẽ phản hồi với các bước tiếp theo và những gì cần thiết để đánh giá.
                     </p>
 
-                    <form id="yani-contact-form" class="contact-form" method="post" novalidate>
-                        <?php wp_nonce_field( 'yani_nonce', 'yani_nonce_field' ); ?>
-
-                        <div class="form-group">
-                            <label for="contact-fullname" class="form-group__label">Họ tên *</label>
-                            <input type="text" id="contact-fullname" name="fullname" class="form-group__input" placeholder="VD: Nguyễn Văn A" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-email" class="form-group__label">Email công việc *</label>
-                            <input type="email" id="contact-email" name="email" class="form-group__input" placeholder="name@company.com" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-phone" class="form-group__label">Số điện thoại / Zalo *</label>
-                            <input type="tel" id="contact-phone" name="phone" class="form-group__input" placeholder="090..." required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-website" class="form-group__label">Website doanh nghiệp (Tùy chọn)</label>
-                            <input type="url" id="contact-website" name="website" class="form-group__input" placeholder="http://...">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-message" class="form-group__label">Bạn cần hỗ trợ gì?</label>
-                            <textarea id="contact-message" name="message" class="form-group__textarea" placeholder="VD: Chúng tôi muốn xây dựng kế hoạch nội dung SEO 6-12 tháng và xuất bản X bài/tháng..."></textarea>
-                        </div>
-
-                        <p class="contact-form__note">
-                            Form này dành cho doanh nghiệp đang tìm kiếm hợp tác nội dung SEO dài hạn. Chúng tôi không cam kết các lời hứa "lên top tức thì".
-                        </p>
-
-                        <div class="contact-form__submit">
-                            <button type="submit" class="btn btn-primary" id="btn-submit-form">
-                                <span>Gửi yêu cầu ngay</span>
-                            </button>
-                        </div>
-
-                        <div id="form-message" class="form-message"></div>
-                    </form>
+                    <div class="contact-form contact-form--cf7">
+                        <?php echo do_shortcode('[contact-form-7 id="28d1ce6" title="CONTACT FORM"]'); ?>
+                    </div>
                 </div>
 
             </div>

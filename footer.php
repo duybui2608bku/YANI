@@ -25,26 +25,26 @@
                     </p>
                 </div>
 
-                <!-- Column 2: Services -->
-                <div class="footer-nav-col">
-                    <h3 class="footer-nav-title">DỊCH VỤ MŨI NHỌN</h3>
-                    <ul class="footer-nav-list" id="footer-services-list">
-                        <li><a href="<?php echo esc_url(home_url('/dich-vu/content-seo-chien-luoc')); ?>">Content SEO Chiến lược</a></li>
-                        <li><a href="<?php echo esc_url(home_url('/dich-vu/viet-bai-chuan-eeat')); ?>">Viết bài chuẩn EEAT</a></li>
-                        <li><a href="<?php echo esc_url(home_url('/dich-vu/audit-toi-uu-noi-dung')); ?>">Audit &amp; Tối ưu nội dung</a></li>
-                        <li><a href="<?php echo esc_url(home_url('/dich-vu/content-marketing-b2b')); ?>">Content Marketing B2B</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3: About -->
-                <div class="footer-nav-col">
-                    <h3 class="footer-nav-title">VỀ CHÚNG TÔI</h3>
-                    <ul class="footer-nav-list" id="footer-about-list">
-                        <li><a href="<?php echo esc_url(home_url('/ve-chung-toi#triet-ly')); ?>">Triết lý nội dung</a></li>
-                        <li><a href="<?php echo esc_url(home_url('/thu-vien-tri-thuc')); ?>">Thư viện tri thức</a></li>
-                        <li><a href="<?php echo esc_url(home_url('/lien-he')); ?>">Yêu cầu báo giá</a></li>
-                        <li><a href="<?php echo esc_url(home_url('/chinh-sach-bao-mat')); ?>">Chính sách bảo mật</a></li>
-                    </ul>
+                <!-- Services + About: shared row, 2 columns -->
+                <div class="footer-nav-row">
+                    <div class="footer-nav-col">
+                        <h3 class="footer-nav-title">DỊCH VỤ MŨI NHỌN</h3>
+                        <ul class="footer-nav-list" id="footer-services-list">
+                            <li><a href="<?php echo esc_url(home_url('/dich-vu/content-seo-chien-luoc')); ?>">Content SEO Chiến lược</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/dich-vu/viet-bai-chuan-eeat')); ?>">Viết bài chuẩn EEAT</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/dich-vu/audit-toi-uu-noi-dung')); ?>">Audit &amp; Tối ưu nội dung</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/dich-vu/content-marketing-b2b')); ?>">Content Marketing B2B</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h3 class="footer-nav-title">VỀ CHÚNG TÔI</h3>
+                        <ul class="footer-nav-list" id="footer-about-list">
+                            <li><a href="<?php echo esc_url(home_url('/ve-chung-toi#triet-ly')); ?>">Triết lý nội dung</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/thu-vien-tri-thuc')); ?>">Thư viện tri thức</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/lien-he')); ?>">Yêu cầu báo giá</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/chinh-sach-bao-mat')); ?>">Chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- Column 4: Contact -->
