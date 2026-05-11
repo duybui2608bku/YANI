@@ -11,7 +11,8 @@
    ======================================== */
 .blog-single-page {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    overflow-x: clip;
 }
 
 /* ========================================
@@ -115,8 +116,7 @@
    LEFT SIDEBAR (Sticky)
    ======================================== */
 .bsingle-sidebar {
-    position: sticky;
-    top: 100px;
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 22px;
@@ -127,6 +127,16 @@
     background: var(--color-bg-card-solid);
     border-radius: var(--radius-md);
     padding: 24px 34px 30px;
+    z-index: 2;
+}
+
+@media (min-width: 992px) {
+    .bsingle-toc {
+        position: sticky;
+        top: 88px;
+        max-height: calc(100vh - 112px);
+        overflow: hidden;
+    }
 }
 
 .bsingle-toc__title {
@@ -142,6 +152,21 @@
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.bsingle-toc.is-expanded .bsingle-toc__list {
+    max-height: min(52vh, 430px);
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.bsingle-toc.is-expanded .bsingle-toc__list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.bsingle-toc.is-expanded .bsingle-toc__list::-webkit-scrollbar-thumb {
+    background: rgba(94, 224, 182, 0.35);
+    border-radius: 999px;
 }
 
 .bsingle-toc__list li {
@@ -164,6 +189,34 @@
 .bsingle-toc__list li a:hover,
 .bsingle-toc__list li a.active {
     color: var(--color-accent-green);
+}
+
+.bsingle-toc__toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 34px;
+    margin-top: 14px;
+    border: 0.5px solid rgba(94, 224, 182, 0.45);
+    border-radius: var(--radius-md);
+    background: rgba(94, 224, 182, 0.08);
+    color: var(--color-accent-green);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: var(--font-size-body-s);
+    line-height: var(--line-height-body-s);
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.bsingle-toc__toggle:hover {
+    background: rgba(94, 224, 182, 0.14);
+    border-color: rgba(94, 224, 182, 0.75);
+}
+
+.bsingle-toc__toggle[hidden] {
+    display: none;
 }
 
 /* -- Share This Post -- */
@@ -735,6 +788,12 @@
         order: 2;
         margin-top: 40px;
         gap: 16px;
+    }
+
+    .bsingle-toc {
+        position: static;
+        max-height: none;
+        overflow: visible;
     }
 
     .bsingle-content {

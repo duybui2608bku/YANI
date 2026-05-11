@@ -87,6 +87,9 @@ $related_query = new WP_Query($related_args);
                         }
                         ?>
                     </ul>
+                    <button class="bsingle-toc__toggle" type="button" aria-expanded="false" hidden>
+                        Xem thêm
+                    </button>
                 </div>
 
                 <!-- Share This Post -->

@@ -15,6 +15,7 @@
         initHeader();
         initFaqAccordion();
         initContactForm();
+        initBlogSingleToc();
     });
 
     /**
@@ -220,6 +221,40 @@
         setTimeout(function () {
             el.style.display = 'none';
         }, 5000);
+    }
+
+    /**
+     * Blog single TOC: collapse long heading lists and keep desktop sidebar usable.
+     */
+    function initBlogSingleToc() {
+        var toc = document.getElementById('bsingle-toc');
+        var list = document.getElementById('toc-list');
+
+        if (!toc || !list) return;
+
+        var items = Array.prototype.slice.call(list.querySelectorAll('li'));
+        var toggle = toc.querySelector('.bsingle-toc__toggle');
+        var visibleLimit = 6;
+
+        if (!toggle || items.length <= visibleLimit) return;
+
+        function setExpanded(isExpanded) {
+            toc.classList.toggle('is-expanded', isExpanded);
+            toc.classList.toggle('is-collapsed', !isExpanded);
+            toggle.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+            toggle.textContent = isExpanded ? 'Thu gọn' : 'Xem thêm';
+
+            items.forEach(function (item, index) {
+                item.hidden = !isExpanded && index >= visibleLimit;
+            });
+        }
+
+        toggle.hidden = false;
+        setExpanded(false);
+
+        toggle.addEventListener('click', function () {
+            setExpanded(!toc.classList.contains('is-expanded'));
+        });
     }
 
 })();
